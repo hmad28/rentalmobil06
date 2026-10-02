@@ -11,7 +11,7 @@ export const FloatingContact = () => {
       {/* Mobile: Keep ONLY the WhatsApp floating button */}
       <div className="sm:hidden">
         <a
-          href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
           className="w-13 h-13 flex justify-center items-center rounded-full bg-[#25D366] text-white shadow-xl active:scale-95 transition-transform"
@@ -33,7 +33,7 @@ export const FloatingContact = () => {
           }`}
         >
           <a
-            href="tel:6281255964566"
+            href="tel:6285349166234"
             className="w-12 h-12 flex justify-center items-center rounded-full bg-[#171717] text-[#E8D5A8] border border-[#DFC88F]/50 shadow-lg hover:border-[#DFC88F] hover:text-white transition-all hover:-translate-y-1"
             title="Telepon"
             aria-label="Telepon"
@@ -42,7 +42,7 @@ export const FloatingContact = () => {
           </a>
 
           <a
-            href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 flex justify-center items-center rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20ba59] transition-all hover:-translate-y-1"

@@ -65,8 +65,8 @@ export const Footer = () => {
             </p>
             <p className="mb-3 text-sm flex items-center gap-2 text-gray-300">
               <Phone className="w-4 h-4 text-[#DFC88F] shrink-0" />
-              <a href="tel:6281255964566" className="hover:text-[#DFC88F] transition-colors">
-                +6281255964566
+              <a href="tel:6285349166234" className="hover:text-[#DFC88F] transition-colors">
+                +62 853-4916-6234
               </a>
             </p>
             <p className="mb-4 text-sm flex items-center gap-2 text-gray-300">
@@ -79,7 +79,7 @@ export const Footer = () => {
             {/* Social Icons */}
             <div className="flex space-x-3">
               <a
-                href="https://wa.me/6281255964566"
+                href="https://wa.me/6285349166234"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
@@ -88,7 +88,7 @@ export const Footer = () => {
                 <MessageCircle className="w-4 h-4" />
               </a>
               <a
-                href="tel:6281255964566"
+                href="tel:6285349166234"
                 className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
                 aria-label="Telepon"
               >

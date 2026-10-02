@@ -51,7 +51,7 @@ export const Hero = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+pesan+rental+mobil&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+pesan+rental+mobil&type=phone_number&app_absent=0"
               className="w-full sm:w-auto text-center px-7 py-3.5 text-base font-semibold text-white bg-[#B8892E] hover:bg-[#9E7424] rounded-md transition-colors shadow-xs"
             >
               Pesan Sekarang

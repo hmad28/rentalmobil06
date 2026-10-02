@@ -54,7 +54,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-4">
             <a
               className="hidden justify-center items-center px-5 py-2.5 text-sm font-semibold text-white bg-gold-gradient rounded-md focus:outline-none transition-all duration-200 sm:inline-flex"
-              href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -120,7 +120,7 @@ export const Navbar = () => {
           <div className="pt-3 pb-2 border-t border-[#E8E4DB]">
             <a
               className="w-full flex justify-center items-center px-4 py-2.5 text-base font-semibold text-white bg-gold-gradient rounded-md transition-all"
-              href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
