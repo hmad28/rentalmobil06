@@ -1,49 +1,69 @@
 import React from "react";
+import { ShieldCheck, Car, MessageSquareText, ThumbsUp } from "lucide-react";
 
 export const WhyChooseUsSection = () => {
-  return (
-    <div className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500">
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Card Left */}
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 uppercase">
-              Mengapa Memilih Deaz Rental?
-            </h2>
-            <p className="text-gray-800 text-lg mb-6 leading-relaxed">
-              Kami adalah jasa penyedia rental mobil yang berlokasi di (Banjarmasin - Banjarbaru)
-              Terpercaya. Fokus utama kami adalah memberikan pelayanan terbaik demi kenyamanan Anda
-              selama di perjalanan.
-            </p>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-white/20 rounded-lg text-center">
-                <span className="block text-2xl font-bold text-red-800">24/7</span>
-                <span className="text-sm font-medium text-gray-800">Layanan Support</span>
-              </div>
-              <div className="p-4 bg-white/20 rounded-lg text-center">
-                <span className="block text-2xl font-bold text-red-800">Terpercaya</span>
-                <span className="text-sm font-medium text-gray-800">Pilihan Utama</span>
-              </div>
-            </div>
-          </div>
+  const points = [
+    {
+      title: "Armada Terawat",
+      description: "Kendaraan dipersiapkan dan dicek berkala untuk memberikan perjalanan yang aman dan nyaman.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Pilihan Sesuai Kebutuhan",
+      description: "Tersedia mulai dari kendaraan keluarga, SUV tangguh, hingga kapasitas rombongan besar.",
+      icon: Car,
+    },
+    {
+      title: "Booking Praktis",
+      description: "Pilih armada dan konsultasikan jadwal serta rute langsung melalui WhatsApp dengan mudah.",
+      icon: MessageSquareText,
+    },
+    {
+      title: "Pelayanan Responsif",
+      description: "Tim kami siap membantu merekomendasikan kendaraan terbaik sesuai agenda perjalanan Anda.",
+      icon: ThumbsUp,
+    },
+  ];
 
-          {/* Image Right with Badge */}
-          <div className="relative">
-            <img
-              src="/images/15_Z1IyzQ1.webp"
-              alt="Armada Deaz Rental"
-              loading="lazy"
-              width={600}
-              height={400}
-              className="rounded-xl shadow-2xl transition-transform hover:scale-[1.02] duration-500 w-full"
-            />
-            <div className="absolute -bottom-4 -right-4 bg-red-800 text-white p-4 rounded-xl shadow-lg hidden sm:block">
-              <span className="block text-2xl font-bold">10+ Tahun</span>
-              <span className="text-xs">Pengalaman Melayani</span>
-            </div>
+  return (
+    <section id="kenapa-kami" className="py-16 sm:py-24 bg-white border-b border-[#E8E4DB]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F8F6F1] border border-[#E8E4DB] mb-3">
+            <span className="font-cinzel text-xs font-semibold tracking-wider text-[#B8892E] uppercase">
+              KEUNGGULAN
+            </span>
           </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#171717] tracking-tight mb-4">
+            Kenapa Memilih ZAHRAFFAMIRA?
+          </h2>
+          <p className="text-base text-[#626262]">
+            Fokus utama kami adalah memberikan pengalaman sewa kendaraan yang nyaman, aman, dan tanpa repot.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {points.map((pt, idx) => {
+            const Icon = pt.icon;
+            return (
+              <div
+                key={idx}
+                className="p-6 rounded-xl bg-[#F8F6F1] border border-[#E8E4DB] transition-all duration-200 hover:border-[#B8892E]/60 hover:-translate-y-0.5"
+              >
+                <div className="w-12 h-12 rounded-lg bg-white border border-[#E8E4DB] flex items-center justify-center text-[#B8892E] mb-5 shadow-2xs">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <h3 className="text-lg font-bold text-[#171717] mb-2">
+                  {pt.title}
+                </h3>
+                <p className="text-sm text-[#626262] leading-relaxed">
+                  {pt.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

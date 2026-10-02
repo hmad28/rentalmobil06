@@ -9,41 +9,36 @@ export const Navbar = () => {
 
   const navLinks = [
     { label: "Beranda", href: "/" },
-    { label: "Banjarmasin", href: "/sewa-mobil-banjarmasin" },
-    { label: "Banjarbaru", href: "/sewa-mobil-banjarbaru" },
-    { label: "Tentang Kami", href: "/tentang-kami" },
-    { label: "Pembayaran", href: "/pembayaran" },
-    { label: "Kerjasama", href: "/kerjasama-kemitraan" },
+    { label: "Armada", href: "/#armada" },
+    { label: "Kenapa Kami", href: "/#kenapa-kami" },
+    { label: "Layanan", href: "/#layanan" },
+    { label: "Cara Booking", href: "/#cara-booking" },
+    { label: "FAQ", href: "/#faq" },
     { label: "Kontak", href: "/kontak" },
-    { label: "Testimoni", href: "/testimoni" },
-    { label: "Blog", href: "/blog" },
   ];
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 bg-white shadow-sm">
+    <header className="fixed top-0 right-0 left-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E8E4DB] shadow-xs">
       <div className="mx-auto max-w-screen-xl px-4 lg:px-8 sm:px-6">
         <div className="h-20 flex justify-between items-center">
-          {/* Logo */}
+          {/* Logo / Branding */}
           <div className="flex-shrink-0">
-            <Link className="block text-red-800" href="/">
-              <span className="sr-only">Home</span>
-              <img
-                src="/images/logo_26SpOd.webp"
-                alt="Logo Deaz Rental Mobil Banjarmasin"
-                title="Logo Deaz Rental Mobil Banjarmasin"
-                width={150}
-                height={64}
-                className="w-auto h-16"
-              />
+            <Link className="block group" href="/">
+              <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-[#171717] block leading-none">
+                ZAHRAFFAMIRA
+              </span>
+              <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-[#B8892E] uppercase block mt-1">
+                Rental Mobil Banjarmasin
+              </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex lg:gap-8" aria-label="Global">
+          <nav className="hidden lg:flex lg:gap-8 items-center" aria-label="Global">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                className="text-base font-medium text-gray-700 transition-colors hover:text-red-800"
+                className="text-sm font-medium text-[#171717] transition-colors hover:text-[#B8892E]"
                 href={link.href}
               >
                 {link.label}
@@ -54,18 +49,20 @@ export const Navbar = () => {
           {/* Right Section */}
           <div className="flex items-center gap-4">
             <a
-              className="hidden justify-center items-center px-5 py-2.5 text-sm font-semibold text-white bg-red-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 hover:bg-red-700 sm:inline-flex transition-colors"
-              href="tel:6281255964566"
+              className="hidden justify-center items-center px-5 py-2.5 text-sm font-semibold text-white bg-[#B8892E] hover:bg-[#9A7020] rounded-md shadow-xs focus:outline-none transition-all duration-200 sm:inline-flex"
+              href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Hubungi Kami
+              Pesan Sekarang
             </a>
 
             {/* Mobile menu button */}
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 hover:bg-gray-100 lg:hidden"
+              className="p-2 text-[#171717] rounded-md focus:outline-none hover:bg-[#F8F6F1] lg:hidden"
               aria-expanded={isOpen}
               aria-label="Toggle navigation"
             >
@@ -97,32 +94,28 @@ export const Navbar = () => {
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
-        <nav className="px-4 py-2 bg-white divide-y divide-gray-200 shadow-lg border-t border-gray-100">
-          <div className="py-3 space-y-1">
+        <nav className="px-4 py-3 bg-white border-t border-[#E8E4DB] shadow-lg">
+          <div className="py-2 space-y-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-base font-medium text-gray-700 rounded-lg hover:text-red-800 hover:bg-gray-50 transition-colors"
+                className="block px-3 py-2 text-base font-medium text-[#171717] rounded-lg hover:text-[#B8892E] hover:bg-[#F8F6F1] transition-colors"
                 href={link.href}
               >
-                {link.label === "Banjarmasin"
-                  ? "Rental Mobil Banjarmasin"
-                  : link.label === "Banjarbaru"
-                  ? "Rental Mobil Banjarbaru"
-                  : link.label === "Kerjasama"
-                  ? "Kerjasama Kemitraan"
-                  : link.label}
+                {link.label}
               </Link>
             ))}
           </div>
-          <div className="py-3">
+          <div className="pt-3 pb-2 border-t border-[#E8E4DB]">
             <a
-              className="w-full flex justify-center items-center px-3 py-2 text-base font-semibold text-white bg-red-800 rounded-md shadow-sm hover:bg-red-700 transition-colors"
-              href="tel:6281255964566"
+              className="w-full flex justify-center items-center px-4 py-2.5 text-base font-semibold text-white bg-[#B8892E] hover:bg-[#9A7020] rounded-md shadow-xs transition-colors"
+              href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Hubungi Kami
+              Pesan Sekarang
             </a>
           </div>
         </nav>

@@ -1,31 +1,40 @@
 import type { Metadata } from "next";
-import { Overpass } from "next/font/google";
+import { Manrope, Cinzel } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
-
 import Script from "next/script";
 import { LucideIconsInit } from "@/components/LucideIconsInit";
 
-const overpass = Overpass({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-overpass",
+  variable: "--font-manrope",
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  variable: "--font-cinzel",
+  weight: ["600", "700", "800"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://deazrental.com"),
-  title: "Rental Mobil Banjarmasin Murah ✅ Sewa Mobil Banjarbaru 24 Jam | Deaz Rental",
+  title: "ZAHRAFFAMIRA - Rental Mobil Banjarmasin | Nyaman untuk Setiap Perjalanan",
   description:
-    "Rental & sewa mobil Banjarmasin Banjarbaru terpercaya ✅ 15+ armada terawat ✅ Lepas kunci / supir ✅ Antar jemput bandara 24 jam. Hubungi sekarang!",
+    "Pilihan armada terawat untuk kebutuhan keluarga, bisnis, wisata hingga perjalanan rombongan di Banjarmasin dan sekitarnya. Booking praktis via WhatsApp.",
   keywords: [
     "rental mobil banjarmasin",
     "sewa mobil banjarmasin",
     "rental mobil banjarbaru",
-    "sewa mobil banjarbaru",
-    "rental mobil lepas kunci",
-    "antar jemput bandara syamsudin noor",
+    "zahraffamira rental mobil",
+    "sewa avanza banjarmasin",
+    "sewa innova zenix banjarmasin",
+    "sewa alphard banjarmasin",
+    "sewa hiace banjarmasin",
   ],
   icons: {
     icon: "/favicon.png",
@@ -33,19 +42,11 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "Rental Mobil Banjarmasin Murah ✅ Sewa Mobil Banjarbaru 24 Jam | Deaz Rental",
+    title: "ZAHRAFFAMIRA - Rental Mobil Banjarmasin | Nyaman untuk Setiap Perjalanan",
     description:
-      "Rental & sewa mobil Banjarmasin Banjarbaru terpercaya ✅ 15+ armada terawat ✅ Lepas kunci / supir ✅ Antar jemput bandara 24 jam. Hubungi sekarang!",
+      "Pilihan armada terawat untuk kebutuhan keluarga, bisnis, wisata hingga perjalanan rombongan di Banjarmasin dan sekitarnya.",
     url: "https://deazrental.com/",
-    siteName: "Deaz Rental",
-    images: [
-      {
-        url: "/images/hero-image_UQlab.webp",
-        width: 1024,
-        height: 400,
-        alt: "Deaz Rental Mobil Banjarmasin Banjarbaru",
-      },
-    ],
+    siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
   },
@@ -57,14 +58,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${overpass.variable} h-full scroll-smooth`}>
+    <html lang="id" className={`${manrope.variable} ${cinzel.variable} h-full scroll-smooth`}>
       <head>
         <Script
           src="https://unpkg.com/lucide@0.562.0/dist/umd/lucide.min.js"
           strategy="afterInteractive"
         />
       </head>
-      <body className={`${overpass.className} bg-gray-100 font-sans min-h-full flex flex-col text-gray-900`}>
+      <body className="font-manrope bg-white text-[#626262] min-h-full flex flex-col antialiased selection:bg-[#E8D5A8] selection:text-[#171717]">
         <LucideIconsInit />
         <Navbar />
         <div className="flex-1">{children}</div>

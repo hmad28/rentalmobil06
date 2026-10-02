@@ -1,27 +1,40 @@
 import React from "react";
-import Link from "next/link";
+import { MapPin } from "lucide-react";
 
 export const ServiceAreaSection = () => {
   const areas = [
-    { label: "Rental Mobil Banjarmasin", href: "/sewa-mobil-banjarmasin" },
-    { label: "Rental Mobil Banjarbaru", href: "/sewa-mobil-banjarbaru" },
-    { label: "Sewa Mobil Lepas Kunci", href: "/layanan/lepas-kunci" },
-    { label: "Antar Jemput Bandara", href: "/layanan/antar-jemput-bandara" },
+    "Banjarmasin",
+    "Banjarbaru",
+    "Martapura",
+    "Bandara Syamsudin Noor",
   ];
 
   return (
-    <section className="py-12 bg-white border-y border-gray-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">Area Layanan Kami</h2>
-        <div className="flex flex-wrap justify-center gap-4">
+    <section className="py-16 sm:py-20 bg-white border-b border-[#E8E4DB]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center mb-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F8F6F1] border border-[#E8E4DB] mb-3">
+            <span className="font-cinzel text-xs font-semibold tracking-wider text-[#B8892E] uppercase">
+              WILAYAH LAYANAN
+            </span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#171717] tracking-tight mb-3">
+            Melayani Perjalanan di Banjarmasin & Sekitarnya
+          </h2>
+          <p className="text-sm sm:text-base text-[#626262]">
+            Fokus melayani mobilitas masyarakat, keluarga, instansi, maupun tamu dari luar daerah.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto">
           {areas.map((area, idx) => (
-            <Link
+            <div
               key={idx}
-              href={area.href}
-              className="px-6 py-3 bg-gray-50 rounded-full text-gray-800 font-bold hover:bg-red-800 hover:text-white transition-all shadow-sm"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F8F6F1] border border-[#E8E4DB] text-[#171717] text-sm font-semibold hover:border-[#B8892E] transition-colors"
             >
-              {area.label}
-            </Link>
+              <MapPin className="w-4 h-4 text-[#B8892E]" />
+              <span>{area}</span>
+            </div>
           ))}
         </div>
       </div>

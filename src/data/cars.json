@@ -1,98 +1,74 @@
 [
   {
-    "title": "Toyota Alphard",
-    "img": "/images/Toyota_Alphard_Z9sSio.webp",
-    "alt": "Rental Toyota Alphard Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Alphard*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Toyota Fortuner GR Sport",
-    "img": "/images/Toyota_Fortuner_GR_Sport_2fN98a.webp",
-    "alt": "Rental Toyota Fortuner GR Sport Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Fortuner%20GR%20Sport*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Mitsubishi Pajero Sport",
-    "img": "/images/Mitsubishi_Pajero_Sport_Zr6aD.webp",
-    "alt": "Rental Mitsubishi Pajero Sport Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Mitsubishi%20Pajero%20Sport*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Toyota Innova Zenix",
-    "img": "/images/Toyota_Innova_Zenix_Zkm8IB.webp",
-    "alt": "Rental Toyota Innova Zenix Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Innova%20Zenix*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Toyota Innova Reborn V",
-    "img": "/images/Toyota_Innova_Reborn_V_ZOFtB7.webp",
-    "alt": "Rental Toyota Innova Reborn V Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Innova%20Reborn%20V*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Toyota Veloz Q",
-    "img": "/images/Toyota_Veloz_Q_1i25kz.webp",
-    "alt": "Rental Toyota Veloz Q Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Veloz%20Q*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Toyota New Avanza",
+    "id": "new-avanza",
+    "title": "New Avanza",
+    "category": ["Keluarga"],
+    "categoryLabel": "Keluarga",
     "img": "/images/Toyota_New_Avanza_ZFUaBb.webp",
-    "alt": "Rental Toyota New Avanza Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20New%20Avanza*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "alt": "Rental New Avanza Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*New%20Avanza*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Toyota Avanza Facelift",
+    "id": "grand-new-avanza",
+    "title": "Grand New Avanza",
+    "category": ["Keluarga"],
+    "categoryLabel": "Keluarga",
     "img": "/images/Toyota_Avanza_Facelift_13mfpn.webp",
-    "alt": "Rental Toyota Avanza Facelift Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Avanza%20Facelift*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "alt": "Rental Grand New Avanza Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Grand%20New%20Avanza*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Mitsubishi Xpander",
-    "img": "/images/Mitsubishi_Xpander_Z11mrMJ.webp",
-    "alt": "Rental Mitsubishi Xpander Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Mitsubishi%20Xpander*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "id": "innova-reborn",
+    "title": "Innova Reborn",
+    "category": ["Keluarga"],
+    "categoryLabel": "Keluarga",
+    "img": "/images/Toyota_Innova_Reborn_V_ZOFtB7.webp",
+    "alt": "Rental Innova Reborn Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Reborn*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Daihatsu New Xenia",
-    "img": "/images/Daihatsu_New_Xenia_Z1r3zzT.webp",
-    "alt": "Rental Daihatsu New Xenia Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Daihatsu%20New%20Xenia*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "id": "innova-zenix",
+    "title": "Innova Zenix",
+    "category": ["Keluarga", "Premium"],
+    "categoryLabel": "Keluarga / Premium",
+    "img": "/images/Toyota_Innova_Zenix_Zkm8IB.webp",
+    "alt": "Rental Innova Zenix Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Zenix*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Suzuki Ertiga",
-    "img": "/images/Suzuki_Ertiga_1TYFkr.webp",
-    "alt": "Rental Suzuki Ertiga Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Suzuki%20Ertiga*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "id": "toyota-fortuner",
+    "title": "Toyota Fortuner",
+    "category": ["SUV"],
+    "categoryLabel": "SUV",
+    "img": "/images/Toyota_Fortuner_GR_Sport_2fN98a.webp",
+    "alt": "Rental Toyota Fortuner Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Fortuner*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Toyota Hilux",
-    "img": "/images/Toyota_Hilux_2l3nWy.webp",
-    "alt": "Rental Toyota Hilux Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Hilux*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "id": "toyota-alphard",
+    "title": "Toyota Alphard",
+    "category": ["Premium"],
+    "categoryLabel": "Premium",
+    "img": "/images/Toyota_Alphard_Z9sSio.webp",
+    "alt": "Rental Toyota Alphard Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Alphard*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Toyota Hiace Commuter",
+    "id": "hiace-commuter",
+    "title": "Hiace Commuter",
+    "category": ["Rombongan"],
+    "categoryLabel": "Rombongan",
     "img": "/images/Toyota_Hiace_Commuter_Z1FbC07.webp",
-    "alt": "Rental Toyota Hiace Commuter Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Hiace%20Commuter*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "alt": "Rental Hiace Commuter Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Commuter*&type=phone_number&app_absent=0"
   },
   {
-    "title": "Toyota Hiace Premio",
+    "id": "hiace-premio",
+    "title": "Hiace Premio",
+    "category": ["Rombongan"],
+    "categoryLabel": "Rombongan",
     "img": "/images/Toyota_Hiace_Premio_18s4YJ.webp",
-    "alt": "Rental Toyota Hiace Premio Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Hiace%20Premio*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Isuzu Elf Long",
-    "img": "/images/Isuzu_Elf_Long_WSL1d.webp",
-    "alt": "Rental Isuzu Elf Long Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Isuzu%20Elf%20Long*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Daihatsu Gran Max",
-    "img": "/images/Daihatsu_Gran_Max_ZyeNYo.webp",
-    "alt": "Rental Daihatsu Gran Max Banjarmasin - Deaz Rental Mobil Banjarmasin",
-    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Daihatsu%20Gran%20Max*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0"
+    "alt": "Rental Hiace Premio Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
+    "waLink": "https://api.whatsapp.com/send/?phone=6281255964566&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Premio*&type=phone_number&app_absent=0"
   }
 ]

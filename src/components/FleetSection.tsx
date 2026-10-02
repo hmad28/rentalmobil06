@@ -1,51 +1,99 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import cars from "@/data/cars.json";
+import { ArrowRight } from "lucide-react";
 
 export const FleetSection = () => {
-  return (
-    <section id="armada" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="mb-4 text-xl font-bold text-center text-red-800 uppercase tracking-wider">
-          Armada Rental Mobil Banjarmasin
-        </h2>
-        <h3 className="mb-12 text-4xl sm:text-5xl font-bold text-center lg:mb-24 text-gray-900">
-          Booking sekarang untuk <span className="text-red-800">harga promo</span> terbaik
-        </h3>
+  const [activeCategory, setActiveCategory] = useState("Semua");
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
-          {cars.map((car, index) => (
+  const categories = ["Semua", "Keluarga", "Premium", "SUV", "Rombongan"];
+
+  const filteredCars = activeCategory === "Semua"
+    ? cars
+    : cars.filter((car) => car.category.includes(activeCategory));
+
+  return (
+    <section id="armada" className="py-16 sm:py-24 bg-[#F8F6F1] border-b border-[#E8E4DB]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#E8E4DB] mb-3">
+            <span className="font-cinzel text-xs font-semibold tracking-wider text-[#B8892E] uppercase">
+              ARMADA PILIHAN
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#171717] tracking-tight mb-4">
+            Pilihan Armada Terawat
+          </h2>
+          <p className="text-base text-[#626262]">
+            Tentukan kendaraan yang sesuai dengan kebutuhan perjalanan Anda di Banjarmasin dan sekitarnya.
+          </p>
+
+          {/* Category Filter Pills */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setActiveCategory(cat)}
+                className={`px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                  activeCategory === cat
+                    ? "bg-[#B8892E] text-white shadow-xs"
+                    : "bg-white text-[#626262] border border-[#E8E4DB] hover:border-[#B8892E] hover:text-[#171717]"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Cars Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {filteredCars.map((car) => (
             <article
-              key={index}
-              className="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"
+              key={car.id}
+              className="bg-white rounded-xl border border-[#E8E4DB] overflow-hidden flex flex-col transition-all duration-300 hover:shadow-md hover:border-[#B8892E]/60 group"
             >
-              <div className="flex flex-col flex-1">
-                <figure className="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer">
-                  <img
-                    src={car.img}
-                    alt={car.alt}
-                    title={car.alt}
-                    loading="lazy"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                  />
-                  {/* Gradient Overlay - protects branding */}
-                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent" />
-                </figure>
-                <div className="p-3 text-white">
-                  <h3 className="text-sm sm:text-base font-bold text-center leading-tight">
+              {/* Image Frame */}
+              <div className="relative aspect-[4/3] bg-[#FFFFFF] p-4 flex items-center justify-center border-b border-[#E8E4DB]/60 overflow-hidden">
+                <img
+                  src={car.img}
+                  alt={car.alt}
+                  title={car.alt}
+                  loading="lazy"
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+                {/* Category Badge */}
+                <div className="absolute top-3 left-3">
+                  <span className="px-2.5 py-1 text-[11px] font-semibold bg-[#F8F6F1] text-[#B8892E] border border-[#E8D5A8] rounded-md">
+                    {car.categoryLabel}
+                  </span>
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div className="mb-4">
+                  <h3 className="text-lg font-bold text-[#171717] group-hover:text-[#B8892E] transition-colors">
                     {car.title}
                   </h3>
                 </div>
+
+                {/* Action Link */}
+                <a
+                  href={car.waLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 px-4 text-xs sm:text-sm font-semibold text-[#B8892E] bg-[#F8F6F1] hover:bg-[#B8892E] hover:text-white border border-[#E8D5A8] rounded-lg transition-all duration-200 flex items-center justify-center gap-1.5 group/btn"
+                >
+                  <span>Cek Harga & Ketersediaan</span>
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-1" />
+                </a>
               </div>
-              <a
-                href={car.waLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors"
-              >
-                Pesan disini
-              </a>
             </article>
           ))}
         </div>
