@@ -27,12 +27,12 @@ export const Navbar = () => {
           <div className="flex-shrink-0">
             <Link className="flex items-center group py-1" href="/">
               <img
-                src="/images/logo-horizontal-cropped.png"
+                src="/images/logo-cropped.png"
                 alt="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
                 title="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
-                width={1560}
-                height={560}
-                className="h-10 sm:h-12 w-auto object-contain mix-blend-multiply transition-transform group-hover:scale-[1.02]"
+                width={1580}
+                height={562}
+                className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
               />
             </Link>
           </div>

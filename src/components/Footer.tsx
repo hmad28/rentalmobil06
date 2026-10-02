@@ -9,9 +9,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           {/* Column 1: Info */}
           <div className="md:col-span-1">
-            <h3 className="mb-4 text-xl font-bold text-gold-gradient-light uppercase tracking-wider font-cinzel">
-              ZAHRAFFAMIRA RENTAL MOBIL
-            </h3>
+            <Link href="/" className="inline-block mb-4 group">
+              <img
+                src="/images/logo-cropped.png"
+                alt="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
+                title="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
+                width={1580}
+                height={562}
+                className="h-11 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              />
+            </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Solusi terbaik untuk <span className="font-bold text-white">Rental Mobil Banjarmasin</span> dan{" "}
               <span className="font-bold text-white">Banjarbaru</span>. Kami menyediakan armada
