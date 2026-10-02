@@ -3,8 +3,8 @@ import React from "react";
 export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-[#FBFAF7] border-b border-[#E8E4DB] min-h-[660px] sm:min-h-[720px] lg:min-h-[640px] xl:min-h-[720px] flex items-center">
-      {/* Responsive Background Images */}
-      <picture className="absolute inset-0 -z-10 w-full h-full pointer-events-none select-none">
+      {/* Background Images Layer (z-0 to ensure it is always visible above section background) */}
+      <picture className="absolute inset-0 z-0 w-full h-full pointer-events-none select-none">
         <source media="(min-width: 1024px)" srcSet="/images/hero-bg-desktop.png" />
         <img
           src="/images/hero-bg-mobile.png"
@@ -14,19 +14,18 @@ export const Hero = () => {
         />
       </picture>
 
-      {/* Subtle readability gradient overlays */}
-      {/* Desktop: Gentle fade on the left 48% to guarantee maximum text contrast */}
+      {/* Subtle readability gradient overlay (z-10) - soft, transparent fade so artwork remains vibrant */}
       <div
-        className="absolute inset-0 -z-5 hidden lg:block bg-gradient-to-r from-[#FBFAF7]/92 via-[#FBFAF7]/50 to-transparent w-[48%] pointer-events-none"
+        className="absolute inset-0 z-10 hidden lg:block bg-gradient-to-r from-[#FBFAF7]/85 via-[#FBFAF7]/40 to-transparent w-[45%] pointer-events-none"
         aria-hidden="true"
       />
-      {/* Mobile: Gentle fade on top 52% so headline and CTAs are crisp while cars below shine */}
       <div
-        className="absolute inset-0 -z-5 lg:hidden bg-gradient-to-b from-[#FBFAF7]/92 via-[#FBFAF7]/70 to-transparent h-[52%] pointer-events-none"
+        className="absolute inset-0 z-10 lg:hidden bg-gradient-to-b from-[#FBFAF7]/85 via-[#FBFAF7]/50 to-transparent h-[48%] pointer-events-none"
         aria-hidden="true"
       />
 
-      <div className="container max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-8 pb-72 sm:pb-80 lg:py-20 relative z-10 w-full">
+      {/* Foreground Content Layer (z-20) */}
+      <div className="container max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-8 pb-72 sm:pb-80 lg:py-20 relative z-20 w-full">
         {/* Left Column: 43% on Desktop */}
         <div className="w-full lg:w-[43%] xl:w-[42%] text-left">
           {/* Eyebrow */}
