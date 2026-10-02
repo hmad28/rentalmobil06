@@ -29,7 +29,7 @@ export const Navbar = () => {
               <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-[#171717] block leading-none">
                 ZAHRAFFAMIRA
               </span>
-              <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-[#B8892E] uppercase block mt-1">
+              <span className="text-[10px] sm:text-xs font-bold tracking-widest text-gold-gradient uppercase block mt-1">
                 Rental Mobil Banjarmasin
               </span>
             </Link>
@@ -51,7 +51,7 @@ export const Navbar = () => {
           {/* Right Section */}
           <div className="flex items-center gap-4">
             <a
-              className="hidden justify-center items-center px-5 py-2.5 text-sm font-semibold text-white bg-[#B8892E] hover:bg-[#9A7020] rounded-md shadow-xs focus:outline-none transition-all duration-200 sm:inline-flex"
+              className="hidden justify-center items-center px-5 py-2.5 text-sm font-semibold text-white bg-gold-gradient rounded-md focus:outline-none transition-all duration-200 sm:inline-flex"
               href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
@@ -117,7 +117,7 @@ export const Navbar = () => {
           </div>
           <div className="pt-3 pb-2 border-t border-[#E8E4DB]">
             <a
-              className="w-full flex justify-center items-center px-4 py-2.5 text-base font-semibold text-white bg-[#B8892E] hover:bg-[#9A7020] rounded-md shadow-xs transition-colors"
+              className="w-full flex justify-center items-center px-4 py-2.5 text-base font-semibold text-white bg-gold-gradient rounded-md transition-all"
               href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+tanya+rental+mobil&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"

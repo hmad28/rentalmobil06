@@ -14,11 +14,11 @@ export const FleetSection = () => {
   return (
     <section id="armada" className="py-16 bg-white border-b border-[#E8E4DB]">
       <div className="container mx-auto px-4">
-        <h2 className="mb-3 text-lg sm:text-xl font-bold text-center text-[#B8892E] uppercase tracking-wider font-cinzel">
+        <h2 className="mb-3 text-lg sm:text-xl font-extrabold text-center text-gold-gradient uppercase tracking-wider font-cinzel">
           Armada Rental Mobil Banjarmasin
         </h2>
         <h3 className="mb-8 text-3xl sm:text-4xl font-bold text-center text-[#171717]">
-          Booking sekarang untuk <span className="text-[#B8892E]">harga promo</span> terbaik
+          Booking sekarang untuk <span className="text-gold-gradient">harga promo</span> terbaik
         </h3>
 
         {/* Category Filter Pills */}
@@ -30,8 +30,8 @@ export const FleetSection = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                 activeCategory === cat
-                  ? "bg-[#B8892E] text-white shadow-xs"
-                  : "bg-[#F8F6F1] text-[#626262] border border-[#E8E4DB] hover:border-[#B8892E] hover:text-[#171717]"
+                  ? "bg-gold-gradient text-white shadow-xs"
+                  : "bg-[#F8F6F1] text-[#626262] border border-[#E8E4DB] hover:border-[#DFC88F] hover:text-[#171717]"
               }`}
             >
               {cat}
@@ -44,7 +44,7 @@ export const FleetSection = () => {
           {filteredCars.map((car, index) => (
             <article
               key={index}
-              className="overflow-hidden flex flex-col bg-white rounded-md border border-[#E8E4DB] shadow-xs hover:shadow-md hover:border-[#B8892E]/60 transition-all group"
+              className="overflow-hidden flex flex-col bg-white rounded-md border border-[#E8E4DB] shadow-xs hover:shadow-md hover:border-[#DFC88F] transition-all group"
             >
               <div className="flex flex-col flex-1">
                 <figure className="relative aspect-[4/3] bg-[#F8F6F1] overflow-hidden animate-shimmer flex items-center justify-center p-3 border-b border-[#E8E4DB]/60">
@@ -58,7 +58,7 @@ export const FleetSection = () => {
                     className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                   {/* Category Pill Tag */}
-                  <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-semibold bg-white/90 text-[#B8892E] border border-[#E8D5A8] rounded">
+                  <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-semibold bg-white/95 text-[#9C721D] border border-[#DFC88F] rounded shadow-2xs">
                     {car.categoryLabel}
                   </span>
                 </figure>
@@ -72,7 +72,7 @@ export const FleetSection = () => {
                 href={car.waLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-3 px-4 font-semibold text-xs sm:text-sm text-center text-[#B8892E] bg-[#F8F6F1] hover:bg-[#B8892E] hover:text-white rounded-b-md transition-colors border-t border-[#E8E4DB] block"
+                className="py-3 px-4 font-semibold text-xs sm:text-sm text-center text-white bg-gold-gradient rounded-b-md transition-all block cursor-pointer"
               >
                 Cek Harga & Ketersediaan →
               </a>

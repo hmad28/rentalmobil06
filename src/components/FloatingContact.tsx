@@ -19,7 +19,7 @@ export const FloatingContact = () => {
       >
         <a
           href="tel:6281255964566"
-          className="w-12 h-12 flex justify-center items-center rounded-full bg-[#171717] text-[#E8D5A8] border border-[#E8D5A8]/30 shadow-lg hover:bg-black transition-all hover:-translate-y-1"
+          className="w-12 h-12 flex justify-center items-center rounded-full bg-[#171717] text-[#E8D5A8] border border-[#DFC88F]/50 shadow-lg hover:border-[#DFC88F] hover:text-white transition-all hover:-translate-y-1"
           title="Telepon"
           aria-label="Telepon"
         >
@@ -42,7 +42,7 @@ export const FloatingContact = () => {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-13 h-13 flex justify-center items-center rounded-full bg-[#B8892E] text-white shadow-xl hover:bg-[#9A7020] transition-colors cursor-pointer"
+        className="w-13 h-13 flex justify-center items-center rounded-full bg-gold-gradient text-white shadow-[0_6px_22px_rgba(184,137,46,0.4)] hover:scale-105 transition-all cursor-pointer"
         aria-label="Toggle contact buttons"
       >
         <ChevronDown

@@ -14,12 +14,12 @@ export const WhyChooseUsSection = () => {
               Kami adalah jasa penyedia rental mobil yang berlokasi di Banjarmasin dan Banjarbaru terpercaya. Fokus utama kami adalah memberikan pelayanan terbaik demi kenyamanan Anda selama di perjalanan.
             </p>
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-[#F8F6F1] rounded-xl border border-[#E8E4DB] text-center">
-                <span className="block text-2xl sm:text-3xl font-extrabold text-[#B8892E]">24/7</span>
+              <div className="p-4 bg-gradient-to-br from-white to-[#FAF6EE] rounded-xl border border-[#DFC88F]/50 shadow-2xs text-center">
+                <span className="block text-2xl sm:text-3xl font-black text-gold-gradient">24/7</span>
                 <span className="text-xs sm:text-sm font-semibold text-[#171717]">Layanan Support</span>
               </div>
-              <div className="p-4 bg-[#F8F6F1] rounded-xl border border-[#E8E4DB] text-center">
-                <span className="block text-2xl sm:text-3xl font-extrabold text-[#B8892E]">Terpercaya</span>
+              <div className="p-4 bg-gradient-to-br from-white to-[#FAF6EE] rounded-xl border border-[#DFC88F]/50 shadow-2xs text-center">
+                <span className="block text-2xl sm:text-3xl font-black text-gold-gradient">Terpercaya</span>
                 <span className="text-xs sm:text-sm font-semibold text-[#171717]">Pilihan Utama</span>
               </div>
             </div>
@@ -33,10 +33,10 @@ export const WhyChooseUsSection = () => {
               loading="lazy"
               width={600}
               height={400}
-              className="rounded-2xl shadow-xl border border-[#E8E4DB] transition-transform hover:scale-[1.02] duration-500 w-full"
+              className="rounded-2xl shadow-xl border border-[#DFC88F]/40 transition-transform hover:scale-[1.02] duration-500 w-full"
             />
-            <div className="absolute -bottom-4 -right-4 bg-[#171717] text-[#E8D5A8] border border-[#B8892E]/40 p-4 rounded-xl shadow-lg hidden sm:block">
-              <span className="block text-2xl font-bold text-white">8+ Unit</span>
+            <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-[#1C1C1C] to-[#111111] text-[#E8D5A8] border border-[#DFC88F]/60 p-4 rounded-xl shadow-2xl hidden sm:block">
+              <span className="block text-2xl font-black text-gold-gradient-light font-cinzel">8+ Unit</span>
               <span className="text-xs text-[#E8D5A8]">Pilihan Armada Terawat</span>
             </div>
           </div>

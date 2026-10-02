@@ -55,9 +55,9 @@ export const ServicesSection = () => {
               Pilihan layanan transportasi terbaik di Banjarmasin
             </p>
             <div className="flex justify-center items-center mt-5">
-              <span className="w-24 h-[1px] bg-[#B8892E]" />
-              <Star className="w-5 h-5 mx-2 text-[#B8892E] fill-[#B8892E]" />
-              <span className="w-24 h-[1px] bg-[#B8892E]" />
+              <span className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#C99E42] to-[#B8892E]" />
+              <Star className="w-5 h-5 mx-2 text-[#C99E42] fill-[#C99E42]" />
+              <span className="w-24 h-[1px] bg-gradient-to-l from-transparent via-[#C99E42] to-[#B8892E]" />
             </div>
             <div className="flex justify-center items-center mt-6">
               <img
@@ -67,7 +67,7 @@ export const ServicesSection = () => {
                 loading="lazy"
                 width={400}
                 height={500}
-                className="w-72 h-auto rounded-lg lg:w-96 shadow-lg border border-[#E8E4DB]"
+                className="w-72 h-auto rounded-lg lg:w-96 shadow-lg border border-[#DFC88F]/50"
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ export const ServicesSection = () => {
               const IconComponent = s.icon;
               return (
                 <li key={idx} className="flex gap-x-4">
-                  <span className="shrink-0 inline-flex justify-center items-center w-[40px] h-[40px] rounded-full border border-[#E8E4DB] bg-white text-[#B8892E] shadow-2xs">
+                  <span className="shrink-0 inline-flex justify-center items-center w-[42px] h-[42px] rounded-full border border-[#DFC88F]/60 bg-gradient-to-br from-white to-[#FAF6EE] text-[#9C721D] shadow-2xs">
                     <IconComponent className="w-5 h-5" />
                   </span>
                   <div className="grow text-left">
@@ -87,7 +87,7 @@ export const ServicesSection = () => {
                     {s.link && (
                       <Link
                         href={s.link}
-                        className="mt-2 inline-block text-xs font-bold text-[#B8892E] hover:text-[#9A7020] underline"
+                        className="mt-2 inline-block text-xs font-bold text-[#9C721D] hover:text-[#B8892E] underline"
                       >
                         Selengkapnya &raquo;
                       </Link>

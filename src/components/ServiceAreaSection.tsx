@@ -20,7 +20,7 @@ export const ServiceAreaSection = () => {
             <Link
               key={idx}
               href={area.href}
-              className="px-6 py-3 bg-[#F8F6F1] border border-[#E8E4DB] rounded-full text-[#171717] font-semibold hover:bg-[#B8892E] hover:text-white hover:border-[#B8892E] transition-all shadow-2xs"
+              className="px-6 py-3 bg-[#F8F6F1] border border-[#E8E4DB] rounded-full text-[#171717] font-semibold hover:bg-gold-gradient hover:text-white hover:border-transparent transition-all shadow-2xs"
             >
               {area.label}
             </Link>

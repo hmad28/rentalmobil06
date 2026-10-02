@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           {/* Column 1: Info */}
           <div className="md:col-span-1">
-            <h3 className="mb-4 text-xl font-bold text-[#E8D5A8] uppercase tracking-wider font-cinzel">
+            <h3 className="mb-4 text-xl font-bold text-gold-gradient-light uppercase tracking-wider font-cinzel">
               ZAHRAFFAMIRA RENTAL MOBIL
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -22,32 +22,32 @@ export const Footer = () => {
 
           {/* Column 2: Layanan Utama */}
           <div>
-            <h3 className="mb-4 text-sm font-bold text-[#E8D5A8] uppercase tracking-wider font-cinzel">
+            <h3 className="mb-4 text-sm font-bold text-gold-gradient-light uppercase tracking-wider font-cinzel">
               Layanan Utama
             </h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link href="/sewa-mobil-banjarmasin" className="hover:text-[#B8892E] transition-colors">
+                <Link href="/sewa-mobil-banjarmasin" className="hover:text-[#DFC88F] transition-colors">
                   Rental Mobil Banjarmasin
                 </Link>
               </li>
               <li>
-                <Link href="/sewa-mobil-banjarbaru" className="hover:text-[#B8892E] transition-colors">
+                <Link href="/sewa-mobil-banjarbaru" className="hover:text-[#DFC88F] transition-colors">
                   Rental Mobil Banjarbaru
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/lepas-kunci" className="hover:text-[#B8892E] transition-colors">
+                <Link href="/layanan/lepas-kunci" className="hover:text-[#DFC88F] transition-colors">
                   Sewa Mobil Lepas Kunci
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/antar-jemput-bandara" className="hover:text-[#B8892E] transition-colors">
+                <Link href="/layanan/antar-jemput-bandara" className="hover:text-[#DFC88F] transition-colors">
                   Antar Jemput Bandara
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-[#B8892E] transition-colors">
+                <Link href="/blog" className="hover:text-[#DFC88F] transition-colors">
                   Blog & Tips Wisata
                 </Link>
               </li>
@@ -56,22 +56,22 @@ export const Footer = () => {
 
           {/* Column 3: Kontak & Lokasi */}
           <div>
-            <h3 className="mb-4 text-sm font-bold text-[#E8D5A8] uppercase tracking-wider font-cinzel">
+            <h3 className="mb-4 text-sm font-bold text-gold-gradient-light uppercase tracking-wider font-cinzel">
               Kontak & Lokasi
             </h3>
             <p className="mb-3 text-sm flex items-start gap-2 text-gray-300">
-              <MapPin className="w-4 h-4 mt-1 text-[#B8892E] shrink-0" />
+              <MapPin className="w-4 h-4 mt-1 text-[#DFC88F] shrink-0" />
               <span>Banjarmasin & Banjarbaru, Kalimantan Selatan</span>
             </p>
             <p className="mb-3 text-sm flex items-center gap-2 text-gray-300">
-              <Phone className="w-4 h-4 text-[#B8892E] shrink-0" />
-              <a href="tel:6281255964566" className="hover:text-[#B8892E] transition-colors">
+              <Phone className="w-4 h-4 text-[#DFC88F] shrink-0" />
+              <a href="tel:6281255964566" className="hover:text-[#DFC88F] transition-colors">
                 +6281255964566
               </a>
             </p>
             <p className="mb-4 text-sm flex items-center gap-2 text-gray-300">
-              <Mail className="w-4 h-4 text-[#B8892E] shrink-0" />
-              <a href="mailto:info@deazrental.com" className="hover:text-[#B8892E] transition-colors">
+              <Mail className="w-4 h-4 text-[#DFC88F] shrink-0" />
+              <a href="mailto:info@deazrental.com" className="hover:text-[#DFC88F] transition-colors">
                 info@zahraffamirarental.com
               </a>
             </p>
@@ -82,14 +82,14 @@ export const Footer = () => {
                 href="https://wa.me/6281255964566"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-white/10 rounded-full hover:bg-[#B8892E] hover:text-white transition-all text-[#E8D5A8]"
+                className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
               <a
                 href="tel:6281255964566"
-                className="p-2 bg-white/10 rounded-full hover:bg-[#B8892E] hover:text-white transition-all text-[#E8D5A8]"
+                className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
                 aria-label="Telepon"
               >
                 <Phone className="w-4 h-4" />

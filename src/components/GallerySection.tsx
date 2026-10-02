@@ -89,7 +89,7 @@ export const GallerySection = () => {
   return (
     <section className="py-16 bg-white overflow-hidden border-b border-[#E8E4DB]">
       <div className="container mx-auto px-4">
-        <h2 className="text-lg sm:text-xl font-bold text-center text-[#B8892E] uppercase tracking-wider mb-2 font-cinzel">
+        <h2 className="text-lg sm:text-xl font-extrabold text-center text-gold-gradient uppercase tracking-wider mb-2 font-cinzel">
           Galeri kami
         </h2>
         <h3 className="text-3xl sm:text-4xl font-bold text-center text-[#171717] mb-8">
@@ -101,7 +101,7 @@ export const GallerySection = () => {
           <button
             type="button"
             onClick={scrollLeft}
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/80 shadow-md text-gray-800 hover:bg-white transition-all cursor-pointer"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md text-gray-800 hover:bg-gold-gradient hover:text-white transition-all cursor-pointer border border-[#E8E4DB]"
             aria-label="Previous"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -110,7 +110,7 @@ export const GallerySection = () => {
           <button
             type="button"
             onClick={scrollRight}
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/80 shadow-md text-gray-800 hover:bg-white transition-all cursor-pointer"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md text-gray-800 hover:bg-gold-gradient hover:text-white transition-all cursor-pointer border border-[#E8E4DB]"
             aria-label="Next"
           >
             <ChevronRight className="w-6 h-6" />

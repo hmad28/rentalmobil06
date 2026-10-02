@@ -5,14 +5,14 @@ export const Hero = () => {
     <section className="container mx-auto flex flex-col justify-center p-6 lg:flex-row lg:justify-between lg:py-20 sm:py-12">
       <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md lg:text-left xl:max-w-lg">
         {/* Eyebrow */}
-        <p className="font-cinzel text-xs font-bold text-[#B8892E] tracking-widest uppercase mb-3">
+        <p className="font-cinzel text-xs font-extrabold text-gold-gradient tracking-widest uppercase mb-3">
           ZAHRAFFAMIRA RENTAL MOBIL
         </p>
 
         {/* H1 */}
         <h1 className="text-3xl font-extrabold leading-tight sm:text-5xl lg:text-5xl text-[#171717] mb-6">
           Rental Mobil Banjarmasin{" "}
-          <span className="text-[#B8892E] block mt-1">Nyaman untuk Setiap Perjalanan.</span>
+          <span className="text-gold-gradient block mt-1">Nyaman untuk Setiap Perjalanan.</span>
         </h1>
 
         {/* Description */}
@@ -26,7 +26,7 @@ export const Hero = () => {
             rel="noopener noreferrer"
             target="_blank"
             href="https://api.whatsapp.com/send/?phone=6281255964566&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+ingin+pesan+rental+mobil&type=phone_number&app_absent=0"
-            className="px-8 py-3.5 text-base font-semibold text-white bg-[#B8892E] hover:bg-[#9A7020] rounded-md transition-colors shadow-xs"
+            className="px-8 py-3.5 text-base font-semibold text-white bg-gold-gradient rounded-md cursor-pointer transition-all"
           >
             Pesan Sekarang
           </a>

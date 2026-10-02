@@ -44,6 +44,41 @@
   font-family: var(--font-manrope), sans-serif;
 }
 
+/* Luxury Gold Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #9C721D 0%, #C99E42 22%, #ECCB7B 48%, #BE9032 75%, #8A6417 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gold-gradient-light {
+  background: linear-gradient(135deg, #E8D5A8 0%, #FFF2D1 30%, #DDB86C 65%, #B8892E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #BE9032 0%, #D8B266 28%, #B8892E 65%, #8F6618 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(184, 137, 46, 0.28);
+  transition: all 0.25s ease-in-out;
+}
+
+.bg-gold-gradient:hover {
+  background: linear-gradient(135deg, #CCA03F 0%, #E2C078 28%, #C79838 65%, #9E731F 100%);
+  box-shadow: 0 6px 20px rgba(184, 137, 46, 0.42);
+}
+
+.bg-gold-gradient-soft {
+  background: linear-gradient(135deg, #FFFDF8 0%, #FBF6EA 50%, #F5ECDA 100%);
+}
+
+.border-gold-subtle {
+  border-color: #DFC88F;
+}
+
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
