@@ -25,13 +25,15 @@ export const Navbar = () => {
         <div className="h-20 flex justify-between items-center">
           {/* Logo / Branding */}
           <div className="flex-shrink-0">
-            <Link className="block group" href="/">
-              <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-[#171717] block leading-none">
-                ZAHRAFFAMIRA
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold tracking-widest text-gold-gradient uppercase block mt-1">
-                Rental Mobil Banjarmasin
-              </span>
+            <Link className="flex items-center group py-1" href="/">
+              <img
+                src="/images/logo-horizontal-cropped.png"
+                alt="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
+                title="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
+                width={1560}
+                height={560}
+                className="h-10 sm:h-12 w-auto object-contain mix-blend-multiply transition-transform group-hover:scale-[1.02]"
+              />
             </Link>
           </div>
 
