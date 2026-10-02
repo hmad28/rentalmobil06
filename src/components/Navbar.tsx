@@ -9,12 +9,14 @@ export const Navbar = () => {
 
   const navLinks = [
     { label: "Beranda", href: "/" },
-    { label: "Armada", href: "/#armada" },
-    { label: "Kenapa Kami", href: "/#kenapa-kami" },
-    { label: "Layanan", href: "/#layanan" },
-    { label: "Cara Booking", href: "/#cara-booking" },
-    { label: "FAQ", href: "/#faq" },
+    { label: "Banjarmasin", href: "/sewa-mobil-banjarmasin" },
+    { label: "Banjarbaru", href: "/sewa-mobil-banjarbaru" },
+    { label: "Tentang Kami", href: "/tentang-kami" },
+    { label: "Pembayaran", href: "/pembayaran" },
+    { label: "Kerjasama", href: "/kerjasama-kemitraan" },
     { label: "Kontak", href: "/kontak" },
+    { label: "Testimoni", href: "/testimoni" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -34,7 +36,7 @@ export const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex lg:gap-8 items-center" aria-label="Global">
+          <nav className="hidden lg:flex lg:gap-7 items-center" aria-label="Global">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -55,7 +57,7 @@ export const Navbar = () => {
               rel="noopener noreferrer"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Pesan Sekarang
+              Hubungi Kami
             </a>
 
             {/* Mobile menu button */}
@@ -103,7 +105,13 @@ export const Navbar = () => {
                 className="block px-3 py-2 text-base font-medium text-[#171717] rounded-lg hover:text-[#B8892E] hover:bg-[#F8F6F1] transition-colors"
                 href={link.href}
               >
-                {link.label}
+                {link.label === "Banjarmasin"
+                  ? "Rental Mobil Banjarmasin"
+                  : link.label === "Banjarbaru"
+                  ? "Rental Mobil Banjarbaru"
+                  : link.label === "Kerjasama"
+                  ? "Kerjasama Kemitraan"
+                  : link.label}
               </Link>
             ))}
           </div>
@@ -115,7 +123,7 @@ export const Navbar = () => {
               rel="noopener noreferrer"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Pesan Sekarang
+              Hubungi Kami
             </a>
           </div>
         </nav>

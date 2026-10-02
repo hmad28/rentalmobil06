@@ -5,21 +5,21 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export const GallerySection = () => {
   const galleryImages = [
-    { src: "/images/1.DOG_iZwZ_ZCq2mP.webp", alt: "Galeri 1 Deaz Rental" },
-    { src: "/images/2.CbeGwr1F_1hoWvt.webp", alt: "Galeri 2 Deaz Rental" },
-    { src: "/images/3.Di3s-bA5_ZHyRrz.webp", alt: "Galeri 3 Deaz Rental" },
-    { src: "/images/4.B40etl_r_1M90HK.webp", alt: "Galeri 4 Deaz Rental" },
-    { src: "/images/5.BK9D3Rr0_ZKSFR1.webp", alt: "Galeri 5 Deaz Rental" },
-    { src: "/images/6.CgXklAZ8_2sT1TI.webp", alt: "Galeri 6 Deaz Rental" },
-    { src: "/images/7.CYkhxhZn_Z1Ok7iv.webp", alt: "Galeri 7 Deaz Rental" },
-    { src: "/images/8.BQUXjo_c_1cEBiO.webp", alt: "Galeri 8 Deaz Rental" },
-    { src: "/images/9.DX1uZBbe_Z5ROD.webp", alt: "Galeri 9 Deaz Rental" },
-    { src: "/images/10.Coui8cs8_ZpCvJ9.webp", alt: "Galeri 10 Deaz Rental" },
-    { src: "/images/11.CjUPcT9C_WWBAL.webp", alt: "Galeri 11 Deaz Rental" },
-    { src: "/images/12.DHht49Dw_Z1VI5fh.webp", alt: "Galeri 12 Deaz Rental" },
-    { src: "/images/13.Du3sydx3_Za6Tzz.webp", alt: "Galeri 13 Deaz Rental" },
-    { src: "/images/14.DY1mHdbC_6XrrD.webp", alt: "Galeri 14 Deaz Rental" },
-    { src: "/images/15.DaTbW5bd_y5ECp.webp", alt: "Galeri 15 Deaz Rental" },
+    { src: "/images/1.DOG_iZwZ_ZCq2mP.webp", alt: "Galeri 1 ZAHRAFFAMIRA" },
+    { src: "/images/2.CbeGwr1F_1hoWvt.webp", alt: "Galeri 2 ZAHRAFFAMIRA" },
+    { src: "/images/3.Di3s-bA5_ZHyRrz.webp", alt: "Galeri 3 ZAHRAFFAMIRA" },
+    { src: "/images/4.B40etl_r_1M90HK.webp", alt: "Galeri 4 ZAHRAFFAMIRA" },
+    { src: "/images/5.BK9D3Rr0_ZKSFR1.webp", alt: "Galeri 5 ZAHRAFFAMIRA" },
+    { src: "/images/6.CgXklAZ8_2sT1TI.webp", alt: "Galeri 6 ZAHRAFFAMIRA" },
+    { src: "/images/7.CYkhxhZn_Z1Ok7iv.webp", alt: "Galeri 7 ZAHRAFFAMIRA" },
+    { src: "/images/8.BQUXjo_c_1cEBiO.webp", alt: "Galeri 8 ZAHRAFFAMIRA" },
+    { src: "/images/9.DX1uZBbe_Z5ROD.webp", alt: "Galeri 9 ZAHRAFFAMIRA" },
+    { src: "/images/10.Coui8cs8_ZpCvJ9.webp", alt: "Galeri 10 ZAHRAFFAMIRA" },
+    { src: "/images/11.CjUPcT9C_WWBAL.webp", alt: "Galeri 11 ZAHRAFFAMIRA" },
+    { src: "/images/12.DHht49Dw_Z1VI5fh.webp", alt: "Galeri 12 ZAHRAFFAMIRA" },
+    { src: "/images/13.Du3sydx3_Za6Tzz.webp", alt: "Galeri 13 ZAHRAFFAMIRA" },
+    { src: "/images/14.DY1mHdbC_6XrrD.webp", alt: "Galeri 14 ZAHRAFFAMIRA" },
+    { src: "/images/15.DaTbW5bd_y5ECp.webp", alt: "Galeri 15 ZAHRAFFAMIRA" },
   ];
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -87,13 +87,13 @@ export const GallerySection = () => {
   }, [lightboxIndex, closeLightbox, prevLightbox, nextLightbox]);
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="py-16 bg-white overflow-hidden border-b border-[#E8E4DB]">
       <div className="container mx-auto px-4">
-        <h2 className="text-xl font-bold text-center text-red-800 uppercase tracking-wider mb-2">
+        <h2 className="text-lg sm:text-xl font-bold text-center text-[#B8892E] uppercase tracking-wider mb-2 font-cinzel">
           Galeri kami
         </h2>
-        <h3 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-8">
-          Dokumentasi Deaz Rental Mobil Banjarmasin bersama pelanggan
+        <h3 className="text-3xl sm:text-4xl font-bold text-center text-[#171717] mb-8">
+          Dokumentasi ZAHRAFFAMIRA Bersama Pelanggan
         </h3>
 
         {/* Carousel Wrapper */}

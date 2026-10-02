@@ -19,7 +19,7 @@ export const FloatingContact = () => {
       >
         <a
           href="tel:6281255964566"
-          className="w-12 h-12 flex justify-center items-center rounded-full bg-[#171717] text-[#E8D5A8] border border-[#E8D5A8]/40 shadow-lg hover:bg-black transition-all hover:-translate-y-1"
+          className="w-12 h-12 flex justify-center items-center rounded-full bg-[#171717] text-[#E8D5A8] border border-[#E8D5A8]/30 shadow-lg hover:bg-black transition-all hover:-translate-y-1"
           title="Telepon"
           aria-label="Telepon"
         >
@@ -38,7 +38,7 @@ export const FloatingContact = () => {
         </a>
       </div>
 
-      {/* Main toggle in brand gold */}
+      {/* Main toggle */}
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
