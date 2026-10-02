@@ -47,18 +47,18 @@ export const FleetSection = () => {
               className="overflow-hidden flex flex-col bg-white rounded-md border border-[#E8E4DB] shadow-xs hover:shadow-md hover:border-[#DFC88F] transition-all group"
             >
               <div className="flex flex-col flex-1">
-                <figure className="relative aspect-[4/3] bg-[#F8F6F1] overflow-hidden animate-shimmer flex items-center justify-center p-3 border-b border-[#E8E4DB]/60">
+                <figure className="relative aspect-square w-full overflow-hidden bg-[#F8F6F1] border-b border-[#E8E4DB]/60">
                   <img
                     src={car.img}
                     alt={car.alt}
                     title={car.alt}
                     loading="lazy"
                     width={400}
-                    height={300}
-                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {/* Category Pill Tag */}
-                  <span className="absolute top-2.5 left-2.5 px-2 py-0.5 text-[10px] font-semibold bg-white/95 text-[#9C721D] border border-[#DFC88F] rounded shadow-2xs">
+                  <span className="absolute top-2.5 left-2.5 px-2.5 py-1 text-[11px] font-semibold bg-white/95 text-[#9C721D] border border-[#DFC88F] rounded shadow-2xs backdrop-blur-xs">
                     {car.categoryLabel}
                   </span>
                 </figure>
