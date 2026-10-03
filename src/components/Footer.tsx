@@ -106,18 +106,28 @@ export const Footer = () => {
 
           {/* Column 4: Peta Lokasi */}
           <div>
-            <h3 className="mb-4 text-sm font-bold text-[#E8D5A8] uppercase tracking-wider font-cinzel">
-              Peta Lokasi
-            </h3>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-sm font-bold text-[#E8D5A8] uppercase tracking-wider font-cinzel">
+                Peta Lokasi
+              </h3>
+              <a
+                href="https://maps.app.goo.gl/yC66naVpd1xchSg1A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] text-[#DFC88F] hover:underline"
+              >
+                Buka Maps &raquo;
+              </a>
+            </div>
             <div className="rounded-lg overflow-hidden h-32 border border-white/20 shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31866.141113921487!2d114.58675!3d-3.283702!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423850da00111%3A0x3374eb35838bae7f!2sDEAZ%20RENTAL%20MOBIL%20BANJARMASIN!5e0!3m2!1sen!2sid!4v1723464391757!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5298!2d114.6745279!3d-3.401417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de427cedb877d03%3A0xc4decb64c249efb9!2sHome%20Zahraffa%20Rental%20Mobil!5e0!3m2!1sid!2sid!4v1727928000000!5m2!1sid!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen={false}
                 loading="lazy"
-                title="Peta Lokasi Rental Mobil Banjarmasin"
+                title="Peta Lokasi Home Zahraffa Rental Mobil"
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>

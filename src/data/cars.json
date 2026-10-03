@@ -4,7 +4,7 @@
     "title": "New Avanza",
     "category": ["Keluarga"],
     "categoryLabel": "Keluarga",
-    "img": "/images/Toyota_New_Avanza_ZFUaBb.webp",
+    "img": "/images/fleet-avanza.png",
     "alt": "Rental New Avanza Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*New%20Avanza*&type=phone_number&app_absent=0"
   },
@@ -13,7 +13,7 @@
     "title": "Grand New Avanza",
     "category": ["Keluarga"],
     "categoryLabel": "Keluarga",
-    "img": "/images/Toyota_Avanza_Facelift_13mfpn.webp",
+    "img": "/images/fleet-grand-avanza.png",
     "alt": "Rental Grand New Avanza Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Grand%20New%20Avanza*&type=phone_number&app_absent=0"
   },
@@ -22,7 +22,7 @@
     "title": "Innova Reborn",
     "category": ["Keluarga"],
     "categoryLabel": "Keluarga",
-    "img": "/images/Toyota_Innova_Reborn_V_ZOFtB7.webp",
+    "img": "/images/fleet-innova-reborn.png",
     "alt": "Rental Innova Reborn Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Reborn*&type=phone_number&app_absent=0"
   },
@@ -31,7 +31,7 @@
     "title": "Innova Zenix",
     "category": ["Keluarga", "Premium"],
     "categoryLabel": "Keluarga / Premium",
-    "img": "/images/Toyota_Innova_Zenix_Zkm8IB.webp",
+    "img": "/images/fleet-innova-zenix.png",
     "alt": "Rental Innova Zenix Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Zenix*&type=phone_number&app_absent=0"
   },
@@ -40,7 +40,7 @@
     "title": "Toyota Fortuner",
     "category": ["SUV"],
     "categoryLabel": "SUV",
-    "img": "/images/Toyota_Fortuner_GR_Sport_2fN98a.webp",
+    "img": "/images/fleet-fortuner.png",
     "alt": "Rental Toyota Fortuner Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Fortuner*&type=phone_number&app_absent=0"
   },
@@ -49,7 +49,7 @@
     "title": "Toyota Alphard",
     "category": ["Premium"],
     "categoryLabel": "Premium",
-    "img": "/images/Toyota_Alphard_Z9sSio.webp",
+    "img": "/images/fleet-alphard.png",
     "alt": "Rental Toyota Alphard Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Alphard*&type=phone_number&app_absent=0"
   },
@@ -58,7 +58,7 @@
     "title": "Hiace Commuter",
     "category": ["Rombongan"],
     "categoryLabel": "Rombongan",
-    "img": "/images/Toyota_Hiace_Commuter_Z1FbC07.webp",
+    "img": "/images/fleet-hiace-commuter.png",
     "alt": "Rental Hiace Commuter Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Commuter*&type=phone_number&app_absent=0"
   },
@@ -67,7 +67,7 @@
     "title": "Hiace Premio",
     "category": ["Rombongan"],
     "categoryLabel": "Rombongan",
-    "img": "/images/Toyota_Hiace_Premio_18s4YJ.webp",
+    "img": "/images/fleet-hiace-premio.png",
     "alt": "Rental Hiace Premio Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
     "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Premio*&type=phone_number&app_absent=0"
   }
