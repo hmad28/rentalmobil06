@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send, ExternalLink } from "lucide-react";
-import { InstagramIcon, TikTokIcon } from "@/components/icons";
+import { InstagramIcon, TikTokIcon, FacebookIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Hubungi Kami - Zahraffa Rental Mobil Banjarmasin",
@@ -157,6 +157,25 @@ export default function KontakPage() {
                       </div>
                     </div>
                     <span className="text-xs text-[#171717] font-semibold">Kunjungi &rarr;</span>
+                  </a>
+
+                  {/* Facebook */}
+                  <a
+                    href="https://www.facebook.com/share/1JpX3qfg3T/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-3 rounded-xl border border-[#E8E4DB] hover:border-[#1877F2] hover:bg-blue-50/40 transition-all group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-9 h-9 rounded-lg bg-[#1877F2] text-white flex items-center justify-center">
+                        <FacebookIcon className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-[#171717] group-hover:text-[#1877F2]">Facebook</p>
+                        <p className="text-xs text-[#626262]">Zahraffa Rental Mobil</p>
+                      </div>
+                    </div>
+                    <span className="text-xs text-[#1877F2] font-semibold">Kunjungi &rarr;</span>
                   </a>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
-import { InstagramIcon, TikTokIcon } from "@/components/icons";
+import { InstagramIcon, TikTokIcon, FacebookIcon } from "@/components/icons";
 
 export const Footer = () => {
   return (
@@ -79,7 +79,7 @@ export const Footer = () => {
             </p>
             <p className="mb-4 text-sm flex items-center gap-2 text-gray-300">
               <Mail className="w-4 h-4 text-[#DFC88F] shrink-0" />
-              <a href="mailto:info@deazrental.com" className="hover:text-[#DFC88F] transition-colors">
+              <a href="mailto:info@zahraffamirarental.com" className="hover:text-[#DFC88F] transition-colors">
                 info@zahraffamirarental.com
               </a>
             </p>
@@ -115,6 +115,16 @@ export const Footer = () => {
                 title="TikTok @sewa_haice_commut"
               >
                 <TikTokIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1JpX3qfg3T/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
+                aria-label="Facebook"
+                title="Facebook Resmi"
+              >
+                <FacebookIcon className="w-4 h-4" />
               </a>
               <a
                 href="tel:6285349166234"

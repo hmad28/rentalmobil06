@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, X, Maximize2, MapPin, Star, ShieldCheck, MessageCircle, ExternalLink } from "lucide-react";
-import { InstagramIcon, TikTokIcon } from "@/components/icons";
+import { InstagramIcon, TikTokIcon, FacebookIcon } from "@/components/icons";
 
 interface GalleryItem {
   src: string;
@@ -213,6 +213,15 @@ export const GallerySection = () => {
               className="text-xs font-semibold text-[#B8892E] hover:text-[#9E7424] hover:underline flex items-center gap-1"
             >
               <TikTokIcon className="w-3.5 h-3.5" /> TikTok
+            </a>
+            <span className="text-[#A39D93]">•</span>
+            <a
+              href="https://www.facebook.com/share/1JpX3qfg3T/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-[#B8892E] hover:text-[#9E7424] hover:underline flex items-center gap-1"
+            >
+              <FacebookIcon className="w-3.5 h-3.5" /> Facebook
             </a>
           </div>
         </div>
