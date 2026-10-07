@@ -94,6 +94,38 @@ const galleryData: GalleryItem[] = [
     badge: "Hiace Ready",
     desc: "Dokumentasi armada Toyota Hiace Commuter putih yang selalu ready dan terawat di garasi Home Zahraffa Rental Mobil.",
   },
+  {
+    src: "/images/konvoi-hiace-event-vip.jpeg",
+    title: "Konvoi Puluhan Toyota Hiace Pengawalan Polisi",
+    plate: "Armada Hiace Premio & Commuter VIP",
+    category: "hiace",
+    badge: "Konvoi VIP & Event",
+    desc: "Dokumentasi pengawalan konvoi puluhan armada Toyota Hiace untuk agenda kunjungan dinas kenegaraan, tamu VIP, dan event akbar di Kalimantan Selatan.",
+  },
+  {
+    src: "/images/avanza-wisata-pulau-mas.jpeg",
+    title: "All New Avanza (DA 1680 BS) di Wisata Pulau Mas",
+    plate: "DA 1680 BS",
+    category: "avanza",
+    badge: "Wisata Pulau Mas",
+    desc: "Armada Toyota All New Avanza hitam saat mengantar perjalanan wisata keluarga di destinasi Wisata Alam Pulau Mas, Kalimantan Selatan.",
+  },
+  {
+    src: "/images/lineup-armada-pascasarjana.jpeg",
+    title: "Deretan Armada di Gedung Pascasarjana",
+    plate: "DA 1680 BS & Lineup MPV",
+    category: "innova_garasi",
+    badge: "Acara Akademik & Kampus",
+    desc: "Deretan kendaraan operasional Zahraffa Rental Mobil terparkir rapi di halaman Gedung Pascasarjana untuk mobilitas tamu dinas dan undangan.",
+  },
+  {
+    src: "/images/avanza-gedung-dinas.jpeg",
+    title: "Toyota All New Avanza Hitam Siap Dinas",
+    plate: "DA 1680 BS",
+    category: "avanza",
+    badge: "Agenda Kantor & Dinas",
+    desc: "Tampak belakang Toyota All New Avanza hitam terawat dan elegan di depan gedung instansi, siap melayani mobilitas kerja.",
+  },
 ];
 
 export const GallerySection = () => {
@@ -230,9 +262,9 @@ export const GallerySection = () => {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           {[
             { id: "all", label: `Semua Foto (${galleryData.length})` },
-            { id: "hiace", label: `Toyota Hiace (4)` },
-            { id: "avanza", label: `Toyota Avanza (3)` },
-            { id: "innova_garasi", label: `Innova & Garasi (3)` },
+            { id: "hiace", label: `Toyota Hiace (5)` },
+            { id: "avanza", label: `Toyota Avanza (5)` },
+            { id: "innova_garasi", label: `Innova & Event (4)` },
           ].map((tab) => (
             <button
               key={tab.id}

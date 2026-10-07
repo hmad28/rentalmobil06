@@ -1,8 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { Star, Users, Briefcase, Palmtree, Bus, Key, Plane } from "lucide-react";
 
 export const ServicesSection = () => {
+  const serviceShowcase = [
+    {
+      title: "Event & Rombongan VIP",
+      desc: "Konvoi puluhan armada Toyota Hiace pengawalan resmi polisi",
+      src: "/images/konvoi-hiace-event-vip.jpeg",
+      badge: "Konvoi VIP & Event Besar",
+    },
+    {
+      title: "Wisata Alam Kalsel",
+      desc: "All New Avanza (DA 1680 BS) di Wisata Alam Pulau Mas",
+      src: "/images/avanza-wisata-pulau-mas.jpeg",
+      badge: "Wisata Keluarga",
+    },
+    {
+      title: "Agenda Dinas & Kampus",
+      desc: "Deretan armada terparkir rapi di Gedung Pascasarjana",
+      src: "/images/lineup-armada-pascasarjana.jpeg",
+      badge: "Dinas & Instansi",
+    },
+    {
+      title: "Armada Ready di Garasi",
+      desc: "Toyota Hiace siap berangkat di garasi Home Zahraffa Gambut",
+      src: "/images/pelayanan-zahraffa.jpeg",
+      badge: "Garasi Resmi",
+    },
+  ];
+
+  const [activePhotoIndex, setActivePhotoIndex] = useState(0);
+  const currentPhoto = serviceShowcase[activePhotoIndex];
+
   const services = [
     {
       title: "Rental Mobil Keluarga",
@@ -46,29 +78,68 @@ export const ServicesSection = () => {
     <div className="py-16 bg-[#F8F6F1] border-b border-[#E8E4DB]">
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Column: Heading, Star divider & Owner/Representative Photo */}
-          <div className="lg:w-3/4 mx-auto md:mx-0 text-center">
+          
+          {/* Left Column: Heading, Star divider & Interactive Service Showcase Photo */}
+          <div className="lg:w-11/12 mx-auto md:mx-0 text-center">
             <h2 className="text-3xl font-bold text-[#171717] lg:text-4xl font-cinzel">
               PELAYANAN KAMI
             </h2>
             <p className="mt-3 text-[#626262]">
-              Pilihan layanan transportasi terbaik di Banjarmasin
+              Pilihan layanan transportasi terbaik & terpercaya di Banjarmasin
             </p>
             <div className="flex justify-center items-center mt-5">
               <span className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#C99E42] to-[#B8892E]" />
               <Star className="w-5 h-5 mx-2 text-[#C99E42] fill-[#C99E42]" />
               <span className="w-24 h-[1px] bg-gradient-to-l from-transparent via-[#C99E42] to-[#B8892E]" />
             </div>
-            <div className="flex justify-center items-center mt-6">
-              <img
-                src="/images/pelayanan-zahraffa.jpeg"
-                alt="Pelayanan ZAHRAFFAMIRA Rental Mobil"
-                title="Pelayanan ZAHRAFFAMIRA Rental Mobil"
-                loading="lazy"
-                width={600}
-                height={400}
-                className="w-full max-w-sm lg:max-w-md h-auto rounded-xl shadow-lg border border-[#DFC88F]/50 object-cover"
-              />
+
+            {/* Main Featured Photo Box */}
+            <div className="mt-6 relative rounded-2xl overflow-hidden border border-[#DFC88F]/60 shadow-lg bg-white group">
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden bg-neutral-900">
+                <img
+                  src={currentPhoto.src}
+                  alt={currentPhoto.title}
+                  title="Pelayanan ZAHRAFFAMIRA Rental Mobil"
+                  loading="lazy"
+                  width={700}
+                  height={450}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none" />
+
+                {/* Top Badge */}
+                <div className="absolute top-3 left-3 bg-[#171717]/85 backdrop-blur-xs text-white text-[11px] font-bold px-2.5 py-1 rounded-md border border-white/20">
+                  {currentPhoto.badge}
+                </div>
+
+                {/* Caption at bottom */}
+                <div className="absolute bottom-3 left-3 right-3 text-left text-white">
+                  <h3 className="font-bold text-sm sm:text-base text-white drop-shadow-sm">
+                    {currentPhoto.title}
+                  </h3>
+                  <p className="text-xs text-neutral-300 drop-shadow-xs line-clamp-1">
+                    {currentPhoto.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Photo Switcher Pills */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
+              {serviceShowcase.map((item, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => setActivePhotoIndex(idx)}
+                  className={`px-2.5 py-2 rounded-lg text-xs font-semibold text-center transition-all cursor-pointer border ${
+                    activePhotoIndex === idx
+                      ? "bg-[#B8892E] text-white border-[#B8892E] shadow-xs"
+                      : "bg-white text-[#626262] border-[#E8E4DB] hover:border-[#DFC88F] hover:text-[#171717]"
+                  }`}
+                >
+                  <span className="block truncate">{item.title}</span>
+                </button>
+              ))}
             </div>
           </div>
 
