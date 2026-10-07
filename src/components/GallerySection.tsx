@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, X, Maximize2, MapPin, Star, ShieldCheck, MessageCircle, ExternalLink } from "lucide-react";
+import { InstagramIcon, TikTokIcon } from "@/components/icons";
 
 interface GalleryItem {
   src: string;
@@ -84,6 +85,14 @@ const galleryData: GalleryItem[] = [
     category: "hiace",
     badge: "Tampak Belakang",
     desc: "Tampak belakang Toyota Hiace Commuter berplat DA asli Kalimantan Selatan dengan stiker resmi Wira Toyota.",
+  },
+  {
+    src: "/images/pelayanan-zahraffa.jpeg",
+    title: "Armada Hiace Ready di Garasi Home Zahraffa",
+    plate: "DA 7098 BM & DA White Series",
+    category: "hiace",
+    badge: "Hiace Ready",
+    desc: "Dokumentasi armada Toyota Hiace Commuter putih yang selalu ready dan terawat di garasi Home Zahraffa Rental Mobil.",
   },
 ];
 
@@ -185,7 +194,25 @@ export const GallerySection = () => {
               rel="noopener noreferrer"
               className="text-xs font-semibold text-[#B8892E] hover:text-[#9E7424] hover:underline flex items-center gap-0.5"
             >
-              Lihat di Maps <ExternalLink className="w-3 h-3 ml-0.5" />
+              Lihat Maps <ExternalLink className="w-3 h-3 ml-0.5" />
+            </a>
+            <span className="text-[#A39D93]">•</span>
+            <a
+              href="https://www.instagram.com/sewa_haice_commuter_gambut_bjm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-[#B8892E] hover:text-[#9E7424] hover:underline flex items-center gap-1"
+            >
+              <InstagramIcon className="w-3.5 h-3.5" /> Instagram
+            </a>
+            <span className="text-[#A39D93]">•</span>
+            <a
+              href="https://www.tiktok.com/@sewa_haice_commut"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-[#B8892E] hover:text-[#9E7424] hover:underline flex items-center gap-1"
+            >
+              <TikTokIcon className="w-3.5 h-3.5" /> TikTok
             </a>
           </div>
         </div>
@@ -194,7 +221,7 @@ export const GallerySection = () => {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           {[
             { id: "all", label: `Semua Foto (${galleryData.length})` },
-            { id: "hiace", label: `Toyota Hiace (3)` },
+            { id: "hiace", label: `Toyota Hiace (4)` },
             { id: "avanza", label: `Toyota Avanza (3)` },
             { id: "innova_garasi", label: `Innova & Garasi (3)` },
           ].map((tab) => (

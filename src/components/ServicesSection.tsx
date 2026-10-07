@@ -61,13 +61,13 @@ export const ServicesSection = () => {
             </div>
             <div className="flex justify-center items-center mt-6">
               <img
-                src="/images/owner-deaz-rental_Z1iYmhF.webp"
-                alt="ZAHRAFFAMIRA Rental Mobil Banjarmasin"
+                src="/images/pelayanan-zahraffa.jpeg"
+                alt="Pelayanan ZAHRAFFAMIRA Rental Mobil"
                 title="Pelayanan ZAHRAFFAMIRA Rental Mobil"
                 loading="lazy"
-                width={400}
-                height={500}
-                className="w-72 h-auto rounded-lg lg:w-96 shadow-lg border border-[#DFC88F]/50"
+                width={600}
+                height={400}
+                className="w-full max-w-sm lg:max-w-md h-auto rounded-xl shadow-lg border border-[#DFC88F]/50 object-cover"
               />
             </div>
           </div>

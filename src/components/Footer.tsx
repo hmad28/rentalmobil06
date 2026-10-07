@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
+import { InstagramIcon, TikTokIcon } from "@/components/icons";
 
 export const Footer = () => {
   return (
@@ -84,20 +85,42 @@ export const Footer = () => {
             </p>
 
             {/* Social Icons */}
-            <div className="flex space-x-3">
+            <div className="flex space-x-2.5">
               <a
                 href="https://wa.me/6285349166234"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
                 aria-label="WhatsApp"
+                title="WhatsApp Kami"
               >
                 <MessageCircle className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/sewa_haice_commuter_gambut_bjm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
+                aria-label="Instagram"
+                title="Instagram @sewa_haice_commuter_gambut_bjm"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@sewa_haice_commut"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
+                aria-label="TikTok"
+                title="TikTok @sewa_haice_commut"
+              >
+                <TikTokIcon className="w-4 h-4" />
               </a>
               <a
                 href="tel:6285349166234"
                 className="p-2 bg-white/10 rounded-full hover:bg-gold-gradient hover:text-white transition-all text-[#E8D5A8]"
                 aria-label="Telepon"
+                title="Telepon Kami"
               >
                 <Phone className="w-4 h-4" />
               </a>
