@@ -1,106 +1,333 @@
+import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
+import cars from "@/data/cars.json";
+import {
+  MapPin,
+  Clock,
+  ShieldCheck,
+  CheckCircle2,
+  MessageCircle,
+  Sparkles,
+  ArrowRight,
+  Waves,
+  Building,
+} from "lucide-react";
+import { FaqSection } from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Rental Mobil Banjarmasin & Sewa Murah ✅ Lepas Kunci 24 Jam",
-  description: "Sewa & Rental Mobil Banjarmasin murah terpercaya. Unit Avanza, Innova, Hiace, Fortuner, Alphard lepas kunci atau dengan supir 24 jam.",
+  title: "Rental & Sewa Mobil Banjarmasin Murah ✅ Lepas Kunci 24 Jam",
+  description:
+    "Sewa & rental mobil Banjarmasin terpercaya dari ZAHRAFFAMIRA. Unit Avanza, Innova Reborn/Zenix, Fortuner, Alphard, & Hiace 15 seat. Lepas kunci atau supir ramah 24 jam nonstop.",
+  keywords: [
+    "rental mobil banjarmasin",
+    "sewa mobil banjarmasin",
+    "rental mobil banjarmasin lepas kunci",
+    "sewa mobil banjarmasin murah",
+    "rental innova banjarmasin",
+    "sewa avanza banjarmasin",
+    "sewa hiace banjarmasin",
+    "carter mobil banjarmasin",
+    "rental mobil banjarmasin 24 jam",
+    "sewa mobil pasar terapung banjarmasin",
+  ],
+  alternates: {
+    canonical: "https://zahraffamirarental.com/sewa-mobil-banjarmasin",
+  },
+  openGraph: {
+    title: "Rental & Sewa Mobil Banjarmasin Murah ✅ Lepas Kunci 24 Jam",
+    description:
+      "Rental mobil terlengkap di Kota Banjarmasin. Unit bersih, wangi, kondisi prima. Tersedia lepas kunci atau dengan driver.",
+    url: "https://zahraffamirarental.com/sewa-mobil-banjarmasin",
+    siteName: "ZAHRAFFAMIRA Rental Mobil",
+    locale: "id_ID",
+    type: "website",
+    images: ["/images/pelayanan-zahraffa.jpeg"],
+  },
 };
 
-const rawHtml = `<main class="pt-20"> <!-- Added padding for fixed navbar -->    <section class="bg-gradient-to-br from-red-900 via-red-800 to-gray-900 text-white py-20"> <div class="container mx-auto px-4 lg:px-8"> <nav class="flex mb-8 text-sm text-gray-300" aria-label="Breadcrumb"> <ol class="flex items-center space-x-2"> <li><a href="/" class="hover:text-yellow-400">Beranda</a></li> <li><span class="mx-2">/</span></li> <li class="text-yellow-400 font-medium">Sewa Mobil Banjarmasin</li> </ol> </nav> <div class="grid lg:grid-cols-2 gap-12 items-center"> <div> <span class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 font-bold text-sm rounded-full mb-6">
-🚗 RENTAL MOBIL BANJARMASIN #1
-</span> <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-Rental & Sewa Mobil <span class="text-yellow-400">Banjarmasin</span> </h1> <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-Butuh rental, <strong>carter</strong>, atau <strong>sewa kendaraan di Banjarmasin</strong>? Deaz Rental Mobil Banjarmasin adalah pilihan tepat! Kami melayani sewa mobil lepas kunci, dengan supir, antar jemput bandara, hingga <strong>travel mobil</strong> wisata ke <strong>Pasar Terapung Lok Baintan</strong>, Loksado, dan seluruh Kalimantan Selatan.
-</p> <div class="flex flex-wrap gap-4 mb-8"> <a href="https://wa.me/6285349166234?text=Halo+Deaz+Rental+Saya+di+Banjarmasin+ingin+sewa+mobil" class="px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-300 transition-all shadow-lg inline-flex items-center gap-2"> <i data-lucide="message-circle" class="w-5 h-5"></i>
-Chat WhatsApp
-</a> <a href="/#armada" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-all">
-Lihat Semua Armada
-</a> </div> <!-- Trust Badges --> <div class="flex flex-wrap gap-6 text-sm"> <div class="flex items-center gap-2"> <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i> <span>10+ Tahun Pengalaman</span> </div> <div class="flex items-center gap-2"> <i data-lucide="clock" class="w-5 h-5 text-yellow-400"></i> <span>Layanan 24 Jam</span> </div> <div class="flex items-center gap-2"> <i data-lucide="star" class="w-5 h-5 text-yellow-400"></i> <span>Rating Terbaik</span> </div> </div> </div> <div class="relative hidden lg:block"> <div class="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-red-600 rounded-2xl blur-lg opacity-30"></div> <img src="/images/hero-image_Zs3daf.webp" alt="Rental Mobil Banjarmasin - Deaz Rental" title="Sewa Mobil Banjarmasin Terpercaya" loading="lazy" decoding="async" fetchpriority="auto" width="600" height="400" class="relative rounded-2xl shadow-2xl"> </div> </div> </div> </section>  <section class="py-16 bg-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
-Layanan Rental Mobil <span class="text-red-800">Banjarmasin</span> </h2> <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-Berbagai pilihan layanan transportasi untuk kebutuhan Anda di Kota Seribu Sungai
-</p> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-shadow border border-gray-100"> <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6"> <i data-lucide="key" class="w-7 h-7 text-red-800"></i> </div> <h3 class="font-bold text-xl mb-3">Sewa Lepas Kunci</h3> <p class="text-gray-600 mb-4">Kebebasan penuh berkendara tanpa supir. Cocok untuk yang familiar dengan rute Banjarmasin.</p> <a href="/layanan/lepas-kunci" class="text-red-800 font-bold hover:underline inline-flex items-center gap-1">
-Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i> </a> </div> <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-shadow border border-gray-100"> <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6"> <i data-lucide="user-check" class="w-7 h-7 text-red-800"></i> </div> <h3 class="font-bold text-xl mb-3">Sewa dengan Supir</h3> <p class="text-gray-600 mb-4">Driver profesional yang hafal jalan Banjarmasin. Ideal untuk wisata, dinas, atau acara.</p> <a href="https://wa.me/6285349166234?text=Halo+Deaz+saya+mau+sewa+mobil+dengan+supir+di+Banjarmasin" class="text-red-800 font-bold hover:underline inline-flex items-center gap-1">
-Tanya Harga <i data-lucide="arrow-right" class="w-4 h-4"></i> </a> </div> <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-shadow border border-gray-100"> <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6"> <i data-lucide="plane" class="w-7 h-7 text-red-800"></i> </div> <h3 class="font-bold text-xl mb-3">Antar Jemput Bandara</h3> <p class="text-gray-600 mb-4">Layanan 24 jam dari/ke Bandara Syamsudin Noor. Driver standby sesuai jadwal Anda.</p> <a href="/layanan/antar-jemput-bandara" class="text-red-800 font-bold hover:underline inline-flex items-center gap-1">
-Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i> </a> </div> </div> </div> </section>  <section class="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white"> <div class="container mx-auto px-4"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
-Area Layanan di <span class="text-yellow-400">Banjarmasin</span> </h2> <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-Kami melayani seluruh wilayah Banjarmasin dan sekitarnya
-</p> <div class="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto"> <div class="bg-white/5 backdrop-blur p-6 rounded-xl border border-white/10"> <h3 class="font-bold text-yellow-400 mb-4 flex items-center gap-2"> <i data-lucide="building-2" class="w-5 h-5"></i> Pusat Kota
-</h3> <ul class="space-y-2 text-gray-300 text-sm"> <li>• Pasar Baru</li> <li>• Jl. A. Yani</li> <li>• Jl. Sudirman</li> <li>• Kayutangi</li> <li>• Antasan Besar</li> </ul> </div> <div class="bg-white/5 backdrop-blur p-6 rounded-xl border border-white/10"> <h3 class="font-bold text-yellow-400 mb-4 flex items-center gap-2"> <i data-lucide="compass" class="w-5 h-5"></i> Banjarmasin Utara
-</h3> <ul class="space-y-2 text-gray-300 text-sm"> <li>• Alalak</li> <li>• Sungai Jingah</li> <li>• Kuin</li> <li>• Pekauman</li> <li>• Surgi Mufti</li> </ul> </div> <div class="bg-white/5 backdrop-blur p-6 rounded-xl border border-white/10"> <h3 class="font-bold text-yellow-400 mb-4 flex items-center gap-2"> <i data-lucide="map" class="w-5 h-5"></i> Banjarmasin Selatan
-</h3> <ul class="space-y-2 text-gray-300 text-sm"> <li>• Pemurus</li> <li>• Kelayan</li> <li>• Mantuil</li> <li>• Tanjung Pagar</li> <li>• Pelambuan</li> </ul> </div> <div class="bg-white/5 backdrop-blur p-6 rounded-xl border border-white/10"> <h3 class="font-bold text-yellow-400 mb-4 flex items-center gap-2"> <i data-lucide="palmtree" class="w-5 h-5"></i> Wisata Populer
-</h3> <ul class="space-y-2 text-gray-300 text-sm"> <li>• Pasar Terapung</li> <li>• Pulau Kembang</li> <li>• Sabilal Muhtadin</li> <li>• Menara Pandang</li> <li>• Siring Tendean</li> </ul> </div> </div> </div> </section>  <section class="py-16 bg-gray-50"> <div class="container mx-auto px-4"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
-Armada Terpopuler di <span class="text-red-800">Banjarmasin</span> </h2> <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-Unit favorit pelanggan kami untuk berkeliling Banjarmasin
-</p> <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"> <article class="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"> <div class="flex flex-col flex-1"> <figure class="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer"> <img src="/images/Toyota_Alphard_Z9sSio.webp" alt="Rental Toyota Alphard Banjarmasin - Deaz Rental Mobil Banjarmasin" title="Sewa Toyota Alphard Banjarmasin Banjarbaru" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="300" class="w-full h-full object-cover object-center transition-transform group-hover:scale-105"> <!-- Gradient Overlay - reduced height to protect branding --> <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent"></div> </figure> <div class="p-3 text-white"> <h3 class="text-sm sm:text-base font-bold text-center leading-tight"> Toyota Alphard </h3> </div> </div> <a href="https://api.whatsapp.com/send/?phone=6285349166234&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Alphard*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors z-10 relative">
-Pesan disini
-</a> </article><article class="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"> <div class="flex flex-col flex-1"> <figure class="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer"> <img src="/images/Toyota_Fortuner_GR_Sport_2fN98a.webp" alt="Rental Toyota Fortuner GR Sport Banjarmasin - Deaz Rental Mobil Banjarmasin" title="Sewa Toyota Fortuner GR Sport Banjarmasin Banjarbaru" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="300" class="w-full h-full object-cover object-center transition-transform group-hover:scale-105"> <!-- Gradient Overlay - reduced height to protect branding --> <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent"></div> </figure> <div class="p-3 text-white"> <h3 class="text-sm sm:text-base font-bold text-center leading-tight"> Toyota Fortuner GR Sport </h3> </div> </div> <a href="https://api.whatsapp.com/send/?phone=6285349166234&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Fortuner%20GR%20Sport*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors z-10 relative">
-Pesan disini
-</a> </article><article class="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"> <div class="flex flex-col flex-1"> <figure class="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer"> <img src="/images/Mitsubishi_Pajero_Sport_Zr6aD.webp" alt="Rental Mitsubishi Pajero Sport Banjarmasin - Deaz Rental Mobil Banjarmasin" title="Sewa Mitsubishi Pajero Sport Banjarmasin Banjarbaru" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="300" class="w-full h-full object-cover object-center transition-transform group-hover:scale-105"> <!-- Gradient Overlay - reduced height to protect branding --> <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent"></div> </figure> <div class="p-3 text-white"> <h3 class="text-sm sm:text-base font-bold text-center leading-tight"> Mitsubishi Pajero Sport </h3> </div> </div> <a href="https://api.whatsapp.com/send/?phone=6285349166234&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Mitsubishi%20Pajero%20Sport*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors z-10 relative">
-Pesan disini
-</a> </article><article class="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"> <div class="flex flex-col flex-1"> <figure class="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer"> <img src="/images/Toyota_Innova_Zenix_Zkm8IB.webp" alt="Rental Toyota Innova Zenix Banjarmasin - Deaz Rental Mobil Banjarmasin" title="Sewa Toyota Innova Zenix Banjarmasin Banjarbaru" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="300" class="w-full h-full object-cover object-center transition-transform group-hover:scale-105"> <!-- Gradient Overlay - reduced height to protect branding --> <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent"></div> </figure> <div class="p-3 text-white"> <h3 class="text-sm sm:text-base font-bold text-center leading-tight"> Toyota Innova Zenix </h3> </div> </div> <a href="https://api.whatsapp.com/send/?phone=6285349166234&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Innova%20Zenix*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors z-10 relative">
-Pesan disini
-</a> </article><article class="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"> <div class="flex flex-col flex-1"> <figure class="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer"> <img src="/images/Toyota_Innova_Reborn_V_ZOFtB7.webp" alt="Rental Toyota Innova Reborn V Banjarmasin - Deaz Rental Mobil Banjarmasin" title="Sewa Toyota Innova Reborn V Banjarmasin Banjarbaru" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="300" class="w-full h-full object-cover object-center transition-transform group-hover:scale-105"> <!-- Gradient Overlay - reduced height to protect branding --> <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent"></div> </figure> <div class="p-3 text-white"> <h3 class="text-sm sm:text-base font-bold text-center leading-tight"> Toyota Innova Reborn V </h3> </div> </div> <a href="https://api.whatsapp.com/send/?phone=6285349166234&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Innova%20Reborn%20V*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors z-10 relative">
-Pesan disini
-</a> </article><article class="overflow-hidden flex flex-col bg-red-700 rounded-md shadow-lg hover:shadow-xl transition-shadow group"> <div class="flex flex-col flex-1"> <figure class="relative aspect-[4/3] bg-gray-200 overflow-hidden animate-shimmer"> <img src="/images/Toyota_Veloz_Q_1i25kz.webp" alt="Rental Toyota Veloz Q Banjarmasin - Deaz Rental Mobil Banjarmasin" title="Sewa Toyota Veloz Q Banjarmasin Banjarbaru" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="300" class="w-full h-full object-cover object-center transition-transform group-hover:scale-105"> <!-- Gradient Overlay - reduced height to protect branding --> <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-red-700 to-transparent"></div> </figure> <div class="p-3 text-white"> <h3 class="text-sm sm:text-base font-bold text-center leading-tight"> Toyota Veloz Q </h3> </div> </div> <a href="https://api.whatsapp.com/send/?phone=6285349166234&text=Pak%20Saya%20Mau%20Sewa%20Mobil%20*Toyota%20Veloz%20Q*%20by%20Deaz%20Rental%20Mobil%20Banjarmasin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="py-4 font-bold text-center text-yellow-300 bg-red-900 rounded-b-md hover:bg-red-950 transition-colors z-10 relative">
-Pesan disini
-</a> </article> </div> <div class="text-center mt-10"> <a href="/#armada" class="inline-flex items-center gap-2 px-8 py-4 bg-red-800 text-white font-bold rounded-lg hover:bg-red-900 transition-all">
-Lihat Semua Armada
-<i data-lucide="arrow-right" class="w-5 h-5"></i> </a> </div> </div> </section>  <section class="py-16 bg-white"> <div class="container mx-auto px-4 max-w-3xl"> <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-FAQ Rental Mobil <span class="text-red-800">Banjarmasin</span> </h2> <div class="space-y-4"> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group" open> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Dimana lokasi Deaz Rental di Banjarmasin?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <p class="mt-4 text-gray-600 leading-relaxed">
-Deaz Rental berlokasi strategis di <strong>Banjarmasin, Kalimantan Selatan</strong>. Kami melayani delivery ke seluruh area 
-            Banjarmasin termasuk pusat kota, Banjarmasin Utara, Banjarmasin Selatan, hotel, dan berbagai lokasi lainnya.
-</p> </details> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group"> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Berapa tarif sewa mobil harian di Banjarmasin?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <div class="mt-4 text-gray-600 leading-relaxed"> <p class="mb-4">
-Tarif sewa mobil kami sangat bervariasi tergantung pada jenis armada, tahun unit, dan durasi penyewaan (harian, mingguan, atau bulanan).
-</p> <a href="https://wa.me/6285349166234?text=Halo+Deaz+Rental+Saya+ingin+tanya+harga+sewa+mobil+di+Banjarmasin" class="inline-flex items-center gap-2 text-red-800 font-bold hover:text-red-900 transition-colors"> <i data-lucide="message-circle" class="w-5 h-5"></i>
-Klik di sini untuk cek harga & promo hari ini
-</a> </div> </details> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group"> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Bisa rental mobil dengan supir di Banjarmasin?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <p class="mt-4 text-gray-600 leading-relaxed">
-Tentu! Kami menyediakan <strong>sewa mobil dengan supir berpengalaman</strong> yang hafal rute Banjarmasin dan sekitarnya. 
-            Cocok untuk wisata ke Pasar Terapung, dinas kerja, atau acara keluarga.
-</p> </details> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group"> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Jam berapa layanan Deaz Rental buka?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <p class="mt-4 text-gray-600 leading-relaxed">
-Deaz Rental beroperasi <strong>24 jam setiap hari</strong> termasuk hari libur dan tanggal merah. 
-            Anda bisa booking kapan saja via WhatsApp dan kami siap melayani antar jemput bandara di jam berapapun.
-</p> </details> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group"> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Apa saja destinasi wisata dari Banjarmasin?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <p class="mt-4 text-gray-600 leading-relaxed">
-Dari Banjarmasin Anda bisa mengunjungi: <strong>Pasar Terapung Lok Baintan</strong>, Pulau Kembang, Masjid Sabilal Muhtadin, 
-            Siring Tendean, Martapura (Pasar Intan), Loksado, Pagat, dan berbagai destinasi wisata Kalsel lainnya.
-</p> </details> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group"> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Apa bedanya sewa, rental, dan carter mobil?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <p class="mt-4 text-gray-600 leading-relaxed"> <strong>Sewa, rental, dan carter mobil</strong> pada dasarnya adalah layanan yang sama. Di Banjarmasin, istilah
-<strong>carter mobil</strong> lebih sering digunakan untuk perjalanan antar kota atau rombongan dengan supir 
-            (misalnya carter Hiace ke Loksado), sedangkan sewa/rental lebih umum untuk pemakaian harian lepas kunci. 
-            Deaz Rental melayani semuanya — baik carter maupun sewa harian!
-</p> </details> <details class="bg-gray-50 rounded-xl shadow-sm p-6 group"> <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
-Apakah bisa sewa mobil bulanan di Banjarmasin?
-<i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"></i> </summary> <p class="mt-4 text-gray-600 leading-relaxed">
-Ya! Kami melayani <strong>sewa mobil bulanan di Banjarmasin</strong> dengan harga spesial yang lebih hemat 
-            dibandingkan sewa harian. Cocok untuk kebutuhan dinas jangka panjang, proyek, atau pemakaian pribadi. 
-            Hubungi kami via WhatsApp untuk penawaran harga sewa bulanan.
-</p> </details> </div> </div> </section>  <section class="py-20 bg-gradient-to-r from-red-800 to-red-900 text-white text-center"> <div class="container mx-auto px-4"> <h2 class="text-3xl md:text-4xl font-bold mb-6">
-Siap Sewa Mobil di Banjarmasin?
-</h2> <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
-Hubungi kami sekarang untuk ketersediaan unit dan penawaran terbaik. Melayani 24 jam!
-</p> <div class="flex flex-wrap justify-center gap-4"> <a href="https://wa.me/6285349166234?text=Halo+Deaz+Rental+Saya+di+Banjarmasin+mau+booking+mobil" class="inline-flex items-center gap-2 px-10 py-5 bg-yellow-400 text-gray-900 font-black text-lg rounded-full hover:bg-yellow-300 transition-all shadow-2xl transform hover:-translate-y-1"> <i data-lucide="message-circle" class="w-6 h-6"></i>
-Chat WhatsApp Sekarang
-</a> <a href="tel:+62 853-4916-6234" class="inline-flex items-center gap-2 px-10 py-5 bg-transparent border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white/10 transition-all"> <i data-lucide="phone" class="w-6 h-6"></i>
-Telepon Langsung
-</a> </div> </div> </section>  <section class="py-12 bg-gray-100"> <div class="container mx-auto px-4"> <h3 class="font-bold text-center mb-6">Layanan Terkait:</h3> <div class="flex flex-wrap justify-center gap-4"> <a href="/sewa-mobil-banjarbaru" class="px-6 py-3 bg-white rounded-full text-gray-800 hover:bg-red-800 hover:text-white transition-colors shadow-sm">
-Sewa Mobil Banjarbaru
-</a> <a href="/layanan/lepas-kunci" class="px-6 py-3 bg-white rounded-full text-gray-800 hover:bg-red-800 hover:text-white transition-colors shadow-sm">
-Sewa Lepas Kunci
-</a> <a href="/layanan/antar-jemput-bandara" class="px-6 py-3 bg-white rounded-full text-gray-800 hover:bg-red-800 hover:text-white transition-colors shadow-sm">
-Antar Jemput Bandara
-</a> <a href="/blog" class="px-6 py-3 bg-white rounded-full text-gray-800 hover:bg-red-800 hover:text-white transition-colors shadow-sm">
-Blog & Tips Wisata
-</a> </div> </div> </section>  </main>`;
+export default function SewaMobilBanjarmasinPage() {
+  const banjarmasinSchema = {
+    "@context": "https://schema.org",
+    "@type": ["AutoRental", "LocalBusiness"],
+    "@id": "https://zahraffamirarental.com/sewa-mobil-banjarmasin#business",
+    "name": "ZAHRAFFAMIRA Rental Mobil Banjarmasin",
+    "url": "https://zahraffamirarental.com/sewa-mobil-banjarmasin",
+    "telephone": "+6285349166234",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Komplek Dinar Mas 2 Blok AB No. 13 D, Kayu Bawang, Gambut",
+      "addressLocality": "Banjarmasin",
+      "addressRegion": "Kalimantan Selatan",
+      "postalCode": "70652",
+      "addressCountry": "ID",
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -3.401417,
+      "longitude": 114.6771028,
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Banjarmasin" },
+      { "@type": "AdministrativeArea", "name": "Banjarmasin Tengah" },
+      { "@type": "AdministrativeArea", "name": "Banjarmasin Utara" },
+      { "@type": "AdministrativeArea", "name": "Banjarmasin Selatan" },
+      { "@type": "AdministrativeArea", "name": "Banjarmasin Timur" },
+      { "@type": "AdministrativeArea", "name": "Banjarmasin Barat" },
+      { "@type": "Place", "name": "Pasar Terapung Lok Baintan" },
+      { "@type": "Place", "name": "Siring Menara Pandang" },
+    ],
+  };
 
-export default function Page() {
-  return <div dangerouslySetInnerHTML={{ __html: rawHtml }} />;
+  const banjarmasinFaqs = [
+    {
+      question: "Apakah mobil bisa diantar langsung ke hotel atau alamat di Banjarmasin?",
+      answer:
+        "Bisa! Kami melayani delivery unit mobil ke seluruh wilayah Kota Banjarmasin, termasuk hotel-hotel ternama (seperti Mercure, Favehotel, Swiss-Belhotel, Rattan Inn, Aston Banua), stasiun perwakilan, maupun alamat rumah/kantor Anda.",
+    },
+    {
+      question: "Berapa tarif sewa mobil harian di Banjarmasin?",
+      answer:
+        "Tarif sewa mobil kami di Banjarmasin sangat kompetitif: New Avanza dan Grand Avanza mulai Rp 350.000/hari, Innova Reborn Rp 500.000 – Rp 650.000/hari, Innova Zenix Rp 700.000 – Rp 900.000/hari, serta Hiace Commuter 15 seat mulai Rp 1.000.000/hari include supir.",
+    },
+    {
+      question: "Apakah bisa sewa mobil untuk wisata Pasar Terapung Lok Baintan?",
+      answer:
+        "Sangat bisa! Pasar Terapung Lok Baintan beroperasi sejak subuh (06.00 WITA). Driver kami siap menjemput Anda sejak pukul 05.30 WITA di hotel Banjarmasin untuk memastikan Anda tidak ketinggalan momen eksotis pasar terapung.",
+    },
+    {
+      question: "Bagaimana sistem rental mobil lepas kunci di Banjarmasin?",
+      answer:
+        "Untuk lepas kunci, Anda cukup menyiapkan E-KTP asli, SIM A aktif, bukti tiket penerbangan/voucher hotel/ID card kantor, dan mengisi formulir verifikasi singkat. Unit akan diantar tepat waktu.",
+    },
+  ];
+
+  return (
+    <main className="pt-20 bg-[#FBFAF7] min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(banjarmasinSchema) }}
+      />
+
+      {/* Hero Section */}
+      <section className="py-14 sm:py-20 bg-gradient-to-b from-[#F4EFE6] to-[#FBFAF7] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <nav className="flex mb-6 text-xs sm:text-sm text-[#737373]" aria-label="Breadcrumb">
+            <ol className="flex items-center space-x-2">
+              <li>
+                <Link href="/" className="hover:text-[#B8892E] transition-colors">
+                  Beranda
+                </Link>
+              </li>
+              <li>
+                <span className="text-[#A3A3A3]">/</span>
+              </li>
+              <li className="text-[#B8892E] font-semibold">Sewa Mobil Banjarmasin</li>
+            </ol>
+          </nav>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7 space-y-5">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-50 border border-amber-200 rounded-full text-xs font-semibold text-[#B8892E] uppercase tracking-wider font-cinzel">
+                <Waves className="w-3.5 h-3.5" />
+                Kota Seribu Sungai
+              </span>
+
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#171717] tracking-tight leading-tight">
+                Rental & Sewa Mobil <span className="text-gold-gradient">Banjarmasin</span>
+              </h1>
+
+              <p className="text-sm sm:text-base text-[#626262] leading-relaxed">
+                Butuh jasa <strong>rental mobil di Kota Banjarmasin</strong> dengan unit bersih, prima, dan pelayanan ramah? <strong>ZAHRAFFAMIRA Rental Mobil</strong> melayani rental harian, mingguan, bulanan, carter lepas kunci maupun include driver untuk keperluan dinas, bisnis, pernikahan, serta wisata keluarga ke Pasar Terapung, Menara Pandang Siring, dan Masjid Raya Sabilal Muhtadin.
+              </p>
+
+              <div className="flex flex-wrap gap-3 pt-2">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+Rental+Mobil+Saya+di+Banjarmasin+ingin+sewa+mobil&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3.5 bg-gold-gradient text-white font-bold text-sm rounded-xl inline-flex items-center gap-2 shadow-md hover:opacity-95 transition-all"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Chat WhatsApp 24 Jam
+                </a>
+                <Link
+                  href="/armada"
+                  className="px-6 py-3.5 bg-white border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold text-sm rounded-xl inline-flex items-center gap-2 transition-all"
+                >
+                  Lihat Semua Armada
+                  <ArrowRight className="w-4 h-4 text-[#B8892E]" />
+                </Link>
+              </div>
+
+              {/* Trust Badges */}
+              <div className="pt-4 grid grid-cols-3 gap-3 border-t border-[#E8E4DB] text-xs text-[#525252]">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-[#B8892E] shrink-0" />
+                  <span>Siaga 24 Jam</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="w-4 h-4 text-[#B8892E] shrink-0" />
+                  <span>Unit Asuransi & Terawat</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-[#B8892E] shrink-0" />
+                  <span>Bebas Bau Rokok</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="relative rounded-2xl overflow-hidden bg-white border border-[#E8E4DB] shadow-lg">
+                <img
+                  src="/images/avanza-gedung-dinas.jpeg"
+                  alt="Rental Mobil Banjarmasin - ZAHRAFFAMIRA"
+                  title="Sewa Mobil Banjarmasin Terpercaya"
+                  width={600}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="p-4 bg-white border-t border-[#E8E4DB]">
+                  <p className="text-xs font-bold text-[#171717]">
+                    🚗 Pilihan Utama Perjalanan Dinas & Wisata
+                  </p>
+                  <p className="text-xs text-[#626262] mt-0.5">
+                    Pengantaran tepat waktu ke hotel, kantor pemerintahan, pusat perbelanjaan, dan bandara.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Layanan Unggulan Banjarmasin */}
+      <section className="py-14 sm:py-18 bg-white border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#171717] tracking-tight">
+              Pilihan Layanan di Kota Banjarmasin
+            </h2>
+            <p className="text-sm sm:text-base text-[#626262] mt-2">
+              Fleksibilitas penuh sesuai kebutuhan mobilitas personal, perusahaan, maupun rombongan
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-2xl bg-[#FBFAF7] border border-[#E8E4DB]">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
+                <CheckCircle2 className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-[#171717] mb-2">Sewa Mobil Lepas Kunci</h3>
+              <p className="text-xs sm:text-sm text-[#626262] leading-relaxed">
+                Nikmati privasi dan kebebasan berkendara mandiri di Banjarmasin dengan proses verifikasi data yang simpel dan cepat.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#FBFAF7] border border-[#E8E4DB]">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
+                <Building className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-[#171717] mb-2">Sewa dengan Supir Profesional</h3>
+              <p className="text-xs sm:text-sm text-[#626262] leading-relaxed">
+                Driver ramah, berpengalaman, hafal rute Banjarmasin bebas macet, serta siap melayani kebutuhan protokoler dan bisnis.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#FBFAF7] border border-[#E8E4DB]">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <h3 className="text-base font-bold text-[#171717] mb-2">Antar Jemput Bandara (Airport Shuttle)</h3>
+              <p className="text-xs sm:text-sm text-[#626262] leading-relaxed">
+                Layanan 24 jam dari/ke Bandara Syamsudin Noor. Driver siap standby di pintu kedatangan sebelum Anda mendarat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Armada Terpopuler Banjarmasin */}
+      <section className="py-14 sm:py-18 bg-[#FBFAF7] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+            <div>
+              <p className="text-xs sm:text-sm font-semibold text-[#B8892E] uppercase tracking-wider font-cinzel">
+                Armada Pilihan di Banjarmasin
+              </p>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#171717] tracking-tight mt-1">
+                Unit Terlaris untuk Kota Banjarmasin
+              </h2>
+            </div>
+            <Link
+              href="/armada"
+              className="text-xs sm:text-sm font-bold text-[#B8892E] hover:underline flex items-center gap-1"
+            >
+              Lihat Seluruh Armada &raquo;
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {cars.slice(0, 4).map((car) => (
+              <div
+                key={car.id}
+                className="bg-white rounded-2xl border border-[#E8E4DB] overflow-hidden hover:shadow-lg transition-all group flex flex-col"
+              >
+                <div className="relative aspect-4/3 bg-[#F8F6F1]">
+                  <img
+                    src={car.img}
+                    alt={`Sewa ${car.title} Banjarmasin`}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  />
+                  <span className="absolute top-3 left-3 px-2.5 py-0.5 text-[11px] font-bold bg-white text-[#9C721D] border border-[#DFC88F] rounded">
+                    {car.categoryLabel}
+                  </span>
+                </div>
+                <div className="p-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-bold text-base text-[#171717]">
+                      {car.fullName}
+                    </h3>
+                    <p className="text-xs text-[#737373] mt-1">
+                      {car.seats} Penumpang • {car.transmission}
+                    </p>
+                    <p className="text-xs font-semibold text-[#B8892E] mt-2">
+                      {car.priceRange}
+                    </p>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-[#F0ECE1] flex gap-2">
+                    <Link
+                      href={`/armada/${car.id}`}
+                      className="flex-1 py-2 bg-[#F8F6F1] hover:bg-[#F0ECE1] text-[11px] font-semibold text-[#171717] rounded-lg text-center transition-colors"
+                    >
+                      Detail
+                    </Link>
+                    <a
+                      href={car.waLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 py-2 bg-gold-gradient text-white text-[11px] font-semibold rounded-lg text-center shadow-xs"
+                    >
+                      Booking
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AEO FAQ Banjarmasin */}
+      <FaqSection
+        title="FAQ Rental Mobil Banjarmasin"
+        subtitle="Pertanyaan umum seputar tarif, pengantaran hotel, dan syarat rental mobil di Banjarmasin"
+        faqs={banjarmasinFaqs}
+        id="faq-banjarmasin"
+      />
+    </main>
+  );
 }

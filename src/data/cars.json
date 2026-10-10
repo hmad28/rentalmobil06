@@ -2,73 +2,281 @@
   {
     "id": "new-avanza",
     "title": "New Avanza",
+    "fullName": "Toyota New Avanza 1.3 / 1.5",
+    "tagline": "Mobil Keluarga Irit, Gesit, dan Nyaman untuk Rute Kalsel",
     "category": ["Keluarga"],
     "categoryLabel": "Keluarga",
     "img": "/images/fleet-avanza.png",
     "alt": "Rental New Avanza Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*New%20Avanza*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*New%20Avanza*&type=phone_number&app_absent=0",
+    "seats": 7,
+    "luggage": 3,
+    "transmission": "Manual / Automatic",
+    "fuel": "Bensin (Hemat Irit)",
+    "engine": "1.3L / 1.5L Dual VVT-i",
+    "priceRange": "Mulai Rp 350.000 / Hari",
+    "description": "Sewa Toyota New Avanza di Banjarmasin dan Banjarbaru bersama Zahraffamira Rental Mobil. Pilihan MPV terfavorit keluarga Indonesia dengan kabin lega 7-seater, AC double blower dingin merata, konsumsi BBM sangat irit, serta suspensi nyaman untuk perjalanan keliling kota Banjarmasin, Gambut, Martapura, hingga antar kota Kalimantan Selatan. Tersedia opsi lepas kunci maupun dengan supir profesional.",
+    "features": [
+      "AC Double Blower Dingin Merata",
+      "Audio Head Unit Touchscreen & Bluetooth",
+      "Kapasitas 7 Penumpang Nyaman",
+      "Port Charger USB di Setiap Baris",
+      "Unit Bersih, Harum & Terawat Berkala",
+      "Dual SRS Airbag & Sistem Rem ABS"
+    ],
+    "idealFor": "Perjalanan keluarga, urusan dinas kantor, mobilitas harian kota Banjarmasin & Banjarbaru, antar-jemput Bandara Syamsudin Noor.",
+    "faqs": [
+      {
+        "question": "Berapa tarif sewa New Avanza di Zahraffamira?",
+        "answer": "Tarif rental Toyota New Avanza mulai dari Rp 350.000 per hari untuk opsi lepas kunci. Untuk paket sewa all-in termasuk supir dan BBM, silakan hubungi tim kami via WhatsApp untuk penawaran terbaik."
+      },
+      {
+        "question": "Apakah New Avanza bisa lepas kunci?",
+        "answer": "Bisa! Persyaratan sewa lepas kunci meliputi E-KTP asli, SIM A aktif, bukti identitas penjamin / tiket kedatangan, serta verifikasi data mudah dan cepat."
+      }
+    ]
   },
   {
     "id": "grand-new-avanza",
     "title": "Grand New Avanza",
+    "fullName": "Toyota Grand New Avanza",
+    "tagline": "Pilihan Ekonomis Andal dengan Ruang Kabin Lapang",
     "category": ["Keluarga"],
     "categoryLabel": "Keluarga",
     "img": "/images/fleet-grand-avanza.png",
     "alt": "Rental Grand New Avanza Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Grand%20New%20Avanza*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Grand%20New%20Avanza*&type=phone_number&app_absent=0",
+    "seats": 7,
+    "luggage": 3,
+    "transmission": "Manual / Automatic",
+    "fuel": "Bensin",
+    "engine": "1.3L DOHC Dual VVT-i",
+    "priceRange": "Mulai Rp 350.000 / Hari",
+    "description": "Grand New Avanza menawarkan keandalan mesin Toyota yang tangguh dan sangat hemat bahan bakar. Cocok untuk Anda yang membutuhkan kendaraan harian yang praktis, lincah bermanuver di jalanan kota Banjarmasin, serta memiliki bagasi fleksibel untuk barang bawaan. Unit selalu diservis rutin di bengkel resmi.",
+    "features": [
+      "AC Double Blower",
+      "Kapasitas 7 Kursi Fleksibel",
+      "Head Unit Audio USB/AUX",
+      "Konsumsi Bahan Bakar Sangat Irit",
+      "Kondisi Mesin Prima & Ban Tebal",
+      "Kabin Bersih & Steril"
+    ],
+    "idealFor": "Operasional dinas harian, kebutuhan keluarga, perjalanan ziarah Sekumpul Martapura, dan carter ekonomis.",
+    "faqs": [
+      {
+        "question": "Apa keunggulan Grand New Avanza untuk rental di Banjarmasin?",
+        "answer": "Grand New Avanza terkenal sangat bandel, hemat bensin, dan biaya sewanya paling ekonomis sehingga ramah di kantong untuk pemakaian harian maupun mingguan."
+      }
+    ]
   },
   {
     "id": "innova-reborn",
     "title": "Innova Reborn",
+    "fullName": "Toyota Kijang Innova Reborn 2.4 Diesel / 2.0 Bensin",
+    "tagline": "Medium MPV Legendaris yang Tangguh, Nyaman, dan Berwibawa",
     "category": ["Keluarga"],
     "categoryLabel": "Keluarga",
     "img": "/images/fleet-innova-reborn.png",
     "alt": "Rental Innova Reborn Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Reborn*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Reborn*&type=phone_number&app_absent=0",
+    "seats": 7,
+    "luggage": 4,
+    "transmission": "Manual / Automatic",
+    "fuel": "Solar Diesel (Torsi Kuat) / Bensin",
+    "engine": "2.4L 2GD-FTV Diesel Turbo / 2.0L 1TR-FE",
+    "priceRange": "Mulai Rp 500.000 - Rp 650.000 / Hari",
+    "description": "Sewa Toyota Innova Reborn di Banjarmasin & Banjarbaru untuk kenyamanan maksimal dalam perjalanan bisnis dinas maupun wisata keluarga. Innova Reborn dibekali mesin diesel turbo yang sangat bertenaga di tanjakan rute Kalimantan Selatan (Loksado, Kiram, Tahura Sultan Adam, Rantau, Barabai, Tanjung) dengan suspensi empuk berkelas eksekutif.",
+    "features": [
+      "Mesin Diesel 2GD Turbo Bertenaga & Halus",
+      "AC Triple Blower Digital Dingin Maksimal",
+      "Kenyamanan Duduk Premium & Reclining Seat",
+      "Audio Touchscreen Bluetooth Handal",
+      "Kabin Kedap Suara & Suspensi Sangat Empuk",
+      "Bagasi Luas untuk Koper & Oleh-oleh"
+    ],
+    "idealFor": "Perjalanan dinas pejabat / instansi BUMN, kunjungan proyek tambang / perkebunan, perjalanan wisata luar kota Kalsel, ziarah Sekumpul.",
+    "faqs": [
+      {
+        "question": "Berapa harga sewa Innova Reborn di Banjarmasin?",
+        "answer": "Harga rental Innova Reborn lepas kunci mulai Rp 500.000 - Rp 600.000/hari. Untuk paket include driver profesional, silakan tanyakan langsung ke customer service kami."
+      },
+      {
+        "question": "Apakah unit Innova Reborn yang tersedia tipe Diesel?",
+        "answer": "Ya, kami memiliki unit Toyota Innova Reborn bermesin Diesel 2.4L yang terkenal sangat bertenaga, irit, dan nyaman untuk rute luar kota."
+      }
+    ]
   },
   {
     "id": "innova-zenix",
     "title": "Innova Zenix",
+    "fullName": "Toyota All New Kijang Innova Zenix",
+    "tagline": "Kemewahan MPV Modern Generasi Terbaru dengan Platform TNGA",
     "category": ["Keluarga", "Premium"],
     "categoryLabel": "Keluarga / Premium",
     "img": "/images/fleet-innova-zenix.png",
     "alt": "Rental Innova Zenix Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Zenix*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Innova%20Zenix*&type=phone_number&app_absent=0",
+    "seats": 7,
+    "luggage": 4,
+    "transmission": "Automatic Direct Shift-CVT",
+    "fuel": "Bensin / Hybrid Modern",
+    "engine": "2.0L M20A-FKS Dynamic Force Engine",
+    "priceRange": "Mulai Rp 700.000 - Rp 900.000 / Hari",
+    "description": "Rasakan pengalaman berkendara kelas atas dengan Toyota All New Innova Zenix di Banjarmasin. Menggunakan platform TNGA (Toyota New Global Architecture), Innova Zenix menghadirkan kabin modern futuristik, peredaman suara luar biasa hening, akselerasi mulus tanpa hentakan, dan aura prestisius untuk menyambut tamu VIP, direksi, maupun keluarga terkasih.",
+    "features": [
+      "Platform TNGA-C Super Stabil & Nyaman",
+      "Transmisi 10-Speed Direct Shift CVT Sangat Halus",
+      "Head Unit Layar Sentuh Modern Smartphone Connectivity",
+      "Electric Parking Brake & Auto Hold",
+      "AC Digital Multi-Zone Auto Climate",
+      "Kabin Sangat Mewah, Modern, dan Wangi"
+    ],
+    "idealFor": "Penyambutan tamu VIP & ekspatriat di Bandara Syamsudin Noor, perjalanan bisnis eksekutif, acara pernikahan, kunjungan kerja kementerian.",
+    "faqs": [
+      {
+        "question": "Apakah Innova Zenix bisa disewa harian di Banjarmasin?",
+        "answer": "Ya, kami melayani sewa harian, mingguan, maupun bulanan Innova Zenix baik lepas kunci maupun didampingi driver eksekutif."
+      }
+    ]
   },
   {
     "id": "toyota-fortuner",
     "title": "Toyota Fortuner",
+    "fullName": "Toyota Fortuner GR Sport / VRZ",
+    "tagline": "SUV Gagah Berkarisma untuk Perjalanan Berkelas & Tangguh di Segala Medan",
     "category": ["SUV"],
     "categoryLabel": "SUV",
     "img": "/images/fleet-fortuner.png",
     "alt": "Rental Toyota Fortuner Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Fortuner*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Fortuner*&type=phone_number&app_absent=0",
+    "seats": 7,
+    "luggage": 4,
+    "transmission": "Automatic",
+    "fuel": "Solar Diesel VNT / Bi-Beam LED",
+    "engine": "2.4L / 2.8L Diesel Turbo High Torque",
+    "priceRange": "Mulai Rp 1.200.000 / Hari (All In Driver)",
+    "description": "Sewa Toyota Fortuner di Banjarmasin dan Banjarbaru bersama Zahraffamira Rental. Desain gagah maskulin, ground clearance tinggi, mesin diesel bertenaga badak, dan interior kulit mewah menjadikan Fortuner opsi tepat untuk survei lapangan proyek Kalimantan Selatan, mobil pengantin (wedding car), serta kunjungan dinas pimpinan perusahaan.",
+    "features": [
+      "Desain Body Gagah & Berwibawa",
+      "Mesin Diesel Turbo Torsi Melimpah",
+      "Interior Leather Seat Mewah & Kursi Elektrik",
+      "Sistem Audio Canggih & Layar Hiburan",
+      "Fitur Keselamatan Lengkap (TSS / VSC / Hill Start)",
+      "Peredaman Suara Mantap & Suspensi Kokoh"
+    ],
+    "idealFor": "Mobil pengantin mewah (wedding car), kunjungan pimpinan dinas / instansi militer / kontraktor tambang, perjalanan VIP rute lintas Kalsel-Kalteng-Kaltim.",
+    "faqs": [
+      {
+        "question": "Apakah sewa Fortuner sudah termasuk supir?",
+        "answer": "Mayoritas paket rental Toyota Fortuner kami sediakan bersama supir profesional berseragam rapi untuk menjamin keamanan dan kenyamanan VIP Anda."
+      }
+    ]
   },
   {
     "id": "toyota-alphard",
     "title": "Toyota Alphard",
+    "fullName": "Toyota Alphard Luxury Transformer",
+    "tagline": "Kemewahan Tertinggi First-Class untuk Tamu VIP dan Pernikahan Megah",
     "category": ["Premium"],
     "categoryLabel": "Premium",
     "img": "/images/fleet-alphard.png",
     "alt": "Rental Toyota Alphard Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Alphard*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Toyota%20Alphard*&type=phone_number&app_absent=0",
+    "seats": 7,
+    "luggage": 4,
+    "transmission": "Automatic CVT",
+    "fuel": "Bensin",
+    "engine": "2.5L DOHC Dual VVT-i",
+    "priceRange": "Mulai Rp 2.500.000 / Hari (VIP Package)",
+    "description": "Layanan rental Toyota Alphard di Banjarmasin dari Zahraffamira Rental Mobil menghadirkan standar kenyamanan kelas satu (first class). Dilengkapi Captain Seat mewah berbahan kulit asli dengan ottoman leg rest, panoramic sunroof, ambient lighting, serta peredaman suara terbaik. Pilihan eksklusif untuk pejabat negara, komisaris, artis, dan pengantin idaman.",
+    "features": [
+      "Executive Captain Seat dengan Electric Ottoman",
+      "Dual Sunroof / Moonroof Mewah",
+      "Power Sliding Door Otomatis Kanan & Kiri",
+      "Wireless Charger & Rear Seat Entertainment",
+      "Kabin Super Hening dengan Akustik Premium",
+      "Driver VIP Berpengalaman Standar Protokoler"
+    ],
+    "idealFor": "Mobil VIP Pejabat / Tamu Kenegaraan, Wedding Car Premium Banjarmasin & Banjarbaru, Penjemputan Direksi di Bandara Syamsudin Noor.",
+    "faqs": [
+      {
+        "question": "Apakah Alphard bisa disewa untuk mobil pengantin di Banjarmasin?",
+        "answer": "Sangat bisa! Kami melayani sewa Alphard untuk mobil pengantin (wedding car) lengkap dengan supir berpenampilan rapi dan opsi dekorasi pita/bunga."
+      }
+    ]
   },
   {
     "id": "hiace-commuter",
     "title": "Hiace Commuter",
+    "fullName": "Toyota Hiace Commuter 15-Seater",
+    "tagline": "Solusi Carter Rombongan Wisata, Ziarah Sekumpul, & Dinas Terbaik di Kalsel",
     "category": ["Rombongan"],
     "categoryLabel": "Rombongan",
     "img": "/images/fleet-hiace-commuter.png",
     "alt": "Rental Hiace Commuter Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Commuter*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Commuter*&type=phone_number&app_absent=0",
+    "seats": 15,
+    "luggage": 6,
+    "transmission": "Manual 5-Speed",
+    "fuel": "Solar Diesel Irit & Kuat",
+    "engine": "2.5L 2KD-FTV D-4D Common Rail Turbo",
+    "priceRange": "Mulai Rp 1.000.000 - Rp 1.300.000 / Hari (Include Supir)",
+    "description": "Spesialis sewa Toyota Hiace Commuter 15 seat di Gambut, Banjarmasin, dan Banjarbaru. Zahraffamira Rental Mobil adalah mitra tepercaya ribuan rombongan untuk perjalanan ziarah Guru Sekumpul Martapura, wisata Pasar Terapung Lok Baintan, bamboo rafting Loksado, hingga antar-jemput kontingen acara besar. Kabin lega berkapasitas 15 orang dengan AC individual roof-vent dingin ke seluruh baris.",
+    "features": [
+      "Kapasitas 14–15 Tempat Duduk Penumpang Lapang",
+      "AC Plafon Individual (Roof Air Conditioner) Dingin Merata",
+      "Reclining Seat Nyaman untuk Perjalanan Jauh",
+      "Audio Karaoke / Bluetooth Entertainment",
+      "Bagasi Luas untuk Koper Rombongan & Oleh-oleh",
+      "Driver Spesialis Hiace yang Hafal Seluruh Rute Kalsel"
+    ],
+    "idealFor": "Rombongan ziarah Sekumpul Martapura & Datu Kalampayan, wisata keluarga besar ke Loksado / Pantai Batakan / Danau Biru, carter dinas instansi, shuttle bandara rombongan.",
+    "faqs": [
+      {
+        "question": "Berapa kapasitas penumpang Hiace Commuter?",
+        "answer": "Toyota Hiace Commuter dapat menampung hingga 14 sampai 15 orang penumpang dengan konfigurasi kursi yang ergonomis dan lega."
+      },
+      {
+        "question": "Apakah harga sewa Hiace sudah termasuk supir?",
+        "answer": "Ya, seluruh pemesanan Hiace Commuter kami sediakan bersama supir berpengalaman yang sangat menguasai rute jalan di Kalimantan Selatan."
+      }
+    ]
   },
   {
     "id": "hiace-premio",
     "title": "Hiace Premio",
+    "fullName": "Toyota All New Hiace Premio Luxury",
+    "tagline": "Minibus Mewah Semi-Bonnet dengan Kenyamanan Maksimal Rasa MPV Eksekutif",
     "category": ["Rombongan"],
     "categoryLabel": "Rombongan",
     "img": "/images/fleet-hiace-premio.png",
     "alt": "Rental Hiace Premio Banjarmasin - ZAHRAFFAMIRA Rental Mobil",
-    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Premio*&type=phone_number&app_absent=0"
+    "waLink": "https://api.whatsapp.com/send/?phone=6285349166234&text=Halo%20ZAHRAFFAMIRA%20Rental%20Mobil%2C%20saya%20ingin%20cek%20harga%20dan%20ketersediaan%20unit%20*Hiace%20Premio*&type=phone_number&app_absent=0",
+    "seats": 12,
+    "luggage": 6,
+    "transmission": "Manual 6-Speed",
+    "fuel": "Solar Diesel Euro 4",
+    "engine": "2.8L 1GD-FTV Diesel Turbo Intercooler",
+    "priceRange": "Mulai Rp 1.400.000 - Rp 1.700.000 / Hari (Include Supir)",
+    "description": "Toyota All New Hiace Premio adalah pilihan minibus kelas premium nomor satu di Banjarmasin dan Gambut. Mengusung desain moncong modern (semi-bonnet), mesin 2.800cc turbo bertenaga besar, peredaman kabin super senyap, dan suspensi belakang leaf spring lembut. Kapasitas 10-12 penumpang dengan legroom sangat lega, menjadikannya standar armada VIP tour di Kalimantan Selatan.",
+    "features": [
+      "Desain Moncong Depan Modern Semi-Bonnet (Eropa Style)",
+      "Mesin 1GD 2.8L Diesel Turbo Sangat Bertenaga & Halus",
+      "Kapasitas 10–12 Penumpang dengan Kursi Eksekutif Jumbo",
+      "AC Multi-Zone Otomatis Dingin Maksimal",
+      "Kabin Mewah, Hening, dan Tidak Goyang di Jalan Keriting",
+      "Port Pengisian Daya USB di Setiap Kursi"
+    ],
+    "idealFor": "Tamu penting instansi, delegasi kementerian / BUMN, wisata VIP keluarga besar, rombongan eksekutif antar provinsi (Kalsel - Kaltim - Kalteng).",
+    "faqs": [
+      {
+        "question": "Apa perbedaan Hiace Commuter dan Hiace Premio?",
+        "answer": "Hiace Premio memiliki desain moncong depan semi-bonnet yang lebih modern, mesin 2.8L yang lebih senyap dan bertenaga, suspensi lebih empuk, serta kabin yang lebih luas dan mewah dibandingkan Hiace Commuter biasa."
+      },
+      {
+        "question": "Berapa kapasitas kursi Hiace Premio?",
+        "answer": "Hiace Premio kami memiliki kapasitas 10 hingga 12 tempat duduk penumpang VIP dengan ruang kaki (legroom) yang jauh lebih longgar."
+      }
+    ]
   }
 ]

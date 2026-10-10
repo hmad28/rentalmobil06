@@ -1,20 +1,162 @@
+import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Star, MessageCircle, Quote, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Testimoni Pelanggan - Deaz Rental Mobil Banjarmasin",
-  description: "Ulasan dan testimoni pengalaman nyata pelanggan yang menyewa mobil di Deaz Rental Mobil Banjarmasin dan Banjarbaru.",
+  title: "Testimoni Pelanggan - ZAHRAFFAMIRA Rental Mobil Banjarmasin",
+  description:
+    "Ulasan dan pengalaman nyata pelanggan yang menyewa mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, Banjarbaru, & Martapura. Pelayanan memuaskan dan armada prima.",
+  alternates: {
+    canonical: "https://zahraffamirarental.com/testimoni",
+  },
 };
 
-const rawHtml = `<main class="pt-20"> <!-- Added padding for fixed navbar -->  <main class="mx-auto max-w-screen-xl px-4 my-12"> <!-- Header Section --> <div class="mb-10 text-center"> <h1 class="mb-2 text-3xl font-bold text-gray-800">Testimoni Pelanggan</h1> <p class="mx-auto max-w-2xl text-gray-600">Pengalaman nyata dari pelanggan kami yang telah menggunakan layanan Deaz Rental Mobil Banjarmasin.</p> </div> <!-- Google Reviews Embed --> <div class="w-full p-6 mb-12 bg-white rounded-lg border border-gray-100 shadow-sm overflow-hidden"> <h2 class="flex items-center pb-2 mb-6 text-xl font-semibold text-gray-800 border-b border-gray-200"> <i data-lucide="star" class="w-5 h-5 mr-2 text-red-700"></i>
-Ulasan Google
-</h2> <div class="relative min-h-[400px]"> <!-- Skeleton Loader --> <div id="reviews-skeleton" class="absolute inset-0 z-10 bg-white transition-opacity duration-500"> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-pulse"> <div class="p-5 border border-gray-100 rounded-lg space-y-4"> <div class="flex items-center space-x-3"> <div class="w-10 h-10 bg-gray-200 rounded-full"></div> <div class="flex-1 space-y-2"> <div class="h-4 bg-gray-200 rounded w-3/4"></div> <div class="h-3 bg-gray-200 rounded w-1/2"></div> </div> </div> <div class="space-y-2"> <div class="h-3 bg-gray-200 rounded w-full"></div> <div class="h-3 bg-gray-200 rounded w-full"></div> <div class="h-3 bg-gray-200 rounded w-2/3"></div> </div> </div><div class="p-5 border border-gray-100 rounded-lg space-y-4"> <div class="flex items-center space-x-3"> <div class="w-10 h-10 bg-gray-200 rounded-full"></div> <div class="flex-1 space-y-2"> <div class="h-4 bg-gray-200 rounded w-3/4"></div> <div class="h-3 bg-gray-200 rounded w-1/2"></div> </div> </div> <div class="space-y-2"> <div class="h-3 bg-gray-200 rounded w-full"></div> <div class="h-3 bg-gray-200 rounded w-full"></div> <div class="h-3 bg-gray-200 rounded w-2/3"></div> </div> </div><div class="p-5 border border-gray-100 rounded-lg space-y-4"> <div class="flex items-center space-x-3"> <div class="w-10 h-10 bg-gray-200 rounded-full"></div> <div class="flex-1 space-y-2"> <div class="h-4 bg-gray-200 rounded w-3/4"></div> <div class="h-3 bg-gray-200 rounded w-1/2"></div> </div> </div> <div class="space-y-2"> <div class="h-3 bg-gray-200 rounded w-full"></div> <div class="h-3 bg-gray-200 rounded w-full"></div> <div class="h-3 bg-gray-200 rounded w-2/3"></div> </div> </div> </div> </div> <!-- Elfsight Widget --> <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> <div id="elfsight-container" class="elfsight-app-cf03e4a7-756a-439d-a032-e2bbddef9f16" data-elfsight-app-lazy></div> </div> </div> <script type="module">const e=document.getElementById("reviews-skeleton"),t=document.getElementById("elfsight-container");if(e&&t){const s=new MutationObserver(()=>{t.children.length>0&&(e.classList.add("opacity-0","pointer-events-none"),setTimeout(()=>{e.classList.add("hidden")},500),s.disconnect())});s.observe(t,{childList:!0,subtree:!0}),setTimeout(()=>{e.classList.contains("hidden")||(e.classList.add("opacity-0","pointer-events-none"),setTimeout(()=>e.classList.add("hidden"),500))},8e3)}</script> <!-- Informasi Tambahan --> <div class="p-6 mb-12 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h2 class="flex items-center mb-6 text-xl font-semibold text-red-700"> <i data-lucide="check-circle" class="w-5 h-5 mr-2"></i>
-Mengapa Memilih Deaz Rental Mobil Banjarmasin?
-</h2> <div class="grid grid-cols-1 gap-4 md:grid-cols-2"> <div class="space-y-3"> <div class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Armada kendaraan terawat dan bersih</span> </div> <div class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Harga kompetitif dan transparan</span> </div> <div class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Layanan pelanggan yang ramah dan profesional</span> </div> </div> <div class="space-y-3"> <div class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Proses pemesanan yang mudah dan cepat</span> </div> <div class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Pilihan kendaraan yang beragam untuk berbagai kebutuhan</span> </div> <div class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Layanan antar-jemput yang nyaman</span> </div> </div> </div> </div> <!-- Testimonial Cards --> <div class="mb-12"> <h2 class="flex items-center pb-2 mb-6 text-xl font-semibold text-gray-800 border-b border-gray-200"> <i data-lucide="quote" class="w-5 h-5 mr-2 text-red-700"></i>
-Apa Kata Pelanggan Kami
-</h2> <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2"> <div class="p-5 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex items-center mb-3"> <div class="flex text-yellow-400"> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> </div> </div> <p class="mb-4 italic text-gray-600">"Pelayanan sangat memuaskan, mobil bersih dan terawat. Driver juga ramah dan profesional. Pasti akan menggunakan jasa Deaz Rental lagi."</p> <div class="flex items-center"> <div class="w-10 h-10 flex justify-center items-center mr-3 font-bold text-red-700 bg-red-100 rounded-full">R</div> <div> <div class="font-medium text-gray-800">Rudi Hartono</div> <div class="text-sm text-gray-500">Banjarmasin</div> </div> </div> </div> <div class="p-5 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex items-center mb-3"> <div class="flex text-yellow-400"> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> </div> </div> <p class="mb-4 italic text-gray-600">"Harga terjangkau dengan kualitas kendaraan yang sangat baik. Proses pemesanan juga mudah dan cepat. Sangat direkomendasikan!"</p> <div class="flex items-center"> <div class="w-10 h-10 flex justify-center items-center mr-3 font-bold text-red-700 bg-red-100 rounded-full">A</div> <div> <div class="font-medium text-gray-800">Anita Wijaya</div> <div class="text-sm text-gray-500">Banjarbaru</div> </div> </div> </div> <div class="p-5 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex items-center mb-3"> <div class="flex text-yellow-400"> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> </div> </div> <p class="mb-4 italic text-gray-600">"Saya sering menggunakan jasa Deaz Rental untuk perjalanan bisnis. Selalu tepat waktu dan pelayanan konsisten. Tim customer service sangat responsif."</p> <div class="flex items-center"> <div class="w-10 h-10 flex justify-center items-center mr-3 font-bold text-red-700 bg-red-100 rounded-full">F</div> <div> <div class="font-medium text-gray-800">Faisal Rahman</div> <div class="text-sm text-gray-500">Martapura</div> </div> </div> </div> </div> </div> <!-- Call to Action --> <div class="from-red-700 to-red-800 p-8 text-center bg-gradient-to-r rounded-lg shadow-sm"> <h2 class="mb-3 text-2xl font-bold text-white">Siap Untuk Memesan?</h2> <p class="text-opacity-90 mx-auto max-w-2xl mb-6 text-white">Bergabunglah dengan ribuan pelanggan puas kami. Dapatkan pengalaman sewa mobil terbaik di Banjarmasin sekarang juga!</p> <a href="/kontak" class="inline-flex items-center px-6 py-3 text-base font-medium text-red-700 bg-white rounded-md border border-transparent shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-700 hover:bg-gray-100"> <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
-Hubungi Kami Sekarang
-</a> </div> </main>`;
+const reviews = [
+  {
+    name: "Rudi Hartono",
+    city: "Banjarmasin",
+    role: "Perjalanan Dinas BUMN",
+    rating: 5,
+    comment:
+      "Pelayanan sangat memuaskan, unit Innova Zenix sangat bersih dan wangi. Driver juga ramah dan sangat menguasai jalan di Banjarmasin. Pasti akan sewa di Zahraffamira lagi untuk agenda kantor berikutnya.",
+  },
+  {
+    name: "Anita Wijaya",
+    city: "Banjarbaru",
+    role: "Wisata Keluarga",
+    rating: 5,
+    comment:
+      "Harga sangat terjangkau dengan kualitas unit mobil yang super terawat. Proses serah terima lepas kunci New Avanza sangat cepat dan tidak berbelit-belit. Sangat direkomendasikan!",
+  },
+  {
+    name: "H. Faisal Rahman",
+    city: "Martapura",
+    role: "Carter Rombongan Ziarah",
+    rating: 5,
+    comment:
+      "Sewa Hiace Commuter 15 seat untuk rombongan keluarga ziarah ke Sekumpul dan Datu Kalampayan. AC dingin merata sampai baris belakang, driver sabar dan santun. Sangat berkah.",
+  },
+  {
+    name: "Dr. Hendra Gunawan",
+    city: "Jakarta (Tamu Kedinasan)",
+    role: "Airport Shuttle & Kunjungan Proyek",
+    rating: 5,
+    comment:
+      "Layanan antar-jemput Bandara Syamsudin Noor sangat tepat waktu. Driver sudah standby memegang papan nama saat pesawat kami mendarat. Sangat profesional!",
+  },
+  {
+    name: "Siti Rahmah",
+    city: "Gambut",
+    role: "Acara Pernikahan (Wedding Car)",
+    rating: 5,
+    comment:
+      "Garasi Zahraffamira di Komplek Dinar Mas Gambut sangat dekat dari rumah. Mobil Fortuner yang kami sewa untuk pengantin kondisinya mengkilap dan mewah. Terima kasih banyak!",
+  },
+  {
+    name: "Bambang Sudarsono",
+    city: "Surabaya",
+    role: "Kunjungan Bisnis Tambang",
+    rating: 5,
+    comment:
+      "Sudah langganan berkali-kali setiap ke Kalsel. Kondisi Innova Reborn Diesel selalu tangguh saat menempuh perjalanan luar kota ke Rantau dan Tanjung. Adminnya fast response 24 jam.",
+  },
+];
 
-export default function Page() {
-  return <div dangerouslySetInnerHTML={{ __html: rawHtml }} />;
+export default function TestimoniPage() {
+  return (
+    <main className="pt-20 bg-[#FBFAF7] min-h-screen">
+      {/* Header */}
+      <section className="py-14 sm:py-18 bg-gradient-to-b from-[#F4EFE6] to-[#FBFAF7] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
+          <nav className="flex justify-center mb-6 text-xs sm:text-sm text-[#737373]" aria-label="Breadcrumb">
+            <ol className="flex items-center space-x-2">
+              <li>
+                <Link href="/" className="hover:text-[#B8892E] transition-colors">
+                  Beranda
+                </Link>
+              </li>
+              <li>
+                <span className="text-[#A3A3A3]">/</span>
+              </li>
+              <li className="text-[#B8892E] font-semibold">Testimoni Pelanggan</li>
+            </ol>
+          </nav>
+
+          <div className="flex items-center justify-center gap-1 text-amber-500 mb-3">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+            ))}
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#171717] tracking-tight mb-4">
+            Testimoni <span className="text-gold-gradient">Pelanggan</span>
+          </h1>
+          <p className="text-sm sm:text-base text-[#626262] max-w-2xl mx-auto leading-relaxed">
+            Pengalaman nyata dari pelanggan perorangan, keluarga, dan perusahaan yang telah mempercayakan perjalanan mereka kepada ZAHRAFFAMIRA Rental Mobil.
+          </p>
+        </div>
+      </section>
+
+      {/* Reviews Grid */}
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reviews.map((rev, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs hover:shadow-md hover:border-[#DFC88F] transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex text-amber-400">
+                      {[...Array(rev.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                    <Quote className="w-5 h-5 text-amber-200" />
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#525252] leading-relaxed italic mb-6">
+                    &ldquo;{rev.comment}&rdquo;
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-[#F0ECE1] flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-amber-100 text-[#9C721D] font-bold flex items-center justify-center text-sm shrink-0">
+                    {rev.name.charAt(0)}
+                  </div>
+                  <div>
+                    <strong className="text-sm text-[#171717] block leading-snug">
+                      {rev.name}
+                    </strong>
+                    <span className="text-[11px] text-[#737373] block">
+                      {rev.role} • {rev.city}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Box */}
+          <div className="mt-14 bg-gradient-to-r from-[#171717] to-[#2B2B2B] rounded-2xl p-8 sm:p-10 text-white text-center shadow-lg max-w-3xl mx-auto">
+            <ShieldCheck className="w-10 h-10 text-[#DFC88F] mx-auto mb-3" />
+            <h3 className="text-2xl font-bold mb-2">Siap Merasakan Layanan Terbaik Kami?</h3>
+            <p className="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto mb-6 leading-relaxed">
+              Bergabunglah dengan ribuan pelanggan puas kami di Banjarmasin, Gambut, Banjarbaru, dan Martapura. Pesan sekarang untuk mendapatkan unit favorit Anda!
+            </p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+saya+ingin+booking+mobil&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 bg-gold-gradient text-white font-bold text-sm rounded-xl inline-flex items-center gap-2 shadow-md hover:opacity-95 transition-all"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Booking via WhatsApp Sekarang
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

@@ -9,14 +9,13 @@ export const Navbar = () => {
 
   const navLinks = [
     { label: "Beranda", href: "/" },
+    { label: "Armada", href: "/armada" },
+    { label: "Gambut", href: "/rental-mobil-gambut" },
     { label: "Banjarmasin", href: "/sewa-mobil-banjarmasin" },
     { label: "Banjarbaru", href: "/sewa-mobil-banjarbaru" },
+    { label: "Martapura", href: "/rental-mobil-martapura" },
     { label: "Tentang Kami", href: "/tentang-kami" },
-    { label: "Pembayaran", href: "/pembayaran" },
-    { label: "Kerjasama", href: "/kerjasama-kemitraan" },
     { label: "Kontak", href: "/kontak" },
-    { label: "Testimoni", href: "/testimoni" },
-    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -111,8 +110,10 @@ export const Navbar = () => {
                   ? "Rental Mobil Banjarmasin"
                   : link.label === "Banjarbaru"
                   ? "Rental Mobil Banjarbaru"
-                  : link.label === "Kerjasama"
-                  ? "Kerjasama Kemitraan"
+                  : link.label === "Gambut"
+                  ? "Rental Mobil Gambut"
+                  : link.label === "Martapura"
+                  ? "Rental Mobil Martapura"
                   : link.label}
               </Link>
             ))}

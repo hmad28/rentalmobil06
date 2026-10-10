@@ -35,6 +35,16 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
+                <Link href="/armada" className="hover:text-[#DFC88F] transition-colors font-medium text-white">
+                  Daftar Armada Lengkap &raquo;
+                </Link>
+              </li>
+              <li>
+                <Link href="/rental-mobil-gambut" className="hover:text-[#DFC88F] transition-colors">
+                  Rental Mobil Gambut (Garasi Utama)
+                </Link>
+              </li>
+              <li>
                 <Link href="/sewa-mobil-banjarmasin" className="hover:text-[#DFC88F] transition-colors">
                   Rental Mobil Banjarmasin
                 </Link>
@@ -45,18 +55,18 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/rental-mobil-martapura" className="hover:text-[#DFC88F] transition-colors">
+                  Rental Mobil Martapura & Sekumpul
+                </Link>
+              </li>
+              <li>
                 <Link href="/layanan/lepas-kunci" className="hover:text-[#DFC88F] transition-colors">
                   Sewa Mobil Lepas Kunci
                 </Link>
               </li>
               <li>
                 <Link href="/layanan/antar-jemput-bandara" className="hover:text-[#DFC88F] transition-colors">
-                  Antar Jemput Bandara
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-[#DFC88F] transition-colors">
-                  Blog & Tips Wisata
+                  Antar Jemput Bandara BDJ
                 </Link>
               </li>
             </ul>

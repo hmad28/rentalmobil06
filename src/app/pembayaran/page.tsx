@@ -1,38 +1,195 @@
+import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { CreditCard, CheckCircle2, MessageCircle, HelpCircle, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Metode Pembayaran - Deaz Rental Mobil Banjarmasin",
-  description: "Informasi rekening bank resmi dan tata cara pembayaran sewa rental mobil di Deaz Rental Mobil Banjarmasin.",
+  title: "Metode Pembayaran Resmi - ZAHRAFFAMIRA Rental Mobil",
+  description:
+    "Informasi rekening bank resmi dan tata cara pembayaran sewa rental mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, & Banjarbaru. Pembayaran aman dan transparan.",
+  alternates: {
+    canonical: "https://zahraffamirarental.com/pembayaran",
+  },
 };
 
-const rawHtml = `<main class="pt-20"> <!-- Added padding for fixed navbar -->  <main class="mx-auto max-w-screen-xl px-4 my-12"> <!-- Header Section --> <div class="mb-10 text-center"> <h1 class="mb-2 text-3xl font-bold text-gray-800">Metode Pembayaran</h1> <p class="mx-auto max-w-2xl text-gray-600">Berbagai pilihan pembayaran yang mudah dan aman untuk kenyamanan Anda dalam menyewa kendaraan.</p> </div> <div class="flex flex-col gap-8 lg:flex-row"> <!-- Kolom Kiri - Daftar Metode Pembayaran --> <div class="lg:w-1/2"> <h2 class="flex items-center pb-2 mb-6 text-xl font-semibold text-gray-800 border-b border-gray-200"> <i data-lucide="credit-card" class="w-5 h-5 mr-2 text-red-700"></i>
-Rekening Bank Resmi
-</h2> <div class="space-y-4"> <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex-shrink-0 w-24 mr-4"> <img src="/images/bca_Z2ngJh5.webp" alt="BCA" loading="lazy" decoding="async" fetchpriority="auto" width="100" height="40" class="w-auto h-10 object-contain"> </div> <div> <div class="font-medium text-gray-800">0512274992</div> <div class="text-sm text-gray-500">a.n AZMIANOOR</div> </div> </div> <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex-shrink-0 w-24 mr-4"> <img src="/images/bri_LeIhN.webp" alt="BRI" loading="lazy" decoding="async" fetchpriority="auto" width="100" height="40" class="w-auto h-10 object-contain"> </div> <div> <div class="font-medium text-gray-800">000301001020564</div> <div class="text-sm text-gray-500">a.n AZMIANOOR, SH</div> </div> </div> <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex-shrink-0 w-24 mr-4"> <img src="/images/mandiri_1u4SzS.webp" alt="Mandiri" loading="lazy" decoding="async" fetchpriority="auto" width="100" height="40" class="w-auto h-10 object-contain"> </div> <div> <div class="font-medium text-gray-800">0310015777181</div> <div class="text-sm text-gray-500">a.n AZMIANOOR</div> </div> </div> <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <div class="flex-shrink-0 w-24 mr-4"> <img src="/images/bni_qViOE.webp" alt="BNI" loading="lazy" decoding="async" fetchpriority="auto" width="100" height="40" class="w-auto h-10 object-contain"> </div> <div> <div class="font-medium text-gray-800">1185485247</div> <div class="text-sm text-gray-500">a.n AZMIANOOR</div> </div> </div> </div> <!-- Proses Pembayaran --> <div class="mt-8"> <h2 class="flex items-center pb-2 mb-6 text-xl font-semibold text-gray-800 border-b border-gray-200"> <i data-lucide="clipboard-list" class="w-5 h-5 mr-2 text-red-700"></i>
-Proses Pembayaran
-</h2> <ol class="space-y-3 text-gray-700"> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">1</div> <span>Pilih kendaraan dan konfirmasi pemesanan</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">2</div> <span>Transfer ke salah satu rekening bank di atas</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">3</div> <span>Kirim bukti pembayaran melalui WhatsApp</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">4</div> <span>Tunggu konfirmasi dari tim kami</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">5</div> <span>Kendaraan siap digunakan sesuai jadwal</span> </li> </ol> </div> </div> <!-- Kolom Kanan - Informasi Tambahan dan FAQ --> <div class="lg:w-1/2"> <div class="p-6 mb-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h2 class="flex items-center mb-4 text-xl font-semibold text-red-700"> <i data-lucide="info" class="w-5 h-5 mr-2"></i>
-Kebijakan Pembayaran
-</h2> <ul class="space-y-3"> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Pembayaran harus dilunasi sebelum pengambilan kendaraan</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Deposit keamanan mungkin diperlukan untuk beberapa jenis kendaraan</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Pembatalan gratis hingga 24 jam sebelum waktu pengambilan</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Pengembalian dana akan diproses dalam 3-5 hari kerja</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span class="text-gray-700">Perpanjangan sewa dikenakan biaya sesuai tarif harian</span> </li> </ul> </div> <div class="p-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h2 class="flex items-center mb-4 text-xl font-semibold text-red-700"> <i data-lucide="help-circle" class="w-5 h-5 mr-2"></i>
-FAQ Pembayaran
-</h2> <div class="space-y-4"> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <h4 class="flex items-center mb-1 font-medium text-gray-800"> <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-red-600"></i>
-Apakah ada biaya tambahan?
-</h4> <p class="ml-6 text-gray-600">
-Semua biaya sudah termasuk dalam harga sewa, kecuali untuk layanan tambahan yang Anda pilih.
-</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <h4 class="flex items-center mb-1 font-medium text-gray-800"> <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-red-600"></i>
-Bagaimana jika saya ingin memperpanjang masa sewa?
-</h4> <p class="ml-6 text-gray-600">
-Anda dapat memperpanjang masa sewa dengan menghubungi kami dan melakukan pembayaran tambahan.
-</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <h4 class="flex items-center mb-1 font-medium text-gray-800"> <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-red-600"></i>
-Apakah saya bisa mendapatkan invoice untuk keperluan bisnis?
-</h4> <p class="ml-6 text-gray-600">
-Ya, kami dapat menyediakan invoice resmi untuk keperluan bisnis Anda.
-</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <h4 class="flex items-center mb-1 font-medium text-gray-800"> <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-red-600"></i>
-Berapa lama proses konfirmasi pembayaran?
-</h4> <p class="ml-6 text-gray-600">
-Konfirmasi pembayaran biasanya diproses dalam waktu 1-2 jam pada jam kerja.
-</p> </div> </div> </div> <!-- Call to Action --> <div class="from-red-700 to-red-800 p-6 mt-6 text-center bg-gradient-to-r rounded-lg shadow-sm"> <h3 class="mb-2 text-xl font-bold text-white">Butuh Bantuan?</h3> <p class="text-opacity-90 mb-4 text-white">Tim kami siap membantu Anda dengan pertanyaan seputar pembayaran</p> <a href="/kontak" class="inline-flex items-center px-5 py-2 text-base font-medium text-red-700 bg-white rounded-md border border-transparent shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-red-700 hover:bg-gray-100"> <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
-Hubungi Kami
-</a> </div> </div> </div> </main>`;
+const bankAccounts = [
+  {
+    bank: "BCA",
+    number: "0512274992",
+    holder: "a.n AZMIANOOR",
+    logo: "/images/bca_Z2ngJh5.webp",
+  },
+  {
+    bank: "BRI",
+    number: "000301001020564",
+    holder: "a.n AZMIANOOR, SH",
+    logo: "/images/bri_LeIhN.webp",
+  },
+  {
+    bank: "Mandiri",
+    number: "0310015777181",
+    holder: "a.n AZMIANOOR",
+    logo: "/images/mandiri_1u4SzS.webp",
+  },
+  {
+    bank: "BNI",
+    number: "1185485247",
+    holder: "a.n AZMIANOOR",
+    logo: "/images/bni_qViOE.webp",
+  },
+];
 
-export default function Page() {
-  return <div dangerouslySetInnerHTML={{ __html: rawHtml }} />;
+export default function PembayaranPage() {
+  return (
+    <main className="pt-20 bg-[#FBFAF7] min-h-screen">
+      {/* Header */}
+      <section className="py-14 sm:py-18 bg-gradient-to-b from-[#F4EFE6] to-[#FBFAF7] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
+          <nav className="flex justify-center mb-6 text-xs sm:text-sm text-[#737373]" aria-label="Breadcrumb">
+            <ol className="flex items-center space-x-2">
+              <li>
+                <Link href="/" className="hover:text-[#B8892E] transition-colors">
+                  Beranda
+                </Link>
+              </li>
+              <li>
+                <span className="text-[#A3A3A3]">/</span>
+              </li>
+              <li className="text-[#B8892E] font-semibold">Metode Pembayaran</li>
+            </ol>
+          </nav>
+
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-50 border border-amber-200 rounded-full text-xs font-semibold text-[#B8892E] uppercase tracking-wider font-cinzel mb-3">
+            <ShieldCheck className="w-3.5 h-3.5" />
+            Transaksi Resmi & Terverifikasi
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#171717] tracking-tight mb-4">
+            Metode <span className="text-gold-gradient">Pembayaran</span>
+          </h1>
+          <p className="text-sm sm:text-base text-[#626262] max-w-2xl mx-auto leading-relaxed">
+            Pilihan transaksi pembayaran yang mudah, transparan, dan aman untuk kenyamanan sewa kendaraan Anda bersama ZAHRAFFAMIRA Rental Mobil.
+          </p>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* Left: Rekening & Langkah */}
+            <div className="lg:col-span-7 space-y-8">
+              <div className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs">
+                <h2 className="text-lg font-bold text-[#171717] flex items-center gap-2 pb-4 border-b border-[#F0ECE1]">
+                  <CreditCard className="w-5 h-5 text-[#B8892E]" />
+                  Rekening Bank Resmi
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                  {bankAccounts.map((account, idx) => (
+                    <div
+                      key={idx}
+                      className="p-4 rounded-xl border border-[#E8E4DB] bg-[#FBFAF7] hover:border-[#DFC88F] transition-all flex items-center gap-4"
+                    >
+                      <div className="w-16 h-10 bg-white rounded-lg p-1.5 border border-[#E8E4DB] flex items-center justify-center shrink-0">
+                        <img
+                          src={account.logo}
+                          alt={account.bank}
+                          width={60}
+                          height={24}
+                          className="max-h-6 w-auto object-contain"
+                        />
+                      </div>
+                      <div>
+                        <strong className="text-sm text-[#171717] block font-mono tracking-wide">
+                          {account.number}
+                        </strong>
+                        <span className="text-xs text-[#737373]">{account.holder}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Langkah Pembayaran */}
+              <div className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs">
+                <h2 className="text-lg font-bold text-[#171717] pb-4 border-b border-[#F0ECE1]">
+                  Tata Cara Pembayaran
+                </h2>
+                <ol className="space-y-4 mt-6 text-xs sm:text-sm text-[#525252]">
+                  <li className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-amber-100 text-[#9C721D] font-bold flex items-center justify-center shrink-0 text-xs">
+                      1
+                    </span>
+                    <span>Pilih tipe armada dan jadwal pemakaian, lalu konfirmasi dengan admin via WhatsApp.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-amber-100 text-[#9C721D] font-bold flex items-center justify-center shrink-0 text-xs">
+                      2
+                    </span>
+                    <span>Lakukan transfer uang muka (DP) atau pelunasan ke salah satu rekening bank resmi di atas.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-amber-100 text-[#9C721D] font-bold flex items-center justify-center shrink-0 text-xs">
+                      3
+                    </span>
+                    <span>Kirim bukti transfer/resi ke nomor WhatsApp resmi kami (+62 853-4916-6234).</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-amber-100 text-[#9C721D] font-bold flex items-center justify-center shrink-0 text-xs">
+                      4
+                    </span>
+                    <span>Admin akan memverifikasi dan mengirimkan surat konfirmasi reservasi unit mobil Anda.</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            {/* Right: Kebijakan & Bantuan */}
+            <div className="lg:col-span-5 space-y-6">
+              <div className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs">
+                <h3 className="text-base font-bold text-[#171717] pb-3 border-b border-[#F0ECE1]">
+                  Kebijakan Pembayaran
+                </h3>
+                <ul className="space-y-3 mt-4 text-xs sm:text-sm text-[#525252]">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#B8892E] shrink-0 mt-0.5" />
+                    <span>Pembayaran tunai dapat dilakukan saat serah terima unit di tempat.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#B8892E] shrink-0 mt-0.5" />
+                    <span>Tersedia invoice resmi perusahaan dan kwitansi bermaterai (bila diperlukan).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#B8892E] shrink-0 mt-0.5" />
+                    <span>Pembatalan jadwal harap diinformasikan minimal 24 jam sebelum jadwal sewa.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#B8892E] shrink-0 mt-0.5" />
+                    <span>Tidak ada biaya tersembunyi yang ditambahkan di luar kesepakatan awal.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#171717] to-[#2B2B2B] text-white rounded-2xl p-6 shadow-md text-center">
+                <HelpCircle className="w-8 h-8 text-[#DFC88F] mx-auto mb-3" />
+                <h4 className="text-base font-bold mb-1">Butuh Bantuan Transaksi?</h4>
+                <p className="text-xs text-gray-300 mb-5 leading-relaxed">
+                  Hubungi admin kami 24 jam bila ada kendala transfer atau membutuhkan rekening alternatif.
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+saya+ingin+konfirmasi+pembayaran&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 bg-gold-gradient text-white font-bold text-xs rounded-xl inline-flex items-center justify-center gap-2 shadow-xs"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Konfirmasi via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

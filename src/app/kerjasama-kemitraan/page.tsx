@@ -1,37 +1,140 @@
+import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Handshake, Car, Building2, UserCheck, MessageCircle, CheckCircle2, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Kerjasama Kemitraan - Deaz Rental Mobil Banjarmasin",
-  description: "Peluang kerjasama dan kemitraan rental mobil untuk instansi, korporasi, serta pemilik kendaraan di Banjarmasin.",
+  title: "Kerjasama Kemitraan - ZAHRAFFAMIRA Rental Mobil",
+  description:
+    "Peluang kerjasama dan kemitraan sewa mobil untuk perusahaan, instansi BUMN, agen wisata, dan pemilik armada di Banjarmasin, Gambut, & Banjarbaru.",
+  alternates: {
+    canonical: "https://zahraffamirarental.com/kerjasama-kemitraan",
+  },
 };
 
-const rawHtml = `<main class="pt-20"> <!-- Added padding for fixed navbar -->  <main class="mx-auto max-w-screen-xl px-4 my-12"> <!-- Header Section --> <div class="mb-10 text-center"> <h1 class="mb-2 text-3xl font-bold text-gray-800">Bergabung Menjadi Mitra Deaz Rental</h1> <p class="mx-auto max-w-2xl text-gray-600">Tingkatkan pendapatan Anda dengan menjadi bagian dari jaringan rental mobil terpercaya di Banjarmasin.</p> </div> <div class="flex flex-col gap-8 lg:flex-row"> <!-- Kolom Kiri - Informasi Kemitraan --> <div class="lg:w-2/3"> <div class="p-6 mb-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h2 class="flex items-center mb-4 text-xl font-semibold text-red-700"> <i data-lucide="star" class="w-5 h-5 mr-2"></i>
-Mengapa Bermitra dengan Kami?
-</h2> <ul class="space-y-3 text-gray-700"> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span>Akses ke jaringan pelanggan yang luas</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span>Sistem manajemen armada yang efisien</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span>Dukungan pemasaran dan operasional</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span>Peluang pendapatan yang menjanjikan</span> </li> <li class="flex items-start"> <i data-lucide="check-circle" class="flex-shrink-0 w-5 h-5 mt-0.5 mr-2 text-red-600"></i> <span>Fleksibilitas dalam pengelolaan kendaraan</span> </li> </ul> </div> <div class="p-6 mb-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h3 class="flex items-center mb-5 text-xl font-semibold text-red-700"> <i data-lucide="users" class="w-5 h-5 mr-2"></i>
-Jenis Kemitraan
-</h3> <div class="space-y-5"> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100 transition-all hover:border-red-100"> <h4 class="flex items-center mb-2 font-semibold text-gray-800"> <i data-lucide="car" class="w-4 h-4 mr-2 text-red-600"></i>
-Mitra Pemilik Kendaraan
-</h4> <p class="ml-6 text-gray-600">
-Bergabunglah dengan armada kami dengan menyewakan kendaraan
-                                Anda melalui platform Deaz Rental.
-</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100 transition-all hover:border-red-100"> <h4 class="flex items-center mb-2 font-semibold text-gray-800"> <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-red-600"></i>
-Mitra Agen
-</h4> <p class="ml-6 text-gray-600">
-Jadilah agen resmi Deaz Rental di daerah Anda dan dapatkan
-                                komisi dari setiap transaksi.
-</p> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100 transition-all hover:border-red-100"> <h4 class="flex items-center mb-2 font-semibold text-gray-800"> <i data-lucide="building" class="w-4 h-4 mr-2 text-red-600"></i>
-Mitra Korporat
-</h4> <p class="ml-6 text-gray-600">
-Solusi khusus untuk perusahaan yang membutuhkan layanan rental
-                                kendaraan jangka panjang.
-</p> </div> </div> </div> <div class="p-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h3 class="flex items-center mb-4 text-xl font-semibold text-red-700"> <i data-lucide="clipboard-list" class="w-5 h-5 mr-2"></i>
-Cara Bergabung
-</h3> <ol class="space-y-3 text-gray-700"> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">1</div> <span>Isi formulir pendaftaran online</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">2</div> <span>Ikuti proses verifikasi dan seleksi</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">3</div> <span>Tanda tangani perjanjian kemitraan</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">4</div> <span>Ikuti pelatihan dan orientasi</span> </li> <li class="flex items-start"> <div class="flex-shrink-0 w-6 h-6 flex justify-center items-center mr-3 font-semibold text-red-700 bg-red-100 rounded-full">5</div> <span>Mulai beroperasi sebagai mitra Deaz Rental</span> </li> </ol> </div> </div> <!-- Kolom Kanan - Form Pendaftaran --> <div class="lg:w-1/3"> <div class="sticky top-24 p-6 bg-white rounded-lg border border-gray-100 shadow-sm transition-all hover:border-red-100"> <h3 class="flex items-center mb-4 text-xl font-semibold text-red-700"> <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
-Daftar Sekarang
-</h3> <!-- Netlify Form --> <form name="partnership" method="POST" data-netlify="true" action="/success-partnership" class="space-y-4"> <div> <label for="name" class="block mb-1 text-sm font-medium text-gray-700">Nama Lengkap</label> <div class="relative"> <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"> <i data-lucide="user" class="w-4 h-4 text-gray-400"></i> </div> <input type="text" id="name" name="name" class="w-full px-3 py-2 pl-10 rounded-md border border-gray-300 transition-all focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500" required> </div> </div> <div> <label for="email" class="block mb-1 text-sm font-medium text-gray-700">Email</label> <div class="relative"> <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"> <i data-lucide="mail" class="w-4 h-4 text-gray-400"></i> </div> <input type="email" id="email" name="email" class="w-full px-3 py-2 pl-10 rounded-md border border-gray-300 transition-all focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500" required> </div> </div> <div> <label for="phone" class="block mb-1 text-sm font-medium text-gray-700">Nomor Telepon</label> <div class="relative"> <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"> <i data-lucide="phone" class="w-4 h-4 text-gray-400"></i> </div> <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 pl-10 rounded-md border border-gray-300 transition-all focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500" required> </div> </div> <div> <label for="partnership_type" class="block mb-1 text-sm font-medium text-gray-700">Jenis Kemitraan</label> <div class="relative"> <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"> <i data-lucide="users" class="w-4 h-4 text-gray-400"></i> </div> <select id="partnership_type" name="partnership_type" class="w-full px-3 py-2 pl-10 rounded-md border border-gray-300 transition-all appearance-none focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500" required> <option value="">Pilih jenis kemitraan</option> <option value="vehicle_owner">Mitra Pemilik Kendaraan</option> <option value="agent">Mitra Agen</option> <option value="corporate">Mitra Korporat</option> </select> <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"> <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i> </div> </div> </div> <div> <label for="message" class="block mb-1 text-sm font-medium text-gray-700">Pesan (Opsional)</label> <div class="relative"> <div class="absolute top-3 left-3 pointer-events-none"> <i data-lucide="message-square" class="w-4 h-4 text-gray-400"></i> </div> <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 pl-10 rounded-md border border-gray-300 transition-all focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"></textarea> </div> </div> <button type="submit" class="w-full px-4 py-3 text-white bg-red-700 rounded-md transition duration-300 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 hover:bg-red-800"> <div class="flex justify-center items-center"> <i data-lucide="send" class="w-4 h-4 mr-2"></i> <span>Kirim Pendaftaran</span> </div> </button> </form> </div> </div> </div> <!-- Testimonial Section --> <div class="p-6 mt-12 bg-white rounded-lg border border-gray-100 shadow-sm"> <h2 class="flex items-center pb-2 mb-6 text-xl font-semibold text-gray-800 border-b border-gray-200"> <i data-lucide="quote" class="w-5 h-5 mr-2 text-red-700"></i>
-Testimoni Mitra Kami
-</h2> <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2"> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <div class="flex items-center mb-3"> <div class="flex text-yellow-400"> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> </div> </div> <p class="mb-3 italic text-gray-600">"Bergabung sebagai mitra pemilik kendaraan dengan Deaz Rental adalah keputusan terbaik. Pendapatan saya meningkat signifikan."</p> <div class="font-medium text-gray-800">Ahmad Rizal</div> <div class="text-sm text-gray-500">Mitra Pemilik Kendaraan</div> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <div class="flex items-center mb-3"> <div class="flex text-yellow-400"> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> </div> </div> <p class="mb-3 italic text-gray-600">"Sistem manajemen yang profesional dan dukungan tim yang luar biasa membuat kemitraan ini sangat menguntungkan."</p> <div class="font-medium text-gray-800">Siti Nurhaliza</div> <div class="text-sm text-gray-500">Mitra Agen</div> </div> <div class="p-4 bg-gray-50 rounded-lg border border-gray-100"> <div class="flex items-center mb-3"> <div class="flex text-yellow-400"> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> <i data-lucide="star" class="w-4 h-4 fill-current"></i> </div> </div> <p class="mb-3 italic text-gray-600">"Sebagai perusahaan, kami sangat puas dengan layanan kemitraan korporat Deaz Rental. Solusi yang fleksibel dan efisien."</p> <div class="font-medium text-gray-800">Budi Santoso</div> <div class="text-sm text-gray-500">Mitra Korporat</div> </div> </div> </div> </main>`;
+export default function KerjasamaPage() {
+  return (
+    <main className="pt-20 bg-[#FBFAF7] min-h-screen">
+      {/* Header */}
+      <section className="py-14 sm:py-18 bg-gradient-to-b from-[#F4EFE6] to-[#FBFAF7] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
+          <nav className="flex justify-center mb-6 text-xs sm:text-sm text-[#737373]" aria-label="Breadcrumb">
+            <ol className="flex items-center space-x-2">
+              <li>
+                <Link href="/" className="hover:text-[#B8892E] transition-colors">
+                  Beranda
+                </Link>
+              </li>
+              <li>
+                <span className="text-[#A3A3A3]">/</span>
+              </li>
+              <li className="text-[#B8892E] font-semibold">Kerjasama Kemitraan</li>
+            </ol>
+          </nav>
 
-export default function Page() {
-  return <div dangerouslySetInnerHTML={{ __html: rawHtml }} />;
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-50 border border-amber-200 rounded-full text-xs font-semibold text-[#B8892E] uppercase tracking-wider font-cinzel mb-3">
+            <Handshake className="w-3.5 h-3.5" />
+            Partnership & Corporate Solution
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#171717] tracking-tight mb-4">
+            Bermitra dengan <span className="text-gold-gradient">ZAHRAFFAMIRA</span>
+          </h1>
+          <p className="text-sm sm:text-base text-[#626262] max-w-2xl mx-auto leading-relaxed">
+            Solusi transportasi terintegrasi untuk kebutuhan korporasi, kontrak sewa bulanan instansi pemerintah, travel pariwisata, hingga titip kelola unit kendaraan di Kalimantan Selatan.
+          </p>
+        </div>
+      </section>
+
+      {/* Program Kemitraan */}
+      <section className="py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs hover:border-[#DFC88F] transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
+                  <Building2 className="w-6 h-6" />
+                </div>
+                <h3 className="text-lg font-bold text-[#171717] mb-2">Sewa Korporat & Instansi</h3>
+                <p className="text-xs sm:text-sm text-[#626262] leading-relaxed mb-4">
+                  Penyediaan kendaraan operasional bulanan/tahunan untuk perusahaan BUMN, perbankan, instansi dinas, kontraktor tambang, dan perkebunan dengan invoice resmi & unit backup.
+                </p>
+              </div>
+              <ul className="space-y-2 text-xs text-[#525252] pt-4 border-t border-[#F0ECE1]">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B8892E]" />
+                  <span>Kontrak fleksibel bulanan / tahunan</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B8892E]" />
+                  <span>Faktur pajak & invoice resmi</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs hover:border-[#DFC88F] transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
+                  <Car className="w-6 h-6" />
+                </div>
+                <h3 className="text-lg font-bold text-[#171717] mb-2">Mitra Pemilik Armada (Titip Unit)</h3>
+                <p className="text-xs sm:text-sm text-[#626262] leading-relaxed mb-4">
+                  Optimalkan kendaraan Anda yang jarang terpakai (Avanza, Innova, Hiace, Fortuner) dengan sistem bagi hasil transparan, manajemen perawatan, dan sistem proteksi keamanan.
+                </p>
+              </div>
+              <ul className="space-y-2 text-xs text-[#525252] pt-4 border-t border-[#F0ECE1]">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B8892E]" />
+                  <span>Bagi hasil menguntungkan & tepat waktu</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B8892E]" />
+                  <span>Unit dipantau GPS & dirawat berkala</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-[#E8E4DB] p-6 shadow-xs hover:border-[#DFC88F] transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
+                  <UserCheck className="w-6 h-6" />
+                </div>
+                <h3 className="text-lg font-bold text-[#171717] mb-2">Mitra Agen Wisata & Travel</h3>
+                <p className="text-xs sm:text-sm text-[#626262] leading-relaxed mb-4">
+                  Kerja sama penyediaan armada pariwisata (Hiace Commuter 15 seat, Hiace Premio VIP) untuk tour operator luar kota yang membawa rombongan ke Kalimantan Selatan.
+                </p>
+              </div>
+              <ul className="space-y-2 text-xs text-[#525252] pt-4 border-t border-[#F0ECE1]">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B8892E]" />
+                  <span>Komisi agen & rate B2B spesial</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#B8892E]" />
+                  <span>Driver ramah standar tour guide</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* CTA Box */}
+          <div className="mt-14 bg-gradient-to-r from-[#171717] to-[#2B2B2B] rounded-2xl p-8 sm:p-10 text-white text-center shadow-lg max-w-3xl mx-auto">
+            <ShieldCheck className="w-10 h-10 text-[#DFC88F] mx-auto mb-3" />
+            <h3 className="text-2xl font-bold mb-2">Diskusikan Kemitraan Bersama Kami</h3>
+            <p className="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto mb-6 leading-relaxed">
+              Tim manajemen Zahraffamira siap menyusun proposal penawaran khusus sesuai spesifikasi armada dan kebutuhan anggaran instansi Anda.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=6285349166234&text=Halo+ZAHRAFFAMIRA+saya+tertarik+kerjasama+kemitraan&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 bg-gold-gradient text-white font-bold text-sm rounded-xl inline-flex items-center gap-2 shadow-md hover:opacity-95 transition-all"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Konsultasi Kemitraan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

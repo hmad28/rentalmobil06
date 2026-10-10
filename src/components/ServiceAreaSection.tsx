@@ -3,10 +3,12 @@ import Link from "next/link";
 
 export const ServiceAreaSection = () => {
   const areas = [
+    { label: "Rental Mobil Gambut (Garasi)", href: "/rental-mobil-gambut" },
     { label: "Rental Mobil Banjarmasin", href: "/sewa-mobil-banjarmasin" },
     { label: "Rental Mobil Banjarbaru", href: "/sewa-mobil-banjarbaru" },
+    { label: "Rental Mobil Martapura", href: "/rental-mobil-martapura" },
     { label: "Sewa Mobil Lepas Kunci", href: "/layanan/lepas-kunci" },
-    { label: "Antar Jemput Bandara", href: "/layanan/antar-jemput-bandara" },
+    { label: "Antar Jemput Bandara BDJ", href: "/layanan/antar-jemput-bandara" },
   ];
 
   return (
