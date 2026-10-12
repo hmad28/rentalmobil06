@@ -35,15 +35,15 @@ export const Hero = () => {
 
           {/* Heading */}
           <h1 className="font-manrope text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-extrabold text-[#171717] leading-[1.2] sm:leading-[1.18] tracking-tight mb-4 sm:mb-5">
-            Rental Mobil Banjarmasin{" "}
+            Rental Mobil Banjarmasin,{" "}
             <span className="text-[#B8892E] block mt-1 sm:mt-1.5">
-              Nyaman untuk Setiap Perjalanan.
+              Gambut & Kertak Hanyar
             </span>
           </h1>
 
           {/* Description */}
           <p className="font-manrope text-base sm:text-lg text-[#626262] leading-relaxed mb-6 sm:mb-8 max-w-lg">
-            Pilihan armada nyaman dan terawat untuk perjalanan keluarga, bisnis, wisata, hingga rombongan.
+            Sewa mobil terpercaya di Kertak Hanyar, Gambut, Banjarmasin, dan Kabupaten Banjar. Pilihan armada Avanza, Innova, Hiace, hingga Fortuner siap lepas kunci maupun supir profesional 24 jam.
           </p>
 
           {/* Buttons: Full width with 12px gap on mobile, inline on sm+ */}

@@ -27,7 +27,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/rental-mobil-kertak-hanyar`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/rental-mobil-gambut`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rental-mobil-banjarmasin`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,

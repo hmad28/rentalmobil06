@@ -123,6 +123,14 @@ export default function SewaMobilBanjarmasinPage() {
               <li>
                 <span className="text-[#A3A3A3]">/</span>
               </li>
+              <li>
+                <Link href="/#area-layanan" className="hover:text-[#B8892E] transition-colors">
+                  Area Layanan
+                </Link>
+              </li>
+              <li>
+                <span className="text-[#A3A3A3]">/</span>
+              </li>
               <li className="text-[#B8892E] font-semibold">Sewa Mobil Banjarmasin</li>
             </ol>
           </nav>
@@ -317,6 +325,46 @@ export default function SewaMobilBanjarmasinPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hub Internal Links */}
+      <section className="py-10 bg-[#FBF9F5] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+          <div className="text-center mb-6">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#B8892E] font-cinzel">
+              Area Layanan Kami Lainnya
+            </h4>
+            <p className="text-xs sm:text-sm text-[#626262] mt-1">
+              Kami juga melayani seluruh wilayah sekitar Kota Banjarmasin:
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
+            <Link
+              href="/rental-mobil-kertak-hanyar"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Kertak Hanyar &raquo;
+            </Link>
+            <Link
+              href="/rental-mobil-gambut"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Gambut (Garasi) &raquo;
+            </Link>
+            <Link
+              href="/sewa-mobil-banjarbaru"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Banjarbaru &raquo;
+            </Link>
+            <Link
+              href="/rental-mobil-martapura"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Martapura &raquo;
+            </Link>
           </div>
         </div>
       </section>

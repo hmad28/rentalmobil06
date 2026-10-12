@@ -21,8 +21,10 @@ export const Footer = () => {
               />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Solusi terbaik untuk <span className="font-bold text-white">Rental Mobil Banjarmasin</span> dan{" "}
-              <span className="font-bold text-white">Banjarbaru</span>. Kami menyediakan armada
+              Solusi terbaik untuk <span className="font-bold text-white">Rental Mobil Kertak Hanyar</span>,{" "}
+              <span className="font-bold text-white">Gambut</span>,{" "}
+              <span className="font-bold text-white">Banjarmasin</span>, dan{" "}
+              <span className="font-bold text-white">Kabupaten Banjar</span>. Kami menyediakan armada
               pilihan dengan kondisi prima dan pelayanan driver profesional untuk menemani perjalanan
               bisnis dan wisata Anda di Kalimantan Selatan.
             </p>
@@ -40,12 +42,17 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/rental-mobil-kertak-hanyar" className="hover:text-[#DFC88F] transition-colors">
+                  Rental Mobil Kertak Hanyar
+                </Link>
+              </li>
+              <li>
                 <Link href="/rental-mobil-gambut" className="hover:text-[#DFC88F] transition-colors">
                   Rental Mobil Gambut (Garasi Utama)
                 </Link>
               </li>
               <li>
-                <Link href="/sewa-mobil-banjarmasin" className="hover:text-[#DFC88F] transition-colors">
+                <Link href="/rental-mobil-banjarmasin" className="hover:text-[#DFC88F] transition-colors">
                   Rental Mobil Banjarmasin
                 </Link>
               </li>
@@ -79,7 +86,7 @@ export const Footer = () => {
             </h3>
             <p className="mb-3 text-sm flex items-start gap-2 text-gray-300">
               <MapPin className="w-4 h-4 mt-1 text-[#DFC88F] shrink-0" />
-              <span>Banjarmasin & Banjarbaru, Kalimantan Selatan</span>
+              <span>Komplek Dinar Mas 2 Blok AB No. 13 D, Gambut, Kab. Banjar (Melayani Kertak Hanyar, Gambut, Banjarmasin)</span>
             </p>
             <p className="mb-3 text-sm flex items-center gap-2 text-gray-300">
               <Phone className="w-4 h-4 text-[#DFC88F] shrink-0" />

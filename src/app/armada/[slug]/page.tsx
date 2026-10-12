@@ -444,6 +444,47 @@ export default async function CarDetailPage({ params }: CarDetailProps) {
           </div>
         </div>
       </section>
+
+      {/* Service Area Availability */}
+      <section className="py-8 bg-white border-t border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl text-center">
+          <p className="text-xs sm:text-sm font-semibold text-[#171717] mb-3">
+            Unit {car.title} siap diantar cepat ke area layanan:
+          </p>
+          <div className="flex flex-wrap justify-center gap-2 text-xs">
+            <Link
+              href="/rental-mobil-kertak-hanyar"
+              className="px-3 py-1.5 bg-[#FBFAF7] border border-[#E8E4DB] rounded-full text-[#404040] hover:text-[#B8892E] hover:border-[#DFC88F] transition-colors"
+            >
+              📍 Kertak Hanyar & CitraLand
+            </Link>
+            <Link
+              href="/rental-mobil-gambut"
+              className="px-3 py-1.5 bg-[#FBFAF7] border border-[#E8E4DB] rounded-full text-[#404040] hover:text-[#B8892E] hover:border-[#DFC88F] transition-colors"
+            >
+              📍 Gambut (Pool Utama)
+            </Link>
+            <Link
+              href="/rental-mobil-banjarmasin"
+              className="px-3 py-1.5 bg-[#FBFAF7] border border-[#E8E4DB] rounded-full text-[#404040] hover:text-[#B8892E] hover:border-[#DFC88F] transition-colors"
+            >
+              📍 Kota Banjarmasin
+            </Link>
+            <Link
+              href="/sewa-mobil-banjarbaru"
+              className="px-3 py-1.5 bg-[#FBFAF7] border border-[#E8E4DB] rounded-full text-[#404040] hover:text-[#B8892E] hover:border-[#DFC88F] transition-colors"
+            >
+              📍 Banjarbaru & Bandara BDJ
+            </Link>
+            <Link
+              href="/rental-mobil-martapura"
+              className="px-3 py-1.5 bg-[#FBFAF7] border border-[#E8E4DB] rounded-full text-[#404040] hover:text-[#B8892E] hover:border-[#DFC88F] transition-colors"
+            >
+              📍 Martapura & Sekumpul
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

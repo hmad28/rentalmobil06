@@ -56,6 +56,8 @@ export default function RentalMobilGambutPage() {
     "url": "https://zahraffamirarental.com/rental-mobil-gambut",
     "telephone": "+6285349166234",
     "priceRange": "$$",
+    "currenciesAccepted": "IDR",
+    "paymentAccepted": "Cash, Transfer Bank",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Komplek Dinar Mas 2 Blok AB No. 13 D, Kayu Bawang",
@@ -80,10 +82,17 @@ export default function RentalMobilGambutPage() {
     ],
     "areaServed": [
       { "@type": "AdministrativeArea", "name": "Kecamatan Gambut" },
+      { "@type": "AdministrativeArea", "name": "Kabupaten Banjar" },
       { "@type": "AdministrativeArea", "name": "Kayu Bawang" },
       { "@type": "AdministrativeArea", "name": "Liang Anggang" },
       { "@type": "AdministrativeArea", "name": "Kota Citra Graha" },
       { "@type": "Place", "name": "Jalan A. Yani KM 12 - 17" },
+    ],
+    "sameAs": [
+      "https://www.instagram.com/sewa_haice_commuter_gambut_bjm",
+      "https://www.tiktok.com/@sewa_haice_commut",
+      "https://www.facebook.com/share/1JpX3qfg3T/",
+      "https://maps.app.goo.gl/yC66naVpd1xchSg1A",
     ],
   };
 
@@ -125,6 +134,14 @@ export default function RentalMobilGambutPage() {
               <li>
                 <Link href="/" className="hover:text-[#B8892E] transition-colors">
                   Beranda
+                </Link>
+              </li>
+              <li>
+                <span className="text-[#A3A3A3]">/</span>
+              </li>
+              <li>
+                <Link href="/#area-layanan" className="hover:text-[#B8892E] transition-colors">
+                  Area Layanan
                 </Link>
               </li>
               <li>
@@ -357,6 +374,46 @@ export default function RentalMobilGambutPage() {
                 ✓ {area}
               </span>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hub Internal Links */}
+      <section className="py-10 bg-[#FBF9F5] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+          <div className="text-center mb-6">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#B8892E] font-cinzel">
+              Jangkauan Layanan Terdekat
+            </h4>
+            <p className="text-xs sm:text-sm text-[#626262] mt-1">
+              Selain Gambut, armada kami juga siap diantar cepat ke area sekitar:
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
+            <Link
+              href="/rental-mobil-kertak-hanyar"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Kertak Hanyar &raquo;
+            </Link>
+            <Link
+              href="/rental-mobil-banjarmasin"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Banjarmasin &raquo;
+            </Link>
+            <Link
+              href="/sewa-mobil-banjarbaru"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Banjarbaru &raquo;
+            </Link>
+            <Link
+              href="/rental-mobil-martapura"
+              className="p-3 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all"
+            >
+              Rental Mobil Martapura &raquo;
+            </Link>
           </div>
         </div>
       </section>

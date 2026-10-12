@@ -10,8 +10,9 @@ export const Navbar = () => {
   const navLinks = [
     { label: "Beranda", href: "/" },
     { label: "Armada", href: "/armada" },
+    { label: "Kertak Hanyar", href: "/rental-mobil-kertak-hanyar" },
     { label: "Gambut", href: "/rental-mobil-gambut" },
-    { label: "Banjarmasin", href: "/sewa-mobil-banjarmasin" },
+    { label: "Banjarmasin", href: "/rental-mobil-banjarmasin" },
     { label: "Banjarbaru", href: "/sewa-mobil-banjarbaru" },
     { label: "Martapura", href: "/rental-mobil-martapura" },
     { label: "Tentang Kami", href: "/tentang-kami" },
@@ -37,11 +38,11 @@ export const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex lg:gap-7 items-center" aria-label="Global">
+          <nav className="hidden lg:flex lg:gap-4 xl:gap-6 items-center" aria-label="Global">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                className="text-sm font-medium text-[#171717] transition-colors hover:text-[#B8892E]"
+                className="text-xs xl:text-sm font-medium text-[#171717] transition-colors hover:text-[#B8892E] whitespace-nowrap"
                 href={link.href}
               >
                 {link.label}

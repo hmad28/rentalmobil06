@@ -24,16 +24,20 @@ const cinzel = Cinzel({
 export const metadata: Metadata = {
   metadataBase: new URL("https://zahraffamirarental.com"),
   title: {
-    default: "ZAHRAFFAMIRA - Rental Mobil Banjarmasin, Gambut & Banjarbaru 24 Jam",
+    default: "ZAHRAFFAMIRA - Rental Mobil Kertak Hanyar, Gambut & Banjarmasin",
     template: "%s | ZAHRAFFAMIRA Rental Mobil",
   },
   description:
-    "Zahraffamira Rental Mobil melayani sewa mobil Banjarmasin, Gambut, Banjarbaru & Martapura. Pilihan armada Avanza, Innova Reborn, Zenix, Fortuner, Alphard, Hiace Commuter & Premio. Lepas kunci & dengan driver 24 jam.",
+    "ZAHRAFFAMIRA Rental Mobil melayani sewa dan rental mobil di Kertak Hanyar, Gambut, Banjarmasin, dan Kabupaten Banjar. Unit Avanza, Innova, Hiace, Fortuner, Alphard siap lepas kunci atau supir 24 jam.",
   keywords: [
-    "rental mobil banjarmasin",
-    "sewa mobil banjarmasin",
+    "rental mobil kertak hanyar",
+    "sewa mobil kertak hanyar",
     "rental mobil gambut",
     "sewa mobil gambut",
+    "rental mobil banjarmasin",
+    "sewa mobil banjarmasin",
+    "rental mobil banjar",
+    "rental mobil kabupaten banjar",
     "rental mobil banjarbaru",
     "sewa mobil banjarbaru",
     "rental mobil martapura",
@@ -82,9 +86,9 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
-    title: "ZAHRAFFAMIRA - Rental Mobil Banjarmasin, Gambut & Banjarbaru 24 Jam",
+    title: "ZAHRAFFAMIRA - Rental Mobil Kertak Hanyar, Gambut & Banjarmasin 24 Jam",
     description:
-      "Pilihan rental mobil terlengkap di Banjarmasin & Banjarbaru: Avanza, Innova Zenix/Reborn, Fortuner, Alphard, hingga Hiace Commuter & Premio. Hubungi kami 24 jam via WhatsApp.",
+      "Rental & sewa mobil terbaik di Kertak Hanyar, Gambut, Banjarmasin, dan Kabupaten Banjar. Avanza, Innova, Hiace, Fortuner, Alphard siap lepas kunci / supir 24 jam.",
     url: "https://zahraffamirarental.com",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
@@ -94,15 +98,15 @@ export const metadata: Metadata = {
         url: "/images/pelayanan-zahraffa.jpeg",
         width: 1200,
         height: 630,
-        alt: "ZAHRAFFAMIRA Rental Mobil Banjarmasin Kalimantan Selatan",
+        alt: "ZAHRAFFAMIRA Rental Mobil Kertak Hanyar Gambut Banjarmasin",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZAHRAFFAMIRA - Rental Mobil Banjarmasin, Gambut & Banjarbaru 24 Jam",
+    title: "ZAHRAFFAMIRA - Rental Mobil Kertak Hanyar, Gambut & Banjarmasin 24 Jam",
     description:
-      "Rental mobil terpercaya di Banjarmasin, Gambut & Banjarbaru. Unit prima Avanza, Innova, Fortuner, Alphard, Hiace. Layanan 24 Jam.",
+      "Rental mobil terpercaya di Kertak Hanyar, Gambut, Banjarmasin & Kabupaten Banjar. Unit prima Avanza, Innova, Fortuner, Alphard, Hiace. Layanan 24 Jam.",
     images: ["/images/pelayanan-zahraffa.jpeg"],
   },
   robots: {
@@ -127,8 +131,9 @@ const globalJsonLd = {
       "name": "ZAHRAFFAMIRA Rental Mobil",
       "alternateName": [
         "Home Zahraffa Rental Mobil",
-        "Zahraffamira Rental Mobil Banjarmasin",
+        "Zahraffamira Rental Mobil Kertak Hanyar",
         "Rental Mobil Gambut Zahraffamira",
+        "Zahraffamira Rental Mobil Banjarmasin",
         "Sewa Hiace Banjarmasin Zahraffamira",
       ],
       "url": "https://zahraffamirarental.com",
@@ -175,9 +180,11 @@ const globalJsonLd = {
         },
       ],
       "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Kertak Hanyar, Kabupaten Banjar" },
+        { "@type": "AdministrativeArea", "name": "Gambut, Kabupaten Banjar" },
+        { "@type": "AdministrativeArea", "name": "Kabupaten Banjar" },
         { "@type": "City", "name": "Banjarmasin" },
         { "@type": "City", "name": "Banjarbaru" },
-        { "@type": "AdministrativeArea", "name": "Gambut, Kabupaten Banjar" },
         { "@type": "City", "name": "Martapura" },
         { "@type": "Place", "name": "Bandara Internasional Syamsudin Noor (BDJ)" },
         { "@type": "AdministrativeArea", "name": "Kalimantan Selatan" },

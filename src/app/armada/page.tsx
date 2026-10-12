@@ -205,6 +205,61 @@ export default function ArmadaPage() {
         </div>
       </section>
 
+      {/* Area Layanan Antar Armada */}
+      <section className="py-12 bg-[#FBF9F5] border-b border-[#E8E4DB]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase font-cinzel bg-amber-50 text-[#B8892E] border border-amber-200 mb-2">
+              Layanan Antar Unit Cepat
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#171717] tracking-tight">
+              Siap Diantar ke Area Domisili Anda
+            </h2>
+            <p className="text-xs sm:text-sm text-[#626262] mt-2">
+              Seluruh armada di atas siap diantar langsung ke lobi hotel, rumah, perumahan, kantor, atau Bandara Syamsudin Noor di wilayah:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 text-center text-xs">
+            <Link
+              href="/rental-mobil-kertak-hanyar"
+              className="p-4 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all flex flex-col items-center justify-center gap-1 group shadow-2xs"
+            >
+              <span className="text-xs font-bold group-hover:text-[#B8892E]">Kertak Hanyar</span>
+              <span className="text-[10px] text-[#737373]">CitraLand & Km 7-11</span>
+            </Link>
+            <Link
+              href="/rental-mobil-gambut"
+              className="p-4 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all flex flex-col items-center justify-center gap-1 group shadow-2xs"
+            >
+              <span className="text-xs font-bold group-hover:text-[#B8892E]">Gambut (Pool)</span>
+              <span className="text-[10px] text-[#737373]">Garasi Utama Km 13</span>
+            </Link>
+            <Link
+              href="/rental-mobil-banjarmasin"
+              className="p-4 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all flex flex-col items-center justify-center gap-1 group shadow-2xs"
+            >
+              <span className="text-xs font-bold group-hover:text-[#B8892E]">Banjarmasin</span>
+              <span className="text-[10px] text-[#737373]">Pusat Kota & Hotel</span>
+            </Link>
+            <Link
+              href="/sewa-mobil-banjarbaru"
+              className="p-4 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all flex flex-col items-center justify-center gap-1 group shadow-2xs"
+            >
+              <span className="text-xs font-bold group-hover:text-[#B8892E]">Banjarbaru</span>
+              <span className="text-[10px] text-[#737373]">Bandara BDJ & Pemprov</span>
+            </Link>
+            <Link
+              href="/rental-mobil-martapura"
+              className="p-4 bg-white rounded-xl border border-[#E8E4DB] hover:border-[#DFC88F] text-[#171717] font-semibold hover:text-[#B8892E] transition-all flex flex-col items-center justify-center gap-1 group shadow-2xs"
+            >
+              <span className="text-xs font-bold group-hover:text-[#B8892E]">Martapura</span>
+              <span className="text-[10px] text-[#737373]">Kubah Sekumpul & CBS</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <FaqSection
         title="FAQ Seputar Armada Zahraffamira"
