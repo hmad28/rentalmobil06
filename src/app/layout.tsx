@@ -22,7 +22,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zahraffamirarental.com"),
+  metadataBase: new URL("https://www.zahraffamirarental.com"),
   title: {
     default: "ZAHRAFFAMIRA - Rental Mobil Kertak Hanyar, Gambut & Banjarmasin",
     template: "%s | ZAHRAFFAMIRA Rental Mobil",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     "carter mobil banjarmasin",
     "zahraffamira rental mobil",
   ],
-  authors: [{ name: "ZAHRAFFAMIRA Rental Mobil", url: "https://zahraffamirarental.com" }],
+  authors: [{ name: "ZAHRAFFAMIRA Rental Mobil", url: "https://www.zahraffamirarental.com" }],
   creator: "ZAHRAFFAMIRA Rental Mobil",
   publisher: "ZAHRAFFAMIRA Rental Mobil",
   formatDetection: {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     address: true,
   },
   alternates: {
-    canonical: "https://zahraffamirarental.com",
+    canonical: "https://www.zahraffamirarental.com",
   },
   icons: {
     icon: [
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     title: "ZAHRAFFAMIRA - Rental Mobil Kertak Hanyar, Gambut & Banjarmasin 24 Jam",
     description:
       "Rental & sewa mobil terbaik di Kertak Hanyar, Gambut, Banjarmasin, dan Kabupaten Banjar. Avanza, Innova, Hiace, Fortuner, Alphard siap lepas kunci / supir 24 jam.",
-    url: "https://zahraffamirarental.com",
+    url: "https://www.zahraffamirarental.com",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -121,7 +121,7 @@ const globalJsonLd = {
   "@graph": [
     {
       "@type": ["AutoRental", "LocalBusiness"],
-      "@id": "https://zahraffamirarental.com/#business",
+      "@id": "https://www.zahraffamirarental.com/#business",
       "name": "ZAHRAFFAMIRA Rental Mobil",
       "alternateName": [
         "Home Zahraffa Rental Mobil",
@@ -130,13 +130,13 @@ const globalJsonLd = {
         "Zahraffamira Rental Mobil Banjarmasin",
         "Sewa Hiace Banjarmasin Zahraffamira",
       ],
-      "url": "https://zahraffamirarental.com",
-      "logo": "https://zahraffamirarental.com/images/logo-cropped.png",
+      "url": "https://www.zahraffamirarental.com",
+      "logo": "https://www.zahraffamirarental.com/images/logo-cropped.png",
       "image": [
-        "https://zahraffamirarental.com/images/pelayanan-zahraffa.jpeg",
-        "https://zahraffamirarental.com/images/lineup-armada-pascasarjana.jpeg",
-        "https://zahraffamirarental.com/images/hiace-ready.jpeg",
-        "https://zahraffamirarental.com/images/logo-cropped.png",
+        "https://www.zahraffamirarental.com/images/pelayanan-zahraffa.jpeg",
+        "https://www.zahraffamirarental.com/images/lineup-armada-pascasarjana.jpeg",
+        "https://www.zahraffamirarental.com/images/hiace-ready.jpeg",
+        "https://www.zahraffamirarental.com/images/logo-cropped.png",
       ],
       "telephone": "+6285349166234",
       "email": "info@zahraffamirarental.com",
@@ -192,10 +192,10 @@ const globalJsonLd = {
     },
     {
       "@type": "Organization",
-      "@id": "https://zahraffamirarental.com/#organization",
+      "@id": "https://www.zahraffamirarental.com/#organization",
       "name": "ZAHRAFFAMIRA Rental Mobil",
-      "url": "https://zahraffamirarental.com",
-      "logo": "https://zahraffamirarental.com/images/logo-cropped.png",
+      "url": "https://www.zahraffamirarental.com",
+      "logo": "https://www.zahraffamirarental.com/images/logo-cropped.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+6285349166234",
@@ -211,11 +211,11 @@ const globalJsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://zahraffamirarental.com/#website",
-      "url": "https://zahraffamirarental.com",
+      "@id": "https://www.zahraffamirarental.com/#website",
+      "url": "https://www.zahraffamirarental.com",
       "name": "ZAHRAFFAMIRA Rental Mobil",
       "publisher": {
-        "@id": "https://zahraffamirarental.com/#organization",
+        "@id": "https://www.zahraffamirarental.com/#organization",
       },
       "inLanguage": "id-ID",
     },

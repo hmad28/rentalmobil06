@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "carter mobil bandara banjarmasin",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/layanan/antar-jemput-bandara",
+    canonical: "https://www.zahraffamirarental.com/layanan/antar-jemput-bandara",
   },
 };
 

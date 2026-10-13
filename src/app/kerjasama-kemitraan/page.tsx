@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Peluang kerjasama dan kemitraan sewa mobil untuk perusahaan, instansi BUMN, agen wisata, dan pemilik armada di Banjarmasin, Gambut, & Banjarbaru.",
   alternates: {
-    canonical: "https://zahraffamirarental.com/kerjasama-kemitraan",
+    canonical: "https://www.zahraffamirarental.com/kerjasama-kemitraan",
   },
 };
 

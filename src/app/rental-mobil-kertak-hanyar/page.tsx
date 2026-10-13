@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     "carter mobil kertak hanyar",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/rental-mobil-kertak-hanyar",
+    canonical: "https://www.zahraffamirarental.com/rental-mobil-kertak-hanyar",
   },
   openGraph: {
     title: "Rental Mobil Kertak Hanyar Murah & Sewa Mobil 24 Jam - ZAHRAFFAMIRA",
     description:
       "Layanan sewa dan rental mobil di Kertak Hanyar, Kabupaten Banjar. Antar unit cepat ke CitraLand, Manarap, & Aston Banua. Avanza, Innova, Hiace, Fortuner 24 Jam.",
-    url: "https://zahraffamirarental.com/rental-mobil-kertak-hanyar",
+    url: "https://www.zahraffamirarental.com/rental-mobil-kertak-hanyar",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -58,14 +58,14 @@ export default function RentalMobilKertakHanyarPage() {
   const kertakHanyarSchema = {
     "@context": "https://schema.org",
     "@type": ["AutoRental", "LocalBusiness"],
-    "@id": "https://zahraffamirarental.com/rental-mobil-kertak-hanyar#business",
+    "@id": "https://www.zahraffamirarental.com/rental-mobil-kertak-hanyar#business",
     "name": "ZAHRAFFAMIRA Rental Mobil Kertak Hanyar",
     "alternateName": [
       "Sewa Mobil Kertak Hanyar",
       "Rental Mobil CitraLand Banjarmasin Zahraffamira",
       "Home Zahraffa Rental Mobil Kertak Hanyar",
     ],
-    "url": "https://zahraffamirarental.com/rental-mobil-kertak-hanyar",
+    "url": "https://www.zahraffamirarental.com/rental-mobil-kertak-hanyar",
     "telephone": "+6285349166234",
     "priceRange": "$$",
     "currenciesAccepted": "IDR",

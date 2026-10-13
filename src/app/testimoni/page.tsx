@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Ulasan dan pengalaman nyata pelanggan yang menyewa mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, Banjarbaru, & Martapura. Pelayanan memuaskan dan armada prima.",
   alternates: {
-    canonical: "https://zahraffamirarental.com/testimoni",
+    canonical: "https://www.zahraffamirarental.com/testimoni",
   },
 };
 

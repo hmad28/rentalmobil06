@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "daftar harga rental mobil banjarmasin",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/armada",
+    canonical: "https://www.zahraffamirarental.com/armada",
   },
 };
 
@@ -36,8 +36,8 @@ export default function ArmadaPage() {
       "item": {
         "@type": "Car",
         "name": car.fullName,
-        "image": `https://zahraffamirarental.com${car.img}`,
-        "url": `https://zahraffamirarental.com/armada/${car.id}`,
+        "image": `https://www.zahraffamirarental.com${car.img}`,
+        "url": `https://www.zahraffamirarental.com/armada/${car.id}`,
         "description": car.description,
         "numberOfSeats": car.seats,
         "offers": {

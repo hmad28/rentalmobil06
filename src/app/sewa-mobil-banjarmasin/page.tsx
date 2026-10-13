@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     "sewa mobil pasar terapung banjarmasin",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/sewa-mobil-banjarmasin",
+    canonical: "https://www.zahraffamirarental.com/sewa-mobil-banjarmasin",
   },
   openGraph: {
     title: "Rental & Sewa Mobil Banjarmasin Murah ✅ Lepas Kunci 24 Jam",
     description:
       "Rental mobil terlengkap di Kota Banjarmasin. Unit bersih, wangi, kondisi prima. Tersedia lepas kunci atau dengan driver.",
-    url: "https://zahraffamirarental.com/sewa-mobil-banjarmasin",
+    url: "https://www.zahraffamirarental.com/sewa-mobil-banjarmasin",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -50,9 +50,9 @@ export default function SewaMobilBanjarmasinPage() {
   const banjarmasinSchema = {
     "@context": "https://schema.org",
     "@type": ["AutoRental", "LocalBusiness"],
-    "@id": "https://zahraffamirarental.com/sewa-mobil-banjarmasin#business",
+    "@id": "https://www.zahraffamirarental.com/sewa-mobil-banjarmasin#business",
     "name": "ZAHRAFFAMIRA Rental Mobil Banjarmasin",
-    "url": "https://zahraffamirarental.com/sewa-mobil-banjarmasin",
+    "url": "https://www.zahraffamirarental.com/sewa-mobil-banjarmasin",
     "telephone": "+6285349166234",
     "priceRange": "$$",
     "address": {

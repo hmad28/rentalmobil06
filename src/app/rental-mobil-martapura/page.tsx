@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     "rental mobil tahura sultan adam",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/rental-mobil-martapura",
+    canonical: "https://www.zahraffamirarental.com/rental-mobil-martapura",
   },
   openGraph: {
     title: "Rental Mobil Martapura & Sewa Hiace Ziarah Sekumpul - ZAHRAFFAMIRA",
     description:
       "Sewa mobil dan carter Hiace di Martapura. Cocok untuk ziarah Sekumpul, wisata religi, dan perjalanan dinas di Kabupaten Banjar.",
-    url: "https://zahraffamirarental.com/rental-mobil-martapura",
+    url: "https://www.zahraffamirarental.com/rental-mobil-martapura",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -47,9 +47,9 @@ export default function RentalMobilMartapuraPage() {
   const martapuraSchema = {
     "@context": "https://schema.org",
     "@type": ["AutoRental", "LocalBusiness"],
-    "@id": "https://zahraffamirarental.com/rental-mobil-martapura#business",
+    "@id": "https://www.zahraffamirarental.com/rental-mobil-martapura#business",
     "name": "ZAHRAFFAMIRA Rental Mobil Martapura",
-    "url": "https://zahraffamirarental.com/rental-mobil-martapura",
+    "url": "https://www.zahraffamirarental.com/rental-mobil-martapura",
     "telephone": "+6285349166234",
     "priceRange": "$$",
     "address": {

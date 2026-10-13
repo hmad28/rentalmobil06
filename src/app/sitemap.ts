@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import cars from "@/data/cars.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://zahraffamirarental.com";
+  const baseUrl = "https://www.zahraffamirarental.com";
   const now = new Date();
 
   // Fleet dynamic routes

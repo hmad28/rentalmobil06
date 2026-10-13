@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     "carter mobil banjarmasin",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/rental-mobil-banjarmasin",
+    canonical: "https://www.zahraffamirarental.com/rental-mobil-banjarmasin",
   },
   openGraph: {
     title: "Rental Mobil Banjarmasin Murah & Terpercaya - ZAHRAFFAMIRA",
     description:
       "Layanan rental mobil terlengkap di Kota Banjarmasin. Unit prima Avanza, Innova, Hiace, Fortuner, Alphard siap lepas kunci atau driver 24 jam.",
-    url: "https://zahraffamirarental.com/rental-mobil-banjarmasin",
+    url: "https://www.zahraffamirarental.com/rental-mobil-banjarmasin",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -59,14 +59,14 @@ export default function RentalMobilBanjarmasinPage() {
   const banjarmasinSchema = {
     "@context": "https://schema.org",
     "@type": ["AutoRental", "LocalBusiness"],
-    "@id": "https://zahraffamirarental.com/rental-mobil-banjarmasin#business",
+    "@id": "https://www.zahraffamirarental.com/rental-mobil-banjarmasin#business",
     "name": "ZAHRAFFAMIRA Rental Mobil Banjarmasin",
     "alternateName": [
       "Rental Mobil Banjarmasin Terpercaya",
       "Home Zahraffa Rental Mobil Banjarmasin",
       "Zahraffamira Sewa Mobil Banjarmasin",
     ],
-    "url": "https://zahraffamirarental.com/rental-mobil-banjarmasin",
+    "url": "https://www.zahraffamirarental.com/rental-mobil-banjarmasin",
     "telephone": "+6285349166234",
     "priceRange": "$$",
     "currenciesAccepted": "IDR",

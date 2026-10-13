@@ -57,12 +57,12 @@ export async function generateMetadata({
       `${car.fullName.toLowerCase()}`,
     ],
     alternates: {
-      canonical: `https://zahraffamirarental.com/armada/${car.id}`,
+      canonical: `https://www.zahraffamirarental.com/armada/${car.id}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://zahraffamirarental.com/armada/${car.id}`,
+      url: `https://www.zahraffamirarental.com/armada/${car.id}`,
       siteName: "ZAHRAFFAMIRA Rental Mobil",
       locale: "id_ID",
       type: "website",
@@ -99,9 +99,9 @@ export default async function CarDetailPage({ params }: CarDetailProps) {
     "@graph": [
       {
         "@type": ["Car", "Product"],
-        "@id": `https://zahraffamirarental.com/armada/${car.id}#car`,
+        "@id": `https://www.zahraffamirarental.com/armada/${car.id}#car`,
         "name": car.fullName,
-        "image": `https://zahraffamirarental.com${car.img}`,
+        "image": `https://www.zahraffamirarental.com${car.img}`,
         "description": car.description,
         "numberOfSeats": car.seats,
         "vehicleTransmission": car.transmission,
@@ -120,7 +120,7 @@ export default async function CarDetailPage({ params }: CarDetailProps) {
           },
           "availability": "https://schema.org/InStock",
           "seller": {
-            "@id": "https://zahraffamirarental.com/#business",
+            "@id": "https://www.zahraffamirarental.com/#business",
           },
         },
       },
@@ -131,19 +131,19 @@ export default async function CarDetailPage({ params }: CarDetailProps) {
             "@type": "ListItem",
             "position": 1,
             "name": "Beranda",
-            "item": "https://zahraffamirarental.com",
+            "item": "https://www.zahraffamirarental.com",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Armada",
-            "item": "https://zahraffamirarental.com/armada",
+            "item": "https://www.zahraffamirarental.com/armada",
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": car.fullName,
-            "item": `https://zahraffamirarental.com/armada/${car.id}`,
+            "item": `https://www.zahraffamirarental.com/armada/${car.id}`,
           },
         ],
       },

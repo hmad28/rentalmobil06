@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Informasi rekening bank resmi dan tata cara pembayaran sewa rental mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, & Banjarbaru. Pembayaran aman dan transparan.",
   alternates: {
-    canonical: "https://zahraffamirarental.com/pembayaran",
+    canonical: "https://www.zahraffamirarental.com/pembayaran",
   },
 };
 

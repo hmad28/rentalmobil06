@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     "zahraffamira rental mobil gambut",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/rental-mobil-gambut",
+    canonical: "https://www.zahraffamirarental.com/rental-mobil-gambut",
   },
   openGraph: {
     title: "Rental Mobil Gambut Terdekat & Sewa Hiace 24 Jam - ZAHRAFFAMIRA",
     description:
       "Garasi utama di Gambut (Komplek Dinar Mas 2). Pilihan unit Avanza, Innova, Hiace, Fortuner, Alphard siap antar cepat.",
-    url: "https://zahraffamirarental.com/rental-mobil-gambut",
+    url: "https://www.zahraffamirarental.com/rental-mobil-gambut",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -50,10 +50,10 @@ export default function RentalMobilGambutPage() {
   const gambutSchema = {
     "@context": "https://schema.org",
     "@type": ["AutoRental", "LocalBusiness"],
-    "@id": "https://zahraffamirarental.com/rental-mobil-gambut#business",
+    "@id": "https://www.zahraffamirarental.com/rental-mobil-gambut#business",
     "name": "ZAHRAFFAMIRA Rental Mobil Gambut",
     "alternateName": "Home Zahraffa Rental Mobil Gambut",
-    "url": "https://zahraffamirarental.com/rental-mobil-gambut",
+    "url": "https://www.zahraffamirarental.com/rental-mobil-gambut",
     "telephone": "+6285349166234",
     "priceRange": "$$",
     "currenciesAccepted": "IDR",

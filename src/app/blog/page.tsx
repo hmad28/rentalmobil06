@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Blog & Panduan Wisata Kalimantan Selatan - ZAHRAFFAMIRA",
   description: "Artikel tips perjalanan, info wisata Banjarmasin, panduan rental mobil, dan kuliner khas Kalimantan Selatan.",
   alternates: {
-    canonical: "https://zahraffamirarental.com/blog",
+    canonical: "https://www.zahraffamirarental.com/blog",
   },
 };
 

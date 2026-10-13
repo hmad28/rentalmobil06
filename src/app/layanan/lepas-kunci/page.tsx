@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "sewa innova lepas kunci banjarmasin",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/layanan/lepas-kunci",
+    canonical: "https://www.zahraffamirarental.com/layanan/lepas-kunci",
   },
 };
 

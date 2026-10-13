@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     "antar jemput bandara banjarbaru",
   ],
   alternates: {
-    canonical: "https://zahraffamirarental.com/sewa-mobil-banjarbaru",
+    canonical: "https://www.zahraffamirarental.com/sewa-mobil-banjarbaru",
   },
   openGraph: {
     title: "Rental & Sewa Mobil Banjarbaru ✅ Bandara Syamsudin Noor 24 Jam",
     description:
       "Layanan rental mobil di Banjarbaru dan sekitar Bandara Internasional Syamsudin Noor. Siap antar lepas kunci & dengan driver.",
-    url: "https://zahraffamirarental.com/sewa-mobil-banjarbaru",
+    url: "https://www.zahraffamirarental.com/sewa-mobil-banjarbaru",
     siteName: "ZAHRAFFAMIRA Rental Mobil",
     locale: "id_ID",
     type: "website",
@@ -48,9 +48,9 @@ export default function SewaMobilBanjarbaruPage() {
   const banjarbaruSchema = {
     "@context": "https://schema.org",
     "@type": ["AutoRental", "LocalBusiness"],
-    "@id": "https://zahraffamirarental.com/sewa-mobil-banjarbaru#business",
+    "@id": "https://www.zahraffamirarental.com/sewa-mobil-banjarbaru#business",
     "name": "ZAHRAFFAMIRA Rental Mobil Banjarbaru",
-    "url": "https://zahraffamirarental.com/sewa-mobil-banjarbaru",
+    "url": "https://www.zahraffamirarental.com/sewa-mobil-banjarbaru",
     "telephone": "+6285349166234",
     "priceRange": "$$",
     "address": {
