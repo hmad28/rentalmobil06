@@ -58,8 +58,7 @@ async function main() {
 
   // Write all icons
   fs.writeFileSync('public/favicon.ico', icoBuffer);
-  fs.writeFileSync('src/app/favicon.ico', icoBuffer);
-  console.log('Updated public/favicon.ico and src/app/favicon.ico (Multi-size ICO):', icoBuffer.length, 'bytes');
+  console.log('Updated public/favicon.ico (Multi-size ICO):', icoBuffer.length, 'bytes');
 
   fs.writeFileSync('public/favicon-48x48.png', size48);
   fs.writeFileSync('public/favicon-96x96.png', size96);
