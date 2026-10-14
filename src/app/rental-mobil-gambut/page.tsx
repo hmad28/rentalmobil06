@@ -14,6 +14,7 @@ import {
   Compass,
 } from "lucide-react";
 import { FaqSection } from "@/components/FaqSection";
+import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
   title: "Rental Mobil Gambut Terdekat & Sewa Hiace 24 Jam - ZAHRAFFAMIRA",
@@ -344,6 +345,13 @@ export default function RentalMobilGambutPage() {
           </div>
         </div>
       </section>
+
+      {/* Semantic Pricing Table for Gambut */}
+      <ArmadaPricingTable
+        title="Daftar Tarif Sewa Mobil di Gambut (Pangkalan Garasi)"
+        subtitle="Tarif rental mobil termurah di Gambut mulai dari Rp 350.000/hari untuk New Avanza lepas kunci. Bebas biaya antar unit untuk area Gambut, Komplek Dinar Mas, Kayu Bawang, dan Jl. A. Yani Km 12–17. Unit selalu bersih, ber-AC dingin, dan wangi."
+        id="tarif-gambut"
+      />
 
       {/* Area Cakupan Gambut */}
       <section className="py-12 bg-white border-b border-[#E8E4DB]">

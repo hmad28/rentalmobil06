@@ -16,6 +16,7 @@ import {
   Compass,
 } from "lucide-react";
 import { FaqSection } from "@/components/FaqSection";
+import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
   title: "Rental Mobil Banjarmasin Murah & Terpercaya - ZAHRAFFAMIRA",
@@ -375,6 +376,13 @@ export default function RentalMobilBanjarmasinPage() {
           </div>
         </div>
       </section>
+
+      {/* Semantic Pricing Table for Banjarmasin */}
+      <ArmadaPricingTable
+        title="Daftar Tarif Rental Mobil Kota Banjarmasin"
+        subtitle="Tarif rental mobil terpercaya di Kota Banjarmasin mulai dari Rp 350.000/hari untuk New Avanza lepas kunci. Tersedia Toyota Innova Reborn, Zenix, Fortuner, Alphard, hingga Hiace Commuter 15 seat dengan fasilitas antar-jemput langsung ke hotel berbintang dan kawasan bisnis Lambung Mangkurat."
+        id="tarif-banjarmasin"
+      />
 
       {/* Titik Antar-Jemput di Kota Banjarmasin */}
       <section className="py-12 bg-white border-b border-[#E8E4DB]">

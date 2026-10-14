@@ -15,6 +15,7 @@ import {
   Compass,
 } from "lucide-react";
 import { FaqSection } from "@/components/FaqSection";
+import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
   title: "Rental Mobil Kertak Hanyar Murah & Sewa Mobil 24 Jam - ZAHRAFFAMIRA",
@@ -372,6 +373,13 @@ export default function RentalMobilKertakHanyarPage() {
           </div>
         </div>
       </section>
+
+      {/* Semantic Pricing Table for Kertak Hanyar */}
+      <ArmadaPricingTable
+        title="Daftar Tarif Rental Mobil Kertak Hanyar & CitraLand"
+        subtitle="Tarif sewa mobil harian di Kertak Hanyar dan CitraLand mulai dari Rp 350.000/hari untuk New Avanza lepas kunci. Tersedia Toyota Innova Reborn, Zenix, Fortuner, hingga Hiace dengan garansi unit bersih, wangi, AC dingin merata, dan bebas biaya antar ke seluruh Jl. A. Yani Km 7–11."
+        id="tarif-kertak-hanyar"
+      />
 
       {/* Titik Antar-Jemput di Kertak Hanyar */}
       <section className="py-12 bg-white border-b border-[#E8E4DB]">

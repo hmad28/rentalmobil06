@@ -4,6 +4,7 @@ import Link from "next/link";
 import cars from "@/data/cars.json";
 import { Users, Briefcase, Cog, Fuel, CheckCircle2, MessageCircle, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { FaqSection } from "@/components/FaqSection";
+import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
   title: "Daftar Armada Rental Mobil Banjarmasin, Gambut & Banjarbaru",
@@ -175,6 +176,9 @@ export default function ArmadaPage() {
           </div>
         </div>
       </section>
+
+      {/* Semantic Pricing Table for AEO & Quick Comparison */}
+      <ArmadaPricingTable />
 
       {/* Fleet Guarantee Section */}
       <section className="py-12 bg-white border-y border-[#E8E4DB]">
