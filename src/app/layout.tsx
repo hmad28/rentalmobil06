@@ -228,6 +228,18 @@ export default function RootLayout({
     <html lang="id" className={`${manrope.variable} ${cinzel.variable} h-full scroll-smooth`}>
       <head>
         <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-W8M8GNC71P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W8M8GNC71P');
+          `}
+        </Script>
+        <Script
           src="https://unpkg.com/lucide@0.562.0/dist/umd/lucide.min.js"
           strategy="afterInteractive"
         />
