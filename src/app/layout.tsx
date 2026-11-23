@@ -6,10 +6,6 @@ import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import Script from "next/script";
 import { LucideIconsInit } from "@/components/LucideIconsInit";
-import { DeactivatedNotice } from "@/components/DeactivatedNotice";
-
-// Set to true to display "Website Sementara Tidak Aktif" notice
-const IS_DEACTIVATED = true;
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -226,26 +222,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  if (IS_DEACTIVATED) {
-    return (
-      <html lang="id" className="h-full">
-        <head>
-          <meta name="robots" content="noindex, nofollow" />
-          <title>Website Sementara Tidak Aktif</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet"
-          />
-        </head>
-        <body className="h-full bg-[#0d1117] m-0 p-0 antialiased">
-          <DeactivatedNotice />
-        </body>
-      </html>
-    );
-  }
-
   return (
     <html lang="id" className={`${manrope.variable} ${cinzel.variable} h-full scroll-smooth`}>
       <head>
