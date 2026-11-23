@@ -4,9 +4,9 @@ import Link from "next/link";
 import { CreditCard, CheckCircle2, MessageCircle, HelpCircle, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Metode Pembayaran Resmi - ZAHRAFFAMIRA Rental Mobil",
+  title: "Metode Pembayaran Sewa Mobil",
   description:
-    "Informasi rekening bank resmi dan tata cara pembayaran sewa rental mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, & Banjarbaru. Pembayaran aman dan transparan.",
+    "Rekening bank resmi dan tata cara pembayaran sewa mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut & Banjarbaru. Aman dan transparan.",
   alternates: {
     canonical: "https://www.zahraffamirarental.com/pembayaran",
   },

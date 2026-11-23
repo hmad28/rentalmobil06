@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Star, MessageCircle, Quote, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Testimoni Pelanggan - ZAHRAFFAMIRA Rental Mobil Banjarmasin",
+  title: "Testimoni Pelanggan Rental Mobil",
   description:
-    "Ulasan dan pengalaman nyata pelanggan yang menyewa mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, Banjarbaru, & Martapura. Pelayanan memuaskan dan armada prima.",
+    "Ulasan nyata pelanggan yang menyewa mobil di ZAHRAFFAMIRA Rental Mobil Banjarmasin, Gambut, Banjarbaru & Martapura.",
   alternates: {
     canonical: "https://www.zahraffamirarental.com/testimoni",
   },
@@ -141,7 +141,7 @@ export default function TestimoniPage() {
           {/* CTA Box */}
           <div className="mt-14 bg-gradient-to-r from-[#171717] to-[#2B2B2B] rounded-2xl p-8 sm:p-10 text-white text-center shadow-lg max-w-3xl mx-auto">
             <ShieldCheck className="w-10 h-10 text-[#DFC88F] mx-auto mb-3" />
-            <h3 className="text-2xl font-bold mb-2">Siap Merasakan Layanan Terbaik Kami?</h3>
+            <h2 className="text-2xl font-bold mb-2">Siap Merasakan Layanan Terbaik Kami?</h2>
             <p className="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto mb-6 leading-relaxed">
               Bergabunglah dengan ribuan pelanggan puas kami di Banjarmasin, Gambut, Banjarbaru, dan Martapura. Pesan sekarang untuk mendapatkan unit favorit Anda!
             </p>

@@ -140,9 +140,9 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
         {/* Small WhatsApp CTA under FAQ */}
         <div className="mt-10 p-6 bg-white rounded-2xl border border-[#E8E4DB] text-center flex flex-col sm:flex-row items-center justify-between gap-4 shadow-2xs">
           <div className="text-left">
-            <h4 className="text-base font-bold text-[#171717]">
+            <h3 className="text-base font-bold text-[#171717]">
               Punya pertanyaan lain seputar armada & jadwal?
-            </h4>
+            </h3>
             <p className="text-xs sm:text-sm text-[#626262] mt-0.5">
               Customer service kami online 24 jam siap menjawab kebutuhan rental Anda.
             </p>

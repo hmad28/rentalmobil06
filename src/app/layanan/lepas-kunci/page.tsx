@@ -5,9 +5,9 @@ import { Key, ShieldCheck, CheckCircle2, MessageCircle, ArrowRight, FileText, Br
 import { FaqSection } from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Sewa Mobil Lepas Kunci Banjarmasin, Gambut & Banjarbaru - ZAHRAFFAMIRA",
+  title: "Sewa Mobil Lepas Kunci Banjarmasin",
   description:
-    "Layanan sewa & rental mobil lepas kunci (self-drive) di Banjarmasin, Gambut, Banjarbaru. Syarat mudah, proses verifikasi cepat, unit Avanza, Innova, & Fortuner siap jalan.",
+    "Sewa mobil lepas kunci di Banjarmasin, Gambut & Banjarbaru. Syarat mudah, verifikasi cepat, unit Avanza, Innova & Fortuner siap jalan.",
   keywords: [
     "sewa mobil lepas kunci banjarmasin",
     "rental mobil banjarmasin lepas kunci",

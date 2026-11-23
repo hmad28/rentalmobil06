@@ -14,9 +14,9 @@ import {
 import { FaqSection } from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Rental & Sewa Mobil Banjarbaru ✅ Bandara Syamsudin Noor 24 Jam",
+  title: "Rental Mobil Banjarbaru & Bandara BDJ 24 Jam",
   description:
-    "Rental mobil Banjarbaru murah terpercaya dari ZAHRAFFAMIRA. Dekat Bandara Syamsudin Noor, Landasan Ulin, & Pemprov Kalsel. Unit Avanza, Innova, Hiace, Fortuner, Alphard siap 24 jam.",
+    "Rental & sewa mobil Banjarbaru 24 jam, dekat Bandara Syamsudin Noor & Landasan Ulin. Avanza, Innova, Hiace, Fortuner, Alphard. Lepas kunci / sopir.",
   keywords: [
     "rental mobil banjarbaru",
     "sewa mobil banjarbaru",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     canonical: "https://www.zahraffamirarental.com/sewa-mobil-banjarbaru",
   },
   openGraph: {
-    title: "Rental & Sewa Mobil Banjarbaru ✅ Bandara Syamsudin Noor 24 Jam",
+    title: "Rental Mobil Banjarbaru & Bandara BDJ 24 Jam",
     description:
       "Layanan rental mobil di Banjarbaru dan sekitar Bandara Internasional Syamsudin Noor. Siap antar lepas kunci & dengan driver.",
     url: "https://www.zahraffamirarental.com/sewa-mobil-banjarbaru",

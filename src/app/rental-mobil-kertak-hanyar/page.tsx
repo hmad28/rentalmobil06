@@ -18,9 +18,9 @@ import { FaqSection } from "@/components/FaqSection";
 import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
-  title: "Rental Mobil Kertak Hanyar Murah & Sewa Mobil 24 Jam - ZAHRAFFAMIRA",
+  title: "Rental Mobil Kertak Hanyar 24 Jam",
   description:
-    "Rental mobil Kertak Hanyar terpercaya dari ZAHRAFFAMIRA. Unit Avanza, Innova Reborn/Zenix, Hiace & Fortuner siap antar cepat ke CitraLand, Manarap, Jl. A. Yani Km 7-11, & Aston Banua. Lepas kunci atau driver 24 jam.",
+    "Rental mobil Kertak Hanyar 24 jam. Avanza, Innova, Hiace & Fortuner antar ke CitraLand, Manarap & A. Yani Km 7-11. Lepas kunci atau dengan sopir.",
   keywords: [
     "rental mobil kertak hanyar",
     "sewa mobil kertak hanyar",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "https://www.zahraffamirarental.com/rental-mobil-kertak-hanyar",
   },
   openGraph: {
-    title: "Rental Mobil Kertak Hanyar Murah & Sewa Mobil 24 Jam - ZAHRAFFAMIRA",
+    title: "Rental Mobil Kertak Hanyar 24 Jam",
     description:
       "Layanan sewa dan rental mobil di Kertak Hanyar, Kabupaten Banjar. Antar unit cepat ke CitraLand, Manarap, & Aston Banua. Avanza, Innova, Hiace, Fortuner 24 Jam.",
     url: "https://www.zahraffamirarental.com/rental-mobil-kertak-hanyar",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rental Mobil Kertak Hanyar Murah & Sewa Mobil 24 Jam - ZAHRAFFAMIRA",
+    title: "Rental Mobil Kertak Hanyar 24 Jam",
     description:
       "Rental mobil di Kertak Hanyar, CitraLand, Manarap, Aston Banua. Armada prima Avanza, Innova, Fortuner, Hiace 24 Jam.",
     images: ["/images/pelayanan-zahraffa.jpeg"],

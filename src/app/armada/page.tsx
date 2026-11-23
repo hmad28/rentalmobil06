@@ -7,9 +7,9 @@ import { FaqSection } from "@/components/FaqSection";
 import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
-  title: "Daftar Armada Rental Mobil Banjarmasin, Gambut & Banjarbaru",
+  title: "Daftar Armada & Harga Sewa Mobil Banjarmasin",
   description:
-    "Pilihan lengkap armada Zahraffamira Rental Mobil: New Avanza, Grand Avanza, Innova Reborn, Innova Zenix, Fortuner, Alphard, Hiace Commuter 15 seat, & Hiace Premio VIP. Unit terawat, bersih, siap lepas kunci atau supir.",
+    "Armada ZAHRAFFAMIRA: Avanza, Innova Reborn & Zenix, Fortuner, Alphard, Hiace Commuter & Premio. Unit bersih & terawat, lepas kunci atau dengan sopir.",
   keywords: [
     "armada rental mobil banjarmasin",
     "sewa avanza banjarmasin",

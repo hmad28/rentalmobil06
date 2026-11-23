@@ -184,8 +184,18 @@ export const Footer = () => {
           </div>
         </div>
 
+        {/* Info links */}
+        <nav aria-label="Informasi" className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-300">
+          <Link href="/tentang-kami" className="hover:text-[#DFC88F] transition-colors">Tentang Kami</Link>
+          <Link href="/testimoni" className="hover:text-[#DFC88F] transition-colors">Testimoni</Link>
+          <Link href="/pembayaran" className="hover:text-[#DFC88F] transition-colors">Pembayaran</Link>
+          <Link href="/kerjasama-kemitraan" className="hover:text-[#DFC88F] transition-colors">Kerjasama</Link>
+          <Link href="/blog" className="hover:text-[#DFC88F] transition-colors">Blog</Link>
+          <Link href="/kontak" className="hover:text-[#DFC88F] transition-colors">Kontak</Link>
+        </nav>
+
         {/* Copyright */}
-        <div className="mt-8 text-center border-t border-white/10 pt-6">
+        <div className="mt-6 text-center border-t border-white/10 pt-6">
           <p className="text-xs sm:text-sm text-gray-400">
             &copy; 2026 ZAHRAFFAMIRA Rental Mobil Banjarmasin. All rights reserved.
           </p>

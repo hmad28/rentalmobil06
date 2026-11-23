@@ -4,8 +4,12 @@ import { ShieldCheck, MapPin, MessageCircle, Star, Clock, Users } from "lucide-r
 import { GallerySection } from "@/components/GallerySection";
 
 export const metadata: Metadata = {
-  title: "Tentang Kami - Zahraffa Rental Mobil Banjarmasin",
-  description: "Profil Home Zahraffa Rental Mobil Banjarmasin dan Banjarbaru. Penyedia jasa transportasi sewa mobil terpercaya dengan komitmen pelayanan prima dan armada terawat berplat DA lokal.",
+  title: "Tentang Kami",
+  description:
+    "Profil ZAHRAFFAMIRA (Home Zahraffa) Rental Mobil di Gambut, Kab. Banjar. Sewa mobil terpercaya untuk Banjarmasin & Banjarbaru dengan armada plat DA lokal.",
+  alternates: {
+    canonical: "https://www.zahraffamirarental.com/tentang-kami",
+  },
 };
 
 export default function TentangKamiPage() {

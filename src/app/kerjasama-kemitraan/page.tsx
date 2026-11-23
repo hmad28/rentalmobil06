@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Handshake, Car, Building2, UserCheck, MessageCircle, CheckCircle2, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Kerjasama Kemitraan - ZAHRAFFAMIRA Rental Mobil",
+  title: "Kerjasama Sewa Mobil Korporat & Mitra",
   description:
     "Peluang kerjasama dan kemitraan sewa mobil untuk perusahaan, instansi BUMN, agen wisata, dan pemilik armada di Banjarmasin, Gambut, & Banjarbaru.",
   alternates: {
@@ -54,7 +54,7 @@ export default function KerjasamaPage() {
                 <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-[#171717] mb-2">Sewa Korporat & Instansi</h3>
+                <h2 className="text-lg font-bold text-[#171717] mb-2">Sewa Korporat & Instansi</h2>
                 <p className="text-xs sm:text-sm text-[#626262] leading-relaxed mb-4">
                   Penyediaan kendaraan operasional bulanan/tahunan untuk perusahaan BUMN, perbankan, instansi dinas, kontraktor tambang, dan perkebunan dengan invoice resmi & unit backup.
                 </p>
@@ -76,7 +76,7 @@ export default function KerjasamaPage() {
                 <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
                   <Car className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-[#171717] mb-2">Mitra Pemilik Armada (Titip Unit)</h3>
+                <h2 className="text-lg font-bold text-[#171717] mb-2">Mitra Pemilik Armada (Titip Unit)</h2>
                 <p className="text-xs sm:text-sm text-[#626262] leading-relaxed mb-4">
                   Optimalkan kendaraan Anda yang jarang terpakai (Avanza, Innova, Hiace, Fortuner) dengan sistem bagi hasil transparan, manajemen perawatan, dan sistem proteksi keamanan.
                 </p>
@@ -98,7 +98,7 @@ export default function KerjasamaPage() {
                 <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center mb-4">
                   <UserCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-[#171717] mb-2">Mitra Agen Wisata & Travel</h3>
+                <h2 className="text-lg font-bold text-[#171717] mb-2">Mitra Agen Wisata & Travel</h2>
                 <p className="text-xs sm:text-sm text-[#626262] leading-relaxed mb-4">
                   Kerja sama penyediaan armada pariwisata (Hiace Commuter 15 seat, Hiace Premio VIP) untuk tour operator luar kota yang membawa rombongan ke Kalimantan Selatan.
                 </p>
@@ -119,7 +119,7 @@ export default function KerjasamaPage() {
           {/* CTA Box */}
           <div className="mt-14 bg-gradient-to-r from-[#171717] to-[#2B2B2B] rounded-2xl p-8 sm:p-10 text-white text-center shadow-lg max-w-3xl mx-auto">
             <ShieldCheck className="w-10 h-10 text-[#DFC88F] mx-auto mb-3" />
-            <h3 className="text-2xl font-bold mb-2">Diskusikan Kemitraan Bersama Kami</h3>
+            <h2 className="text-2xl font-bold mb-2">Diskusikan Kemitraan Bersama Kami</h2>
             <p className="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto mb-6 leading-relaxed">
               Tim manajemen Zahraffamira siap menyusun proposal penawaran khusus sesuai spesifikasi armada dan kebutuhan anggaran instansi Anda.
             </p>

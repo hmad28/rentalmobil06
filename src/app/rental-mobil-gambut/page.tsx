@@ -17,9 +17,9 @@ import { FaqSection } from "@/components/FaqSection";
 import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
-  title: "Rental Mobil Gambut Terdekat & Sewa Hiace 24 Jam - ZAHRAFFAMIRA",
+  title: "Rental Mobil Gambut & Sewa Hiace 24 Jam",
   description:
-    "Rental mobil Gambut terpercaya berlokasi di Komplek Dinar Mas 2. Melayani sewa mobil lepas kunci, dengan supir, dan carter Hiace 24 jam ke Jl. A. Yani KM 12-17, Liang Anggang, & Bandara Syamsudin Noor.",
+    "Rental mobil Gambut di Komplek Dinar Mas 2. Lepas kunci, dengan sopir & carter Hiace 24 jam ke A. Yani Km 12-17, Liang Anggang & Bandara Syamsudin Noor.",
   keywords: [
     "rental mobil gambut",
     "sewa mobil gambut",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     canonical: "https://www.zahraffamirarental.com/rental-mobil-gambut",
   },
   openGraph: {
-    title: "Rental Mobil Gambut Terdekat & Sewa Hiace 24 Jam - ZAHRAFFAMIRA",
+    title: "Rental Mobil Gambut & Sewa Hiace 24 Jam",
     description:
       "Garasi utama di Gambut (Komplek Dinar Mas 2). Pilihan unit Avanza, Innova, Hiace, Fortuner, Alphard siap antar cepat.",
     url: "https://www.zahraffamirarental.com/rental-mobil-gambut",

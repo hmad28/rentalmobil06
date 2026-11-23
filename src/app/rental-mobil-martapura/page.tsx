@@ -14,9 +14,9 @@ import {
 import { FaqSection } from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Rental Mobil Martapura & Sewa Hiace Ziarah Sekumpul - ZAHRAFFAMIRA",
+  title: "Rental Mobil Martapura & Hiace Sekumpul",
   description:
-    "Rental mobil Martapura murah & terpercaya. Spesialis sewa Hiace rombongan ziarah Guru Sekumpul, wisata Tahura Sultan Adam, Kiram Park, dan Pasar Intan CBS. Driver ramah dan hafal jalan.",
+    "Rental mobil Martapura & sewa Hiace rombongan ziarah Sekumpul, wisata Tahura Sultan Adam, Kiram Park & Pasar Intan CBS. Sopir ramah, hafal rute.",
   keywords: [
     "rental mobil martapura",
     "sewa mobil martapura",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: "https://www.zahraffamirarental.com/rental-mobil-martapura",
   },
   openGraph: {
-    title: "Rental Mobil Martapura & Sewa Hiace Ziarah Sekumpul - ZAHRAFFAMIRA",
+    title: "Rental Mobil Martapura & Hiace Sekumpul",
     description:
       "Sewa mobil dan carter Hiace di Martapura. Cocok untuk ziarah Sekumpul, wisata religi, dan perjalanan dinas di Kabupaten Banjar.",
     url: "https://www.zahraffamirarental.com/rental-mobil-martapura",

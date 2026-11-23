@@ -48,8 +48,8 @@ export const ServiceAreaSection = () => {
 
   const serviceCategories = [
     { label: "Sewa Mobil Lepas Kunci", href: "/layanan/lepas-kunci" },
-    { label: "Sewa Mobil Plus Supir", href: "/layanan/dengan-supir" },
-    { label: "Sewa Hiace Commuter & Premio", href: "/layanan/sewa-hiace" },
+    { label: "Sewa Mobil Plus Supir", href: "/armada" },
+    { label: "Sewa Hiace Commuter & Premio", href: "/armada/hiace-commuter" },
     { label: "Antar Jemput Bandara BDJ", href: "/layanan/antar-jemput-bandara" },
     { label: "Carter Mobil Luar Kota Kalsel", href: "/kontak" },
   ];

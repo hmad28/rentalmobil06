@@ -19,9 +19,9 @@ import { FaqSection } from "@/components/FaqSection";
 import { ArmadaPricingTable } from "@/components/ArmadaPricingTable";
 
 export const metadata: Metadata = {
-  title: "Rental Mobil Banjarmasin Murah & Terpercaya - ZAHRAFFAMIRA",
+  title: "Rental & Sewa Mobil Banjarmasin 24 Jam",
   description:
-    "Jasa rental mobil Banjarmasin resmi dari ZAHRAFFAMIRA. Unit New Avanza, Innova Reborn/Zenix, Fortuner, Alphard & Hiace. Siap antar ke hotel, kantor BUMN, & mall 24 jam nonstop.",
+    "Rental & sewa mobil Banjarmasin 24 jam. Avanza, Innova Reborn/Zenix, Fortuner, Alphard & Hiace, lepas kunci atau dengan sopir. Antar ke hotel & kantor.",
   keywords: [
     "rental mobil banjarmasin",
     "rental mobil banjarmasin murah",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: "https://www.zahraffamirarental.com/rental-mobil-banjarmasin",
   },
   openGraph: {
-    title: "Rental Mobil Banjarmasin Murah & Terpercaya - ZAHRAFFAMIRA",
+    title: "Rental & Sewa Mobil Banjarmasin 24 Jam",
     description:
       "Layanan rental mobil terlengkap di Kota Banjarmasin. Unit prima Avanza, Innova, Hiace, Fortuner, Alphard siap lepas kunci atau driver 24 jam.",
     url: "https://www.zahraffamirarental.com/rental-mobil-banjarmasin",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rental Mobil Banjarmasin Murah & Terpercaya - ZAHRAFFAMIRA",
+    title: "Rental & Sewa Mobil Banjarmasin 24 Jam",
     description:
       "Rental mobil di Kota Banjarmasin. Antar unit ke hotel bintang, pusat kantor, & bandara. Unit bersih & wangi 24 jam.",
     images: ["/images/pelayanan-zahraffa.jpeg"],

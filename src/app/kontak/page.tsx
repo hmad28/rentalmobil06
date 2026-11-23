@@ -4,8 +4,12 @@ import { MapPin, Phone, Mail, Clock, MessageCircle, Send, ExternalLink } from "l
 import { InstagramIcon, TikTokIcon, FacebookIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Hubungi Kami - Zahraffa Rental Mobil Banjarmasin",
-  description: "Hubungi Home Zahraffa Rental Mobil Banjarmasin & Banjarbaru untuk reservasi, konsultasi rute, dan sewa mobil 24 jam via WhatsApp dan telepon.",
+  title: "Kontak Rental Mobil Banjarmasin 24 Jam",
+  description:
+    "Hubungi ZAHRAFFAMIRA Rental Mobil untuk reservasi, cek unit, dan sewa mobil 24 jam di Banjarmasin, Gambut & Banjarbaru via WhatsApp 0853-4916-6234.",
+  alternates: {
+    canonical: "https://www.zahraffamirarental.com/kontak",
+  },
 };
 
 export default function KontakPage() {

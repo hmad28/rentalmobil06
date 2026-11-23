@@ -5,9 +5,9 @@ import { Plane, Clock, ShieldCheck, Smile, MessageCircle, ArrowRight, CheckCircl
 import { FaqSection } from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Antar Jemput Bandara Syamsudin Noor (BDJ) 24 Jam - ZAHRAFFAMIRA",
+  title: "Antar Jemput Bandara Syamsudin Noor 24 Jam",
   description:
-    "Layanan antar jemput (airport shuttle transfer) Bandara Internasional Syamsudin Noor ke Banjarmasin, Gambut, Banjarbaru, & Martapura. Tepat waktu, bebas antre, standby 24 jam.",
+    "Antar jemput Bandara Syamsudin Noor (BDJ) ke Banjarmasin, Gambut, Banjarbaru & Martapura. Tepat waktu, bebas antre, standby 24 jam.",
   keywords: [
     "antar jemput bandara syamsudin noor",
     "shuttle bandara banjarmasin",

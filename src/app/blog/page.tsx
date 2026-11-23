@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog & Panduan Wisata Kalimantan Selatan - ZAHRAFFAMIRA",
-  description: "Artikel tips perjalanan, info wisata Banjarmasin, panduan rental mobil, dan kuliner khas Kalimantan Selatan.",
+  title: "Blog Wisata & Tips Rental Mobil Kalsel",
+  description:
+    "Artikel tips perjalanan, info wisata Banjarmasin, panduan rental mobil, dan kuliner khas Kalimantan Selatan.",
   alternates: {
     canonical: "https://www.zahraffamirarental.com/blog",
   },

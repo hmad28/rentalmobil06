@@ -41,8 +41,12 @@ export async function generateMetadata({
     };
   }
 
-  const title = `Sewa & Rental ${car.fullName} Banjarmasin, Gambut & Banjarbaru`;
-  const description = `${car.description.slice(0, 155)}... Booking ${car.title} lepas kunci atau plus driver via WhatsApp 0853-4916-6234.`;
+  const title = `Sewa ${car.title} Banjarmasin & Banjarbaru`;
+  const withPrice = `Sewa ${car.title} di Banjarmasin, Gambut & Banjarbaru. ${car.seats} penumpang, ${car.priceRange.replace(/^Mulai/, "mulai")}. Lepas kunci atau dengan sopir, WA 0853-4916-6234.`;
+  const description =
+    withPrice.length <= 160
+      ? withPrice
+      : `Sewa ${car.title} di Banjarmasin, Gambut & Banjarbaru. ${car.seats} penumpang, lepas kunci atau dengan sopir. Booking via WA 0853-4916-6234.`;
 
   return {
     title,
@@ -241,9 +245,9 @@ export default async function CarDetailPage({ params }: CarDetailProps) {
 
               {/* Specs Box */}
               <div className="bg-white rounded-2xl border border-[#E8E4DB] p-5 shadow-xs">
-                <h3 className="text-sm font-bold text-[#171717] uppercase tracking-wider mb-4 pb-2 border-b border-[#F0ECE1]">
+                <h2 className="text-sm font-bold text-[#171717] uppercase tracking-wider mb-4 pb-2 border-b border-[#F0ECE1]">
                   Spesifikasi & Kapasitas
-                </h3>
+                </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-lg bg-amber-50 border border-amber-200 text-[#B8892E] flex items-center justify-center shrink-0">
